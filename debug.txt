@@ -1,0 +1,4589 @@
+Test case 2: ./a.out 8 6 512 0.001 3000 4 0.5 32
+==> Checking std output
+len(gt_lines) = 18398 len(our_lines) = 3816
+2786
+gt:  time 53318ms: Recalculating tau for process A: old tau 478ms ==> new tau 263ms [Q H F E G D]
+
+our: time 53318ms: Recalculating tau for process A: old tau 478ms ==> new tau 262ms [Q H F E G D]
+
+2791
+gt:  time 54491ms: Process A (tau 263ms) completed I/O; preempting C [Q A H F E G D]
+
+our: time 54491ms: Process A (tau 262ms) completed I/O; preempting C [Q A H F E G D]
+
+2792
+gt:  time 54497ms: Process A (tau 263ms) started using the CPU for 227ms burst [Q C H F E G D]
+
+our: time 54497ms: Process A (tau 262ms) started using the CPU for 227ms burst [Q C H F E G D]
+
+2793
+gt:  time 54724ms: Process A (tau 263ms) completed a CPU burst; 14 bursts to go [Q C H F E G D]
+
+our: time 54724ms: Process A (tau 262ms) completed a CPU burst; 14 bursts to go [Q C H F E G D]
+
+2794
+gt:  time 54724ms: Recalculating tau for process A: old tau 263ms ==> new tau 231ms [Q C H F E G D]
+
+our: time 54724ms: Recalculating tau for process A: old tau 262ms ==> new tau 231ms [Q C H F E G D]
+
+2904
+gt:  time 102524ms: Process G (tau 7886ms) completed I/O; added to ready queue [Q E F G D C]
+
+our: time 102525ms: Process A (tau 274ms) started using the CPU for 119ms burst [Q E F D C]
+
+2905
+gt:  time 102525ms: Process A (tau 274ms) started using the CPU for 119ms burst [Q E F G D C]
+
+our: time 102644ms: Process A (tau 274ms) completed a CPU burst; 8 bursts to go [Q E F D C]
+
+2906
+gt:  time 102644ms: Process A (tau 274ms) completed a CPU burst; 8 bursts to go [Q E F G D C]
+
+our: time 102644ms: Recalculating tau for process A: old tau 274ms ==> new tau 135ms [Q E F D C]
+
+2907
+gt:  time 102644ms: Recalculating tau for process A: old tau 274ms ==> new tau 135ms [Q E F G D C]
+
+our: time 102644ms: Process A switching out of CPU; blocking on I/O until time 102887ms [Q E F D C]
+
+2908
+gt:  time 102644ms: Process A switching out of CPU; blocking on I/O until time 102887ms [Q E F G D C]
+
+our: time 102650ms: Process E (tau 6697ms) started using the CPU for remaining 8416ms of 8908ms burst [Q F D C]
+
+2909
+gt:  time 102650ms: Process E (tau 6697ms) started using the CPU for remaining 8416ms of 8908ms burst [Q F G D C]
+
+our: time 102887ms: Process A (tau 135ms) completed I/O; preempting E [Q A F D C]
+
+2910
+gt:  time 102887ms: Process A (tau 135ms) completed I/O; preempting E [Q A F G D C]
+
+our: time 102893ms: Process A (tau 135ms) started using the CPU for 1807ms burst [Q E F D C]
+
+2911
+gt:  time 102893ms: Process A (tau 135ms) started using the CPU for 1807ms burst [Q E F G D C]
+
+our: time 104700ms: Process A (tau 135ms) completed a CPU burst; 7 bursts to go [Q E F D C]
+
+2912
+gt:  time 104700ms: Process A (tau 135ms) completed a CPU burst; 7 bursts to go [Q E F G D C]
+
+our: time 104700ms: Recalculating tau for process A: old tau 135ms ==> new tau 1640ms [Q E F D C]
+
+2913
+gt:  time 104700ms: Recalculating tau for process A: old tau 135ms ==> new tau 1640ms [Q E F G D C]
+
+our: time 104700ms: Process A switching out of CPU; blocking on I/O until time 106583ms [Q E F D C]
+
+2914
+gt:  time 104700ms: Process A switching out of CPU; blocking on I/O until time 106583ms [Q E F G D C]
+
+our: time 104706ms: Process E (tau 6697ms) started using the CPU for remaining 8179ms of 8908ms burst [Q F D C]
+
+2915
+gt:  time 104706ms: Process E (tau 6697ms) started using the CPU for remaining 8179ms of 8908ms burst [Q F G D C]
+
+our: time 104907ms: Process H (tau 865ms) completed I/O; preempting E [Q H F D C]
+
+2916
+gt:  time 104907ms: Process H (tau 865ms) completed I/O; preempting E [Q H F G D C]
+
+our: time 104913ms: Process H (tau 865ms) started using the CPU for 684ms burst [Q E F D C]
+
+2917
+gt:  time 104913ms: Process H (tau 865ms) started using the CPU for 684ms burst [Q E F G D C]
+
+our: time 105597ms: Process H (tau 865ms) completed a CPU burst; 30 bursts to go [Q E F D C]
+
+2918
+gt:  time 105597ms: Process H (tau 865ms) completed a CPU burst; 30 bursts to go [Q E F G D C]
+
+our: time 105597ms: Recalculating tau for process H: old tau 865ms ==> new tau 703ms [Q E F D C]
+
+2919
+gt:  time 105597ms: Recalculating tau for process H: old tau 865ms ==> new tau 703ms [Q E F G D C]
+
+our: time 105597ms: Process H switching out of CPU; blocking on I/O until time 106530ms [Q E F D C]
+
+2920
+gt:  time 105597ms: Process H switching out of CPU; blocking on I/O until time 106530ms [Q E F G D C]
+
+our: time 105603ms: Process E (tau 6697ms) started using the CPU for remaining 7978ms of 8908ms burst [Q F D C]
+
+2921
+gt:  time 105603ms: Process E (tau 6697ms) started using the CPU for remaining 7978ms of 8908ms burst [Q F G D C]
+
+our: time 106530ms: Process H (tau 703ms) completed I/O; preempting E [Q H F D C]
+
+2922
+gt:  time 106530ms: Process H (tau 703ms) completed I/O; preempting E [Q H F G D C]
+
+our: time 106536ms: Process H (tau 703ms) started using the CPU for 2352ms burst [Q E F D C]
+
+2923
+gt:  time 106536ms: Process H (tau 703ms) started using the CPU for 2352ms burst [Q E F G D C]
+
+our: time 106583ms: Process A (tau 1640ms) completed I/O; added to ready queue [Q A E F D C]
+
+2924
+gt:  time 106583ms: Process A (tau 1640ms) completed I/O; added to ready queue [Q A E F G D C]
+
+our: time 108888ms: Process H (tau 703ms) completed a CPU burst; 29 bursts to go [Q A E F D C]
+
+2925
+gt:  time 108888ms: Process H (tau 703ms) completed a CPU burst; 29 bursts to go [Q A E F G D C]
+
+our: time 108888ms: Recalculating tau for process H: old tau 703ms ==> new tau 2188ms [Q A E F D C]
+
+2926
+gt:  time 108888ms: Recalculating tau for process H: old tau 703ms ==> new tau 2188ms [Q A E F G D C]
+
+our: time 108888ms: Process H switching out of CPU; blocking on I/O until time 109283ms [Q A E F D C]
+
+2927
+gt:  time 108888ms: Process H switching out of CPU; blocking on I/O until time 109283ms [Q A E F G D C]
+
+our: time 108894ms: Process A (tau 1640ms) started using the CPU for 397ms burst [Q E F D C]
+
+2928
+gt:  time 108894ms: Process A (tau 1640ms) started using the CPU for 397ms burst [Q E F G D C]
+
+our: time 109283ms: Process H (tau 2188ms) completed I/O; added to ready queue [Q H E F D C]
+
+2929
+gt:  time 109283ms: Process H (tau 2188ms) completed I/O; added to ready queue [Q H E F G D C]
+
+our: time 109291ms: Process A (tau 1640ms) completed a CPU burst; 6 bursts to go [Q H E F D C]
+
+2930
+gt:  time 109291ms: Process A (tau 1640ms) completed a CPU burst; 6 bursts to go [Q H E F G D C]
+
+our: time 109291ms: Recalculating tau for process A: old tau 1640ms ==> new tau 522ms [Q H E F D C]
+
+2931
+gt:  time 109291ms: Recalculating tau for process A: old tau 1640ms ==> new tau 522ms [Q H E F G D C]
+
+our: time 109291ms: Process A switching out of CPU; blocking on I/O until time 119034ms [Q H E F D C]
+
+2932
+gt:  time 109291ms: Process A switching out of CPU; blocking on I/O until time 119034ms [Q H E F G D C]
+
+our: time 109297ms: Process H (tau 2188ms) started using the CPU for 460ms burst [Q E F D C]
+
+2933
+gt:  time 109297ms: Process H (tau 2188ms) started using the CPU for 460ms burst [Q E F G D C]
+
+our: time 109757ms: Process H (tau 2188ms) completed a CPU burst; 28 bursts to go [Q E F D C]
+
+2934
+gt:  time 109757ms: Process H (tau 2188ms) completed a CPU burst; 28 bursts to go [Q E F G D C]
+
+our: time 109757ms: Recalculating tau for process H: old tau 2188ms ==> new tau 633ms [Q E F D C]
+
+2935
+gt:  time 109757ms: Recalculating tau for process H: old tau 2188ms ==> new tau 633ms [Q E F G D C]
+
+our: time 109757ms: Process H switching out of CPU; blocking on I/O until time 114502ms [Q E F D C]
+
+2936
+gt:  time 109757ms: Process H switching out of CPU; blocking on I/O until time 114502ms [Q E F G D C]
+
+our: time 109763ms: Process E (tau 6697ms) started using the CPU for remaining 7051ms of 8908ms burst [Q F D C]
+
+2937
+gt:  time 109763ms: Process E (tau 6697ms) started using the CPU for remaining 7051ms of 8908ms burst [Q F G D C]
+
+our: time 114502ms: Process H (tau 633ms) completed I/O; added to ready queue [Q H F D C]
+
+2938
+gt:  time 114502ms: Process H (tau 633ms) completed I/O; added to ready queue [Q H F G D C]
+
+our: time 116814ms: Process E (tau 6697ms) completed a CPU burst; 62 bursts to go [Q H F D C]
+
+2939
+gt:  time 116814ms: Process E (tau 6697ms) completed a CPU burst; 62 bursts to go [Q H F G D C]
+
+our: time 116814ms: Recalculating tau for process E: old tau 6697ms ==> new tau 8687ms [Q H F D C]
+
+2940
+gt:  time 116814ms: Recalculating tau for process E: old tau 6697ms ==> new tau 8687ms [Q H F G D C]
+
+our: time 116814ms: Process E switching out of CPU; blocking on I/O until time 117229ms [Q H F D C]
+
+2941
+gt:  time 116814ms: Process E switching out of CPU; blocking on I/O until time 117229ms [Q H F G D C]
+
+our: time 116820ms: Process H (tau 633ms) started using the CPU for 6140ms burst [Q F D C]
+
+2942
+gt:  time 116820ms: Process H (tau 633ms) started using the CPU for 6140ms burst [Q F G D C]
+
+our: time 117229ms: Process E (tau 8687ms) completed I/O; added to ready queue [Q F E D C]
+
+2943
+gt:  time 117229ms: Process E (tau 8687ms) completed I/O; added to ready queue [Q F G E D C]
+
+our: time 119034ms: Process A (tau 522ms) completed I/O; added to ready queue [Q A F E D C]
+
+2944
+gt:  time 119034ms: Process A (tau 522ms) completed I/O; added to ready queue [Q A F G E D C]
+
+our: time 122960ms: Process H (tau 633ms) completed a CPU burst; 27 bursts to go [Q A F E D C]
+
+2945
+gt:  time 122960ms: Process H (tau 633ms) completed a CPU burst; 27 bursts to go [Q A F G E D C]
+
+our: time 122960ms: Recalculating tau for process H: old tau 633ms ==> new tau 5590ms [Q A F E D C]
+
+2946
+gt:  time 122960ms: Recalculating tau for process H: old tau 633ms ==> new tau 5590ms [Q A F G E D C]
+
+our: time 122960ms: Process H switching out of CPU; blocking on I/O until time 125120ms [Q A F E D C]
+
+2947
+gt:  time 122960ms: Process H switching out of CPU; blocking on I/O until time 125120ms [Q A F G E D C]
+
+our: time 122966ms: Process A (tau 522ms) started using the CPU for 895ms burst [Q F E D C]
+
+2948
+gt:  time 122966ms: Process A (tau 522ms) started using the CPU for 895ms burst [Q F G E D C]
+
+our: time 123861ms: Process A (tau 522ms) completed a CPU burst; 5 bursts to go [Q F E D C]
+
+2949
+gt:  time 123861ms: Process A (tau 522ms) completed a CPU burst; 5 bursts to go [Q F G E D C]
+
+our: time 123861ms: Recalculating tau for process A: old tau 522ms ==> new tau 858ms [Q F E D C]
+
+2950
+gt:  time 123861ms: Recalculating tau for process A: old tau 522ms ==> new tau 858ms [Q F G E D C]
+
+our: time 123861ms: Process A switching out of CPU; blocking on I/O until time 128574ms [Q F E D C]
+
+2951
+gt:  time 123861ms: Process A switching out of CPU; blocking on I/O until time 128574ms [Q F G E D C]
+
+our: time 123867ms: Process F (tau 6728ms) started using the CPU for 2548ms burst [Q E D C]
+
+2952
+gt:  time 123867ms: Process F (tau 6728ms) started using the CPU for 2548ms burst [Q G E D C]
+
+our: time 125120ms: Process H (tau 5590ms) completed I/O; added to ready queue [Q H E D C]
+
+2953
+gt:  time 125120ms: Process H (tau 5590ms) completed I/O; added to ready queue [Q H G E D C]
+
+our: time 126415ms: Process F (tau 6728ms) completed a CPU burst; 3 bursts to go [Q H E D C]
+
+2954
+gt:  time 126415ms: Process F (tau 6728ms) completed a CPU burst; 3 bursts to go [Q H G E D C]
+
+our: time 126415ms: Recalculating tau for process F: old tau 6728ms ==> new tau 2966ms [Q H E D C]
+
+2955
+gt:  time 126415ms: Recalculating tau for process F: old tau 6728ms ==> new tau 2967ms [Q H G E D C]
+
+our: time 126415ms: Process F switching out of CPU; blocking on I/O until time 130365ms [Q H E D C]
+
+2956
+gt:  time 126415ms: Process F switching out of CPU; blocking on I/O until time 130365ms [Q H G E D C]
+
+our: time 126421ms: Process H (tau 5590ms) started using the CPU for 1040ms burst [Q E D C]
+
+2957
+gt:  time 126421ms: Process H (tau 5590ms) started using the CPU for 1040ms burst [Q G E D C]
+
+our: time 127461ms: Process H (tau 5590ms) completed a CPU burst; 26 bursts to go [Q E D C]
+
+2958
+gt:  time 127461ms: Process H (tau 5590ms) completed a CPU burst; 26 bursts to go [Q G E D C]
+
+our: time 127461ms: Recalculating tau for process H: old tau 5590ms ==> new tau 1496ms [Q E D C]
+
+2959
+gt:  time 127461ms: Recalculating tau for process H: old tau 5590ms ==> new tau 1496ms [Q G E D C]
+
+our: time 127461ms: Process H switching out of CPU; blocking on I/O until time 128334ms [Q E D C]
+
+2960
+gt:  time 127461ms: Process H switching out of CPU; blocking on I/O until time 128334ms [Q G E D C]
+
+our: time 127467ms: Process E (tau 8687ms) started using the CPU for 1264ms burst [Q D C]
+
+2961
+gt:  time 127467ms: Process G (tau 7886ms) started using the CPU for 2036ms burst [Q E D C]
+
+our: time 128334ms: Process H (tau 1496ms) completed I/O; preempting E [Q H D C]
+
+2962
+gt:  time 128334ms: Process H (tau 1496ms) completed I/O; preempting G [Q H E D C]
+
+our: time 128340ms: Process H (tau 1496ms) started using the CPU for 8584ms burst [Q E D C]
+
+2963
+gt:  time 128340ms: Process H (tau 1496ms) started using the CPU for 8584ms burst [Q G E D C]
+
+our: time 128574ms: Process A (tau 858ms) completed I/O; preempting H [Q A E D C]
+
+2964
+gt:  time 128574ms: Process A (tau 858ms) completed I/O; preempting H [Q A G E D C]
+
+our: time 128580ms: Process A (tau 858ms) started using the CPU for 1245ms burst [Q H E D C]
+
+2965
+gt:  time 128580ms: Process A (tau 858ms) started using the CPU for 1245ms burst [Q H G E D C]
+
+our: time 129825ms: Process A (tau 858ms) completed a CPU burst; 4 bursts to go [Q H E D C]
+
+2966
+gt:  time 129825ms: Process A (tau 858ms) completed a CPU burst; 4 bursts to go [Q H G E D C]
+
+our: time 129825ms: Recalculating tau for process A: old tau 858ms ==> new tau 1207ms [Q H E D C]
+
+2967
+gt:  time 129825ms: Recalculating tau for process A: old tau 858ms ==> new tau 1207ms [Q H G E D C]
+
+our: time 129825ms: Process A switching out of CPU; blocking on I/O until time 139918ms [Q H E D C]
+
+2968
+gt:  time 129825ms: Process A switching out of CPU; blocking on I/O until time 139918ms [Q H G E D C]
+
+our: time 129831ms: Process H (tau 1496ms) started using the CPU for remaining 8350ms of 8584ms burst [Q E D C]
+
+2969
+gt:  time 129831ms: Process H (tau 1496ms) started using the CPU for remaining 8350ms of 8584ms burst [Q G E D C]
+
+our: time 130365ms: Process F (tau 2966ms) completed I/O; added to ready queue [Q F E D C]
+
+2970
+gt:  time 130365ms: Process F (tau 2967ms) completed I/O; added to ready queue [Q F G E D C]
+
+our: time 138181ms: Process H (tau 1496ms) completed a CPU burst; 25 bursts to go [Q F E D C]
+
+2971
+gt:  time 138181ms: Process H (tau 1496ms) completed a CPU burst; 25 bursts to go [Q F G E D C]
+
+our: time 138181ms: Recalculating tau for process H: old tau 1496ms ==> new tau 7876ms [Q F E D C]
+
+2972
+gt:  time 138181ms: Recalculating tau for process H: old tau 1496ms ==> new tau 7876ms [Q F G E D C]
+
+our: time 138181ms: Process H switching out of CPU; blocking on I/O until time 139951ms [Q F E D C]
+
+2973
+gt:  time 138181ms: Process H switching out of CPU; blocking on I/O until time 139951ms [Q F G E D C]
+
+our: time 138187ms: Process F (tau 2966ms) started using the CPU for 2040ms burst [Q E D C]
+
+2974
+gt:  time 138187ms: Process F (tau 2967ms) started using the CPU for 2040ms burst [Q G E D C]
+
+our: time 139918ms: Process A (tau 1207ms) completed I/O; preempting F [Q A E D C]
+
+2975
+gt:  time 139918ms: Process A (tau 1207ms) completed I/O; preempting F [Q A G E D C]
+
+our: time 139924ms: Process A (tau 1207ms) started using the CPU for 42ms burst [Q F E D C]
+
+2976
+gt:  time 139924ms: Process A (tau 1207ms) started using the CPU for 42ms burst [Q F G E D C]
+
+our: time 139951ms: Process H (tau 7876ms) completed I/O; added to ready queue [Q F E H D C]
+
+2977
+gt:  time 139951ms: Process H (tau 7876ms) completed I/O; added to ready queue [Q F G H E D C]
+
+our: time 139966ms: Process A (tau 1207ms) completed a CPU burst; 3 bursts to go [Q F E H D C]
+
+2978
+gt:  time 139966ms: Process A (tau 1207ms) completed a CPU burst; 3 bursts to go [Q F G H E D C]
+
+our: time 139966ms: Recalculating tau for process A: old tau 1207ms ==> new tau 159ms [Q F E H D C]
+
+2979
+gt:  time 139966ms: Recalculating tau for process A: old tau 1207ms ==> new tau 159ms [Q F G H E D C]
+
+our: time 139966ms: Process A switching out of CPU; blocking on I/O until time 142169ms [Q F E H D C]
+
+2980
+gt:  time 139966ms: Process A switching out of CPU; blocking on I/O until time 142169ms [Q F G H E D C]
+
+our: time 139972ms: Process F (tau 2966ms) started using the CPU for remaining 309ms of 2040ms burst [Q E H D C]
+
+2981
+gt:  time 139972ms: Process F (tau 2967ms) started using the CPU for remaining 309ms of 2040ms burst [Q G H E D C]
+
+our: time 140281ms: Process F (tau 2966ms) completed a CPU burst; 2 bursts to go [Q E H D C]
+
+2982
+gt:  time 140281ms: Process F (tau 2967ms) completed a CPU burst; 2 bursts to go [Q G H E D C]
+
+our: time 140281ms: Recalculating tau for process F: old tau 2966ms ==> new tau 2133ms [Q E H D C]
+
+2983
+gt:  time 140281ms: Recalculating tau for process F: old tau 2967ms ==> new tau 2133ms [Q G H E D C]
+
+our: time 140281ms: Process F switching out of CPU; blocking on I/O until time 140941ms [Q E H D C]
+
+2984
+gt:  time 140281ms: Process F switching out of CPU; blocking on I/O until time 140941ms [Q G H E D C]
+
+our: time 140287ms: Process E (tau 8687ms) started using the CPU for remaining 397ms of 1264ms burst [Q H D C]
+
+2985
+gt:  time 140287ms: Process G (tau 7886ms) started using the CPU for remaining 1169ms of 2036ms burst [Q H E D C]
+
+our: time 140684ms: Process E (tau 8687ms) completed a CPU burst; 61 bursts to go [Q H D C]
+
+2986
+gt:  time 140941ms: Process F (tau 2133ms) completed I/O; preempting G [Q F H E D C]
+
+our: time 140684ms: Recalculating tau for process E: old tau 8687ms ==> new tau 2007ms [Q H D C]
+
+2987
+gt:  time 140947ms: Process F (tau 2133ms) started using the CPU for 1340ms burst [Q G H E D C]
+
+our: time 140684ms: Process E switching out of CPU; blocking on I/O until time 142487ms [Q H D C]
+
+2988
+gt:  time 142169ms: Process A (tau 159ms) completed I/O; preempting F [Q A G H E D C]
+
+our: time 140690ms: Process H (tau 7876ms) started using the CPU for 2300ms burst [Q D C]
+
+2989
+gt:  time 142175ms: Process A (tau 159ms) started using the CPU for 11ms burst [Q F G H E D C]
+
+our: time 140941ms: Process F (tau 2133ms) completed I/O; preempting H [Q F D C]
+
+2990
+gt:  time 142186ms: Process A (tau 159ms) completed a CPU burst; 2 bursts to go [Q F G H E D C]
+
+our: time 140947ms: Process F (tau 2133ms) started using the CPU for 1340ms burst [Q H D C]
+
+2991
+gt:  time 142186ms: Recalculating tau for process A: old tau 159ms ==> new tau 26ms [Q F G H E D C]
+
+our: time 142169ms: Process A (tau 159ms) completed I/O; preempting F [Q A H D C]
+
+2992
+gt:  time 142186ms: Process A switching out of CPU; blocking on I/O until time 145619ms [Q F G H E D C]
+
+our: time 142175ms: Process A (tau 159ms) started using the CPU for 11ms burst [Q F H D C]
+
+2993
+gt:  time 142192ms: Process F (tau 2133ms) started using the CPU for remaining 118ms of 1340ms burst [Q G H E D C]
+
+our: time 142186ms: Process A (tau 159ms) completed a CPU burst; 2 bursts to go [Q F H D C]
+
+2994
+gt:  time 142310ms: Process F (tau 2133ms) completed a CPU burst; 1 burst to go [Q G H E D C]
+
+our: time 142186ms: Recalculating tau for process A: old tau 159ms ==> new tau 26ms [Q F H D C]
+
+2995
+gt:  time 142310ms: Recalculating tau for process F: old tau 2133ms ==> new tau 1420ms [Q G H E D C]
+
+our: time 142186ms: Process A switching out of CPU; blocking on I/O until time 145619ms [Q F H D C]
+
+2996
+gt:  time 142310ms: Process F switching out of CPU; blocking on I/O until time 143310ms [Q G H E D C]
+
+our: time 142192ms: Process F (tau 2133ms) started using the CPU for remaining 118ms of 1340ms burst [Q H D C]
+
+2997
+gt:  time 142316ms: Process G (tau 7886ms) started using the CPU for remaining 515ms of 2036ms burst [Q H E D C]
+
+our: time 142310ms: Process F (tau 2133ms) completed a CPU burst; 1 burst to go [Q H D C]
+
+2998
+gt:  time 142831ms: Process G (tau 7886ms) completed a CPU burst; 85 bursts to go [Q H E D C]
+
+our: time 142310ms: Recalculating tau for process F: old tau 2133ms ==> new tau 1420ms [Q H D C]
+
+2999
+gt:  time 142831ms: Recalculating tau for process G: old tau 7886ms ==> new tau 2622ms [Q H E D C]
+
+our: time 142310ms: Process F switching out of CPU; blocking on I/O until time 143310ms [Q H D C]
+
+3000
+gt:  time 142831ms: Process G switching out of CPU; blocking on I/O until time 144559ms [Q H E D C]
+
+our: time 142316ms: Process H (tau 7876ms) started using the CPU for remaining 2049ms of 2300ms burst [Q D C]
+
+3001
+gt:  time 142837ms: Process H (tau 7876ms) started using the CPU for 2300ms burst [Q E D C]
+
+our: time 142487ms: Process E (tau 2007ms) completed I/O; preempting H [Q E D C]
+
+3002
+gt:  time 143310ms: Process F (tau 1420ms) completed I/O; preempting H [Q F E D C]
+
+our: time 142493ms: Process E (tau 2007ms) started using the CPU for 2972ms burst [Q H D C]
+
+3003
+gt:  time 143316ms: Process F (tau 1420ms) started using the CPU for 2872ms burst [Q H E D C]
+
+our: time 143310ms: Process F (tau 1420ms) completed I/O; added to ready queue [Q F H D C]
+
+3004
+gt:  time 144559ms: Process G (tau 2622ms) completed I/O; added to ready queue [Q G H E D C]
+
+our: time 145465ms: Process E (tau 2007ms) completed a CPU burst; 60 bursts to go [Q F H D C]
+
+3005
+gt:  time 145619ms: Process A (tau 26ms) completed I/O; added to ready queue [Q A G H E D C]
+
+our: time 145465ms: Recalculating tau for process E: old tau 2007ms ==> new tau 2876ms [Q F H D C]
+
+3006
+gt:  time 146188ms: Process F terminated [Q A G H E D C]
+
+our: time 145465ms: Process E switching out of CPU; blocking on I/O until time 148830ms [Q F H D C]
+
+3007
+gt:  time 146194ms: Process A (tau 26ms) started using the CPU for 400ms burst [Q G H E D C]
+
+our: time 145471ms: Process F (tau 1420ms) started using the CPU for 2872ms burst [Q H D C]
+
+3008
+gt:  time 146594ms: Process A (tau 26ms) completed a CPU burst; 1 burst to go [Q G H E D C]
+
+our: time 145619ms: Process A (tau 26ms) completed I/O; preempting F [Q A H D C]
+
+3009
+gt:  time 146594ms: Recalculating tau for process A: old tau 26ms ==> new tau 363ms [Q G H E D C]
+
+our: time 145625ms: Process A (tau 26ms) started using the CPU for 400ms burst [Q F H D C]
+
+3010
+gt:  time 146594ms: Process A switching out of CPU; blocking on I/O until time 149687ms [Q G H E D C]
+
+our: time 146025ms: Process A (tau 26ms) completed a CPU burst; 1 burst to go [Q F H D C]
+
+3011
+gt:  time 146600ms: Process G (tau 2622ms) started using the CPU for 2304ms burst [Q H E D C]
+
+our: time 146025ms: Recalculating tau for process A: old tau 26ms ==> new tau 363ms [Q F H D C]
+
+3012
+gt:  time 148904ms: Process G (tau 2622ms) completed a CPU burst; 84 bursts to go [Q H E D C]
+
+our: time 146025ms: Process A switching out of CPU; blocking on I/O until time 149118ms [Q F H D C]
+
+3013
+gt:  time 148904ms: Recalculating tau for process G: old tau 2622ms ==> new tau 2336ms [Q H E D C]
+
+our: time 146031ms: Process F (tau 1420ms) started using the CPU for remaining 2724ms of 2872ms burst [Q H D C]
+
+3014
+gt:  time 148904ms: Process G switching out of CPU; blocking on I/O until time 149734ms [Q H E D C]
+
+our: time 148755ms: Process F terminated [Q H D C]
+
+3015
+gt:  time 148910ms: Process H (tau 7876ms) started using the CPU for remaining 1827ms of 2300ms burst [Q E D C]
+
+our: time 148761ms: Process H (tau 7876ms) started using the CPU for remaining 1878ms of 2300ms burst [Q D C]
+
+3016
+gt:  time 149687ms: Process A (tau 363ms) completed I/O; preempting H [Q A E D C]
+
+our: time 148830ms: Process E (tau 2876ms) completed I/O; preempting H [Q E D C]
+
+3017
+gt:  time 149693ms: Process A (tau 363ms) started using the CPU for 84ms burst [Q H E D C]
+
+our: time 148836ms: Process E (tau 2876ms) started using the CPU for 5800ms burst [Q H D C]
+
+3018
+gt:  time 149734ms: Process G (tau 2336ms) completed I/O; added to ready queue [Q G H E D C]
+
+our: time 149118ms: Process A (tau 363ms) completed I/O; preempting E [Q A H D C]
+
+3019
+gt:  time 149777ms: Process A terminated [Q G H E D C]
+
+our: time 149124ms: Process A (tau 363ms) started using the CPU for 84ms burst [Q E H D C]
+
+3020
+gt:  time 149783ms: Process G (tau 2336ms) started using the CPU for 3072ms burst [Q H E D C]
+
+our: time 149208ms: Process A terminated [Q E H D C]
+
+3021
+gt:  time 152855ms: Process G (tau 2336ms) completed a CPU burst; 83 bursts to go [Q H E D C]
+
+our: time 149214ms: Process E (tau 2876ms) started using the CPU for remaining 5518ms of 5800ms burst [Q H D C]
+
+3022
+gt:  time 152855ms: Recalculating tau for process G: old tau 2336ms ==> new tau 2999ms [Q H E D C]
+
+our: time 154732ms: Process E (tau 2876ms) completed a CPU burst; 59 bursts to go [Q H D C]
+
+3023
+gt:  time 152855ms: Process G switching out of CPU; blocking on I/O until time 155555ms [Q H E D C]
+
+our: time 154732ms: Recalculating tau for process E: old tau 2876ms ==> new tau 5508ms [Q H D C]
+
+3024
+gt:  time 152861ms: Process H (tau 7876ms) started using the CPU for remaining 1050ms of 2300ms burst [Q E D C]
+
+our: time 154732ms: Process E switching out of CPU; blocking on I/O until time 155065ms [Q H D C]
+
+3025
+gt:  time 153911ms: Process H (tau 7876ms) completed a CPU burst; 24 bursts to go [Q E D C]
+
+our: time 154738ms: Process H (tau 7876ms) started using the CPU for remaining 1809ms of 2300ms burst [Q D C]
+
+3026
+gt:  time 153911ms: Recalculating tau for process H: old tau 7876ms ==> new tau 2858ms [Q E D C]
+
+our: time 155065ms: Process E (tau 5508ms) completed I/O; preempting H [Q E D C]
+
+3027
+gt:  time 153911ms: Process H switching out of CPU; blocking on I/O until time 155841ms [Q E D C]
+
+our: time 155071ms: Process E (tau 5508ms) started using the CPU for 8596ms burst [Q H D C]
+
+3028
+gt:  time 153917ms: Process E (tau 8687ms) started using the CPU for 1264ms burst [Q D C]
+
+our: time 163667ms: Process E (tau 5508ms) completed a CPU burst; 58 bursts to go [Q H D C]
+
+3029
+gt:  time 155181ms: Process E (tau 8687ms) completed a CPU burst; 61 bursts to go [Q D C]
+
+our: time 163667ms: Recalculating tau for process E: old tau 5508ms ==> new tau 8288ms [Q H D C]
+
+3030
+gt:  time 155181ms: Recalculating tau for process E: old tau 8687ms ==> new tau 2007ms [Q D C]
+
+our: time 163667ms: Process E switching out of CPU; blocking on I/O until time 164322ms [Q H D C]
+
+3031
+gt:  time 155181ms: Process E switching out of CPU; blocking on I/O until time 156984ms [Q D C]
+
+our: time 163673ms: Process H (tau 7876ms) started using the CPU for remaining 1482ms of 2300ms burst [Q D C]
+
+3032
+gt:  time 155187ms: Process D (tau 9345ms) started using the CPU for 288ms burst [Q C]
+
+our: time 164322ms: Process E (tau 8288ms) completed I/O; added to ready queue [Q E D C]
+
+3033
+gt:  time 155475ms: Process D (tau 9345ms) completed a CPU burst; 51 bursts to go [Q C]
+
+our: time 165155ms: Process H (tau 7876ms) completed a CPU burst; 24 bursts to go [Q E D C]
+
+3034
+gt:  time 155475ms: Recalculating tau for process D: old tau 9345ms ==> new tau 1194ms [Q C]
+
+our: time 165155ms: Recalculating tau for process H: old tau 7876ms ==> new tau 2858ms [Q E D C]
+
+3035
+gt:  time 155475ms: Process D switching out of CPU; blocking on I/O until time 155968ms [Q C]
+
+our: time 165155ms: Process H switching out of CPU; blocking on I/O until time 167085ms [Q E D C]
+
+3036
+gt:  time 155481ms: Process C (tau 10504ms) started using the CPU for 4644ms burst [Q <empty>]
+
+our: time 165161ms: Process E (tau 8288ms) started using the CPU for 9572ms burst [Q D C]
+
+3037
+gt:  time 155555ms: Process G (tau 2999ms) completed I/O; preempting C [Q G]
+
+our: time 167085ms: Process H (tau 2858ms) completed I/O; preempting E [Q H D C]
+
+3038
+gt:  time 155561ms: Process G (tau 2999ms) started using the CPU for 5332ms burst [Q C]
+
+our: time 167091ms: Process H (tau 2858ms) started using the CPU for 4768ms burst [Q E D C]
+
+3039
+gt:  time 155841ms: Process H (tau 2858ms) completed I/O; added to ready queue [Q H C]
+
+our: time 171859ms: Process H (tau 2858ms) completed a CPU burst; 23 bursts to go [Q E D C]
+
+3040
+gt:  time 155968ms: Process D (tau 1194ms) completed I/O; preempting G [Q D H C]
+
+our: time 171859ms: Recalculating tau for process H: old tau 2858ms ==> new tau 4577ms [Q E D C]
+
+3041
+gt:  time 155974ms: Process D (tau 1194ms) started using the CPU for 10396ms burst [Q G H C]
+
+our: time 171859ms: Process H switching out of CPU; blocking on I/O until time 172377ms [Q E D C]
+
+3042
+gt:  time 156984ms: Process E (tau 2007ms) completed I/O; added to ready queue [Q E G H C]
+
+our: time 171865ms: Process E (tau 8288ms) started using the CPU for remaining 7648ms of 9572ms burst [Q D C]
+
+3043
+gt:  time 166370ms: Process D (tau 1194ms) completed a CPU burst; 50 bursts to go [Q E G H C]
+
+our: time 172377ms: Process H (tau 4577ms) completed I/O; preempting E [Q H D C]
+
+3044
+gt:  time 166370ms: Recalculating tau for process D: old tau 1194ms ==> new tau 9476ms [Q E G H C]
+
+our: time 172383ms: Process H (tau 4577ms) started using the CPU for 828ms burst [Q E D C]
+
+3045
+gt:  time 166370ms: Process D switching out of CPU; blocking on I/O until time 166590ms [Q E G H C]
+
+our: time 173211ms: Process H (tau 4577ms) completed a CPU burst; 22 bursts to go [Q E D C]
+
+3046
+gt:  time 166376ms: Process E (tau 2007ms) started using the CPU for 2972ms burst [Q G H C]
+
+our: time 173211ms: Recalculating tau for process H: old tau 4577ms ==> new tau 1203ms [Q E D C]
+
+3047
+gt:  time 166590ms: Process D (tau 9476ms) completed I/O; added to ready queue [Q G H D C]
+
+our: time 173211ms: Process H switching out of CPU; blocking on I/O until time 176516ms [Q E D C]
+
+3048
+gt:  time 169348ms: Process E (tau 2007ms) completed a CPU burst; 60 bursts to go [Q G H D C]
+
+our: time 173217ms: Process E (tau 8288ms) started using the CPU for remaining 7136ms of 9572ms burst [Q D C]
+
+3049
+gt:  time 169348ms: Recalculating tau for process E: old tau 2007ms ==> new tau 2876ms [Q G H D C]
+
+our: time 176516ms: Process H (tau 1203ms) completed I/O; preempting E [Q H D C]
+
+3050
+gt:  time 169348ms: Process E switching out of CPU; blocking on I/O until time 172713ms [Q G H D C]
+
+our: time 176522ms: Process H (tau 1203ms) started using the CPU for 2648ms burst [Q E D C]
+
+3051
+gt:  time 169354ms: Process G (tau 2999ms) started using the CPU for remaining 4925ms of 5332ms burst [Q H D C]
+
+our: time 179170ms: Process H (tau 1203ms) completed a CPU burst; 21 bursts to go [Q E D C]
+
+3052
+gt:  time 172713ms: Process E (tau 2876ms) completed I/O; added to ready queue [Q H E D C]
+
+our: time 179170ms: Recalculating tau for process H: old tau 1203ms ==> new tau 2504ms [Q E D C]
+
+3053
+gt:  time 174279ms: Process G (tau 2999ms) completed a CPU burst; 82 bursts to go [Q H E D C]
+
+our: time 179170ms: Process H switching out of CPU; blocking on I/O until time 179458ms [Q E D C]
+
+3054
+gt:  time 174279ms: Recalculating tau for process G: old tau 2999ms ==> new tau 5099ms [Q H E D C]
+
+our: time 179176ms: Process E (tau 8288ms) started using the CPU for remaining 3837ms of 9572ms burst [Q D C]
+
+3055
+gt:  time 174279ms: Process G switching out of CPU; blocking on I/O until time 174599ms [Q H E D C]
+
+our: time 179458ms: Process H (tau 2504ms) completed I/O; added to ready queue [Q H D C]
+
+3056
+gt:  time 174285ms: Process H (tau 2858ms) started using the CPU for 4768ms burst [Q E D C]
+
+our: time 183013ms: Process E (tau 8288ms) completed a CPU burst; 57 bursts to go [Q H D C]
+
+3057
+gt:  time 174599ms: Process G (tau 5099ms) completed I/O; added to ready queue [Q E G D C]
+
+our: time 183013ms: Recalculating tau for process E: old tau 8288ms ==> new tau 9444ms [Q H D C]
+
+3058
+gt:  time 179053ms: Process H (tau 2858ms) completed a CPU burst; 23 bursts to go [Q E G D C]
+
+our: time 183013ms: Process E switching out of CPU; blocking on I/O until time 183696ms [Q H D C]
+
+3059
+gt:  time 179053ms: Recalculating tau for process H: old tau 2858ms ==> new tau 4577ms [Q E G D C]
+
+our: time 183019ms: Process H (tau 2504ms) started using the CPU for 3140ms burst [Q D C]
+
+3060
+gt:  time 179053ms: Process H switching out of CPU; blocking on I/O until time 179571ms [Q E G D C]
+
+our: time 183696ms: Process E (tau 9444ms) completed I/O; added to ready queue [Q D E C]
+
+3061
+gt:  time 179059ms: Process E (tau 2876ms) started using the CPU for 5800ms burst [Q G D C]
+
+our: time 186159ms: Process H (tau 2504ms) completed a CPU burst; 20 bursts to go [Q D E C]
+
+3062
+gt:  time 179571ms: Process H (tau 4577ms) completed I/O; added to ready queue [Q H G D C]
+
+our: time 186159ms: Recalculating tau for process H: old tau 2504ms ==> new tau 3077ms [Q D E C]
+
+3063
+gt:  time 184859ms: Process E (tau 2876ms) completed a CPU burst; 59 bursts to go [Q H G D C]
+
+our: time 186159ms: Process H switching out of CPU; blocking on I/O until time 191467ms [Q D E C]
+
+3064
+gt:  time 184859ms: Recalculating tau for process E: old tau 2876ms ==> new tau 5508ms [Q H G D C]
+
+our: time 186165ms: Process D (tau 9345ms) started using the CPU for 288ms burst [Q E C]
+
+3065
+gt:  time 184859ms: Process E switching out of CPU; blocking on I/O until time 185192ms [Q H G D C]
+
+our: time 186453ms: Process D (tau 9345ms) completed a CPU burst; 51 bursts to go [Q E C]
+
+3066
+gt:  time 184865ms: Process H (tau 4577ms) started using the CPU for 828ms burst [Q G D C]
+
+our: time 186453ms: Recalculating tau for process D: old tau 9345ms ==> new tau 1194ms [Q E C]
+
+3067
+gt:  time 185192ms: Process E (tau 5508ms) completed I/O; added to ready queue [Q G E D C]
+
+our: time 186453ms: Process D switching out of CPU; blocking on I/O until time 186946ms [Q E C]
+
+3068
+gt:  time 185693ms: Process H (tau 4577ms) completed a CPU burst; 22 bursts to go [Q G E D C]
+
+our: time 186459ms: Process E (tau 9444ms) started using the CPU for 4552ms burst [Q C]
+
+3069
+gt:  time 185693ms: Recalculating tau for process H: old tau 4577ms ==> new tau 1203ms [Q G E D C]
+
+our: time 186946ms: Process D (tau 1194ms) completed I/O; preempting E [Q D C]
+
+3070
+gt:  time 185693ms: Process H switching out of CPU; blocking on I/O until time 188998ms [Q G E D C]
+
+our: time 186952ms: Process D (tau 1194ms) started using the CPU for 10396ms burst [Q E C]
+
+3071
+gt:  time 185699ms: Process G (tau 5099ms) started using the CPU for 1836ms burst [Q E D C]
+
+our: time 191467ms: Process H (tau 3077ms) completed I/O; added to ready queue [Q H E C]
+
+3072
+gt:  time 187535ms: Process G (tau 5099ms) completed a CPU burst; 81 bursts to go [Q E D C]
+
+our: time 197348ms: Process D (tau 1194ms) completed a CPU burst; 50 bursts to go [Q H E C]
+
+3073
+gt:  time 187535ms: Recalculating tau for process G: old tau 5099ms ==> new tau 2163ms [Q E D C]
+
+our: time 197348ms: Recalculating tau for process D: old tau 1194ms ==> new tau 9476ms [Q H E C]
+
+3074
+gt:  time 187535ms: Process G switching out of CPU; blocking on I/O until time 190123ms [Q E D C]
+
+our: time 197348ms: Process D switching out of CPU; blocking on I/O until time 197568ms [Q H E C]
+
+3075
+gt:  time 187541ms: Process E (tau 5508ms) started using the CPU for 8596ms burst [Q D C]
+
+our: time 197354ms: Process H (tau 3077ms) started using the CPU for 5036ms burst [Q E C]
+
+3076
+gt:  time 188998ms: Process H (tau 1203ms) completed I/O; preempting E [Q H D C]
+
+our: time 197568ms: Process D (tau 9476ms) completed I/O; added to ready queue [Q E D C]
+
+3077
+gt:  time 189004ms: Process H (tau 1203ms) started using the CPU for 2648ms burst [Q E D C]
+
+our: time 202390ms: Process H (tau 3077ms) completed a CPU burst; 19 bursts to go [Q E D C]
+
+3078
+gt:  time 190123ms: Process G (tau 2163ms) completed I/O; added to ready queue [Q G E D C]
+
+our: time 202390ms: Recalculating tau for process H: old tau 3077ms ==> new tau 4841ms [Q E D C]
+
+3079
+gt:  time 191652ms: Process H (tau 1203ms) completed a CPU burst; 21 bursts to go [Q G E D C]
+
+our: time 202390ms: Process H switching out of CPU; blocking on I/O until time 202845ms [Q E D C]
+
+3080
+gt:  time 191652ms: Recalculating tau for process H: old tau 1203ms ==> new tau 2504ms [Q G E D C]
+
+our: time 202396ms: Process E (tau 9444ms) started using the CPU for remaining 4065ms of 4552ms burst [Q D C]
+
+3081
+gt:  time 191652ms: Process H switching out of CPU; blocking on I/O until time 191940ms [Q G E D C]
+
+our: time 202845ms: Process H (tau 4841ms) completed I/O; preempting E [Q H D C]
+
+3082
+gt:  time 191658ms: Process G (tau 2163ms) started using the CPU for 1972ms burst [Q E D C]
+
+our: time 202851ms: Process H (tau 4841ms) started using the CPU for 1128ms burst [Q E D C]
+
+3083
+gt:  time 191940ms: Process H (tau 2504ms) completed I/O; added to ready queue [Q H E D C]
+
+our: time 203979ms: Process H (tau 4841ms) completed a CPU burst; 18 bursts to go [Q E D C]
+
+3084
+gt:  time 193630ms: Process G (tau 2163ms) completed a CPU burst; 80 bursts to go [Q H E D C]
+
+our: time 203979ms: Recalculating tau for process H: old tau 4841ms ==> new tau 1500ms [Q E D C]
+
+3085
+gt:  time 193630ms: Recalculating tau for process G: old tau 2163ms ==> new tau 1992ms [Q H E D C]
+
+our: time 203979ms: Process H switching out of CPU; blocking on I/O until time 205229ms [Q E D C]
+
+3086
+gt:  time 193630ms: Process G switching out of CPU; blocking on I/O until time 193913ms [Q H E D C]
+
+our: time 203985ms: Process E (tau 9444ms) started using the CPU for remaining 3616ms of 4552ms burst [Q D C]
+
+3087
+gt:  time 193636ms: Process H (tau 2504ms) started using the CPU for 3140ms burst [Q E D C]
+
+our: time 205229ms: Process H (tau 1500ms) completed I/O; preempting E [Q H D C]
+
+3088
+gt:  time 193913ms: Process G (tau 1992ms) completed I/O; preempting H [Q G E D C]
+
+our: time 205235ms: Process H (tau 1500ms) started using the CPU for 2604ms burst [Q E D C]
+
+3089
+gt:  time 193919ms: Process G (tau 1992ms) started using the CPU for 116ms burst [Q H E D C]
+
+our: time 207839ms: Process H (tau 1500ms) completed a CPU burst; 17 bursts to go [Q E D C]
+
+3090
+gt:  time 194035ms: Process G (tau 1992ms) completed a CPU burst; 79 bursts to go [Q H E D C]
+
+our: time 207839ms: Recalculating tau for process H: old tau 1500ms ==> new tau 2494ms [Q E D C]
+
+3091
+gt:  time 194035ms: Recalculating tau for process G: old tau 1992ms ==> new tau 304ms [Q H E D C]
+
+our: time 207839ms: Process H switching out of CPU; blocking on I/O until time 212704ms [Q E D C]
+
+3092
+gt:  time 194035ms: Process G switching out of CPU; blocking on I/O until time 194910ms [Q H E D C]
+
+our: time 207845ms: Process E (tau 9444ms) started using the CPU for remaining 2372ms of 4552ms burst [Q D C]
+
+3093
+gt:  time 194041ms: Process H (tau 2504ms) started using the CPU for remaining 2863ms of 3140ms burst [Q E D C]
+
+our: time 210217ms: Process E (tau 9444ms) completed a CPU burst; 56 bursts to go [Q D C]
+
+3094
+gt:  time 194910ms: Process G (tau 304ms) completed I/O; preempting H [Q G E D C]
+
+our: time 210217ms: Recalculating tau for process E: old tau 9444ms ==> new tau 5042ms [Q D C]
+
+3095
+gt:  time 194916ms: Process G (tau 304ms) started using the CPU for 7116ms burst [Q H E D C]
+
+our: time 210217ms: Process E switching out of CPU; blocking on I/O until time 212677ms [Q D C]
+
+3096
+gt:  time 202032ms: Process G (tau 304ms) completed a CPU burst; 78 bursts to go [Q H E D C]
+
+our: time 210223ms: Process D (tau 9476ms) started using the CPU for 2536ms burst [Q C]
+
+3097
+gt:  time 202032ms: Recalculating tau for process G: old tau 304ms ==> new tau 6435ms [Q H E D C]
+
+our: time 212677ms: Process E (tau 5042ms) completed I/O; preempting D [Q E C]
+
+3098
+gt:  time 202032ms: Process G switching out of CPU; blocking on I/O until time 202890ms [Q H E D C]
+
+our: time 212683ms: Process E (tau 5042ms) started using the CPU for 5016ms burst [Q D C]
+
+3099
+gt:  time 202038ms: Process H (tau 2504ms) started using the CPU for remaining 1994ms of 3140ms burst [Q E D C]
+
+our: time 212704ms: Process H (tau 2494ms) completed I/O; preempting E [Q H D C]
+
+3100
+gt:  time 202890ms: Process G (tau 6435ms) completed I/O; added to ready queue [Q E G D C]
+
+our: time 212710ms: Process H (tau 2494ms) started using the CPU for 1576ms burst [Q E D C]
+
+3101
+gt:  time 204032ms: Process H (tau 2504ms) completed a CPU burst; 20 bursts to go [Q E G D C]
+
+our: time 214286ms: Process H (tau 2494ms) completed a CPU burst; 16 bursts to go [Q E D C]
+
+3102
+gt:  time 204032ms: Recalculating tau for process H: old tau 2504ms ==> new tau 3077ms [Q E G D C]
+
+our: time 214286ms: Recalculating tau for process H: old tau 2494ms ==> new tau 1668ms [Q E D C]
+
+3103
+gt:  time 204032ms: Process H switching out of CPU; blocking on I/O until time 209340ms [Q E G D C]
+
+our: time 214286ms: Process H switching out of CPU; blocking on I/O until time 215954ms [Q E D C]
+
+3104
+gt:  time 204038ms: Process E (tau 5508ms) started using the CPU for remaining 7139ms of 8596ms burst [Q G D C]
+
+our: time 214292ms: Process E (tau 5042ms) started using the CPU for remaining 4995ms of 5016ms burst [Q D C]
+
+3105
+gt:  time 209340ms: Process H (tau 3077ms) completed I/O; added to ready queue [Q H G D C]
+
+our: time 215954ms: Process H (tau 1668ms) completed I/O; preempting E [Q H D C]
+
+3106
+gt:  time 211177ms: Process E (tau 5508ms) completed a CPU burst; 58 bursts to go [Q H G D C]
+
+our: time 215960ms: Process H (tau 1668ms) started using the CPU for 3164ms burst [Q E D C]
+
+3107
+gt:  time 211177ms: Recalculating tau for process E: old tau 5508ms ==> new tau 8288ms [Q H G D C]
+
+our: time 219124ms: Process H (tau 1668ms) completed a CPU burst; 15 bursts to go [Q E D C]
+
+3108
+gt:  time 211177ms: Process E switching out of CPU; blocking on I/O until time 211832ms [Q H G D C]
+
+our: time 219124ms: Recalculating tau for process H: old tau 1668ms ==> new tau 3015ms [Q E D C]
+
+3109
+gt:  time 211183ms: Process H (tau 3077ms) started using the CPU for 5036ms burst [Q G D C]
+
+our: time 219124ms: Process H switching out of CPU; blocking on I/O until time 219654ms [Q E D C]
+
+3110
+gt:  time 211832ms: Process E (tau 8288ms) completed I/O; added to ready queue [Q G E D C]
+
+our: time 219130ms: Process E (tau 5042ms) started using the CPU for remaining 3333ms of 5016ms burst [Q D C]
+
+3111
+gt:  time 216219ms: Process H (tau 3077ms) completed a CPU burst; 19 bursts to go [Q G E D C]
+
+our: time 219654ms: Process H (tau 3015ms) completed I/O; added to ready queue [Q H D C]
+
+3112
+gt:  time 216219ms: Recalculating tau for process H: old tau 3077ms ==> new tau 4841ms [Q G E D C]
+
+our: time 222463ms: Process E (tau 5042ms) completed a CPU burst; 55 bursts to go [Q H D C]
+
+3113
+gt:  time 216219ms: Process H switching out of CPU; blocking on I/O until time 216674ms [Q G E D C]
+
+our: time 222463ms: Recalculating tau for process E: old tau 5042ms ==> new tau 5019ms [Q H D C]
+
+3114
+gt:  time 216225ms: Process G (tau 6435ms) started using the CPU for 2004ms burst [Q E D C]
+
+our: time 222463ms: Process E switching out of CPU; blocking on I/O until time 223351ms [Q H D C]
+
+3115
+gt:  time 216674ms: Process H (tau 4841ms) completed I/O; preempting G [Q H E D C]
+
+our: time 222469ms: Process H (tau 3015ms) started using the CPU for 9128ms burst [Q D C]
+
+3116
+gt:  time 216680ms: Process H (tau 4841ms) started using the CPU for 1128ms burst [Q G E D C]
+
+our: time 223351ms: Process E (tau 5019ms) completed I/O; added to ready queue [Q E D C]
+
+3117
+gt:  time 217808ms: Process H (tau 4841ms) completed a CPU burst; 18 bursts to go [Q G E D C]
+
+our: time 231597ms: Process H (tau 3015ms) completed a CPU burst; 14 bursts to go [Q E D C]
+
+3118
+gt:  time 217808ms: Recalculating tau for process H: old tau 4841ms ==> new tau 1500ms [Q G E D C]
+
+our: time 231597ms: Recalculating tau for process H: old tau 3015ms ==> new tau 8517ms [Q E D C]
+
+3119
+gt:  time 217808ms: Process H switching out of CPU; blocking on I/O until time 219058ms [Q G E D C]
+
+our: time 231597ms: Process H switching out of CPU; blocking on I/O until time 233952ms [Q E D C]
+
+3120
+gt:  time 217814ms: Process G (tau 6435ms) started using the CPU for remaining 1555ms of 2004ms burst [Q E D C]
+
+our: time 231603ms: Process E (tau 5019ms) started using the CPU for 3248ms burst [Q D C]
+
+3121
+gt:  time 219058ms: Process H (tau 1500ms) completed I/O; preempting G [Q H E D C]
+
+our: time 233952ms: Process H (tau 8517ms) completed I/O; added to ready queue [Q D H C]
+
+3122
+gt:  time 219064ms: Process H (tau 1500ms) started using the CPU for 2604ms burst [Q G E D C]
+
+our: time 234851ms: Process E (tau 5019ms) completed a CPU burst; 54 bursts to go [Q D H C]
+
+3123
+gt:  time 221668ms: Process H (tau 1500ms) completed a CPU burst; 17 bursts to go [Q G E D C]
+
+our: time 234851ms: Recalculating tau for process E: old tau 5019ms ==> new tau 3426ms [Q D H C]
+
+3124
+gt:  time 221668ms: Recalculating tau for process H: old tau 1500ms ==> new tau 2494ms [Q G E D C]
+
+our: time 234851ms: Process E switching out of CPU; blocking on I/O until time 241494ms [Q D H C]
+
+3125
+gt:  time 221668ms: Process H switching out of CPU; blocking on I/O until time 226533ms [Q G E D C]
+
+our: time 234857ms: Process D (tau 9476ms) started using the CPU for remaining 82ms of 2536ms burst [Q H C]
+
+3126
+gt:  time 221674ms: Process G (tau 6435ms) started using the CPU for remaining 311ms of 2004ms burst [Q E D C]
+
+our: time 234939ms: Process D (tau 9476ms) completed a CPU burst; 49 bursts to go [Q H C]
+
+3127
+gt:  time 221985ms: Process G (tau 6435ms) completed a CPU burst; 77 bursts to go [Q E D C]
+
+our: time 234939ms: Recalculating tau for process D: old tau 9476ms ==> new tau 3230ms [Q H C]
+
+3128
+gt:  time 221985ms: Recalculating tau for process G: old tau 6435ms ==> new tau 2448ms [Q E D C]
+
+our: time 234939ms: Process D switching out of CPU; blocking on I/O until time 241239ms [Q H C]
+
+3129
+gt:  time 221985ms: Process G switching out of CPU; blocking on I/O until time 222995ms [Q E D C]
+
+our: time 234945ms: Process H (tau 8517ms) started using the CPU for 1640ms burst [Q C]
+
+3130
+gt:  time 221991ms: Process E (tau 8288ms) started using the CPU for 9572ms burst [Q D C]
+
+our: time 236585ms: Process H (tau 8517ms) completed a CPU burst; 13 bursts to go [Q C]
+
+3131
+gt:  time 222995ms: Process G (tau 2448ms) completed I/O; preempting E [Q G D C]
+
+our: time 236585ms: Recalculating tau for process H: old tau 8517ms ==> new tau 2328ms [Q C]
+
+3132
+gt:  time 223001ms: Process G (tau 2448ms) started using the CPU for 2052ms burst [Q E D C]
+
+our: time 236585ms: Process H switching out of CPU; blocking on I/O until time 238378ms [Q C]
+
+3133
+gt:  time 225053ms: Process G (tau 2448ms) completed a CPU burst; 76 bursts to go [Q E D C]
+
+our: time 236591ms: Process C (tau 10504ms) started using the CPU for 4644ms burst [Q <empty>]
+
+3134
+gt:  time 225053ms: Recalculating tau for process G: old tau 2448ms ==> new tau 2092ms [Q E D C]
+
+our: time 238378ms: Process H (tau 2328ms) completed I/O; preempting C [Q H]
+
+3135
+gt:  time 225053ms: Process G switching out of CPU; blocking on I/O until time 230038ms [Q E D C]
+
+our: time 238384ms: Process H (tau 2328ms) started using the CPU for 268ms burst [Q C]
+
+3136
+gt:  time 225059ms: Process E (tau 8288ms) started using the CPU for remaining 8568ms of 9572ms burst [Q D C]
+
+our: time 238652ms: Process H (tau 2328ms) completed a CPU burst; 12 bursts to go [Q C]
+
+3137
+gt:  time 226533ms: Process H (tau 2494ms) completed I/O; preempting E [Q H D C]
+
+our: time 238652ms: Recalculating tau for process H: old tau 2328ms ==> new tau 475ms [Q C]
+
+3138
+gt:  time 226539ms: Process H (tau 2494ms) started using the CPU for 1576ms burst [Q E D C]
+
+our: time 238652ms: Process H switching out of CPU; blocking on I/O until time 246047ms [Q C]
+
+3139
+gt:  time 228115ms: Process H (tau 2494ms) completed a CPU burst; 16 bursts to go [Q E D C]
+
+our: time 238658ms: Process C (tau 10504ms) started using the CPU for remaining 2857ms of 4644ms burst [Q <empty>]
+
+3140
+gt:  time 228115ms: Recalculating tau for process H: old tau 2494ms ==> new tau 1668ms [Q E D C]
+
+our: time 241239ms: Process D (tau 3230ms) completed I/O; preempting C [Q D]
+
+3141
+gt:  time 228115ms: Process H switching out of CPU; blocking on I/O until time 229783ms [Q E D C]
+
+our: time 241245ms: Process D (tau 3230ms) started using the CPU for 1268ms burst [Q C]
+
+3142
+gt:  time 228121ms: Process E (tau 8288ms) started using the CPU for remaining 7094ms of 9572ms burst [Q D C]
+
+our: time 241494ms: Process E (tau 3426ms) completed I/O; added to ready queue [Q E C]
+
+3143
+gt:  time 229783ms: Process H (tau 1668ms) completed I/O; preempting E [Q H D C]
+
+our: time 242513ms: Process D (tau 3230ms) completed a CPU burst; 48 bursts to go [Q E C]
+
+3144
+gt:  time 229789ms: Process H (tau 1668ms) started using the CPU for 3164ms burst [Q E D C]
+
+our: time 242513ms: Recalculating tau for process D: old tau 3230ms ==> new tau 1465ms [Q E C]
+
+3145
+gt:  time 230038ms: Process G (tau 2092ms) completed I/O; added to ready queue [Q G E D C]
+
+our: time 242513ms: Process D switching out of CPU; blocking on I/O until time 243531ms [Q E C]
+
+3146
+gt:  time 232953ms: Process H (tau 1668ms) completed a CPU burst; 15 bursts to go [Q G E D C]
+
+our: time 242519ms: Process E (tau 3426ms) started using the CPU for 3356ms burst [Q C]
+
+3147
+gt:  time 232953ms: Recalculating tau for process H: old tau 1668ms ==> new tau 3015ms [Q G E D C]
+
+our: time 243531ms: Process D (tau 1465ms) completed I/O; preempting E [Q D C]
+
+3148
+gt:  time 232953ms: Process H switching out of CPU; blocking on I/O until time 233483ms [Q G E D C]
+
+our: time 243537ms: Process D (tau 1465ms) started using the CPU for 1652ms burst [Q E C]
+
+3149
+gt:  time 232959ms: Process G (tau 2092ms) started using the CPU for 3192ms burst [Q E D C]
+
+our: time 245189ms: Process D (tau 1465ms) completed a CPU burst; 47 bursts to go [Q E C]
+
+3150
+gt:  time 233483ms: Process H (tau 3015ms) completed I/O; added to ready queue [Q H E D C]
+
+our: time 245189ms: Recalculating tau for process D: old tau 1465ms ==> new tau 1634ms [Q E C]
+
+3151
+gt:  time 236151ms: Process G (tau 2092ms) completed a CPU burst; 75 bursts to go [Q H E D C]
+
+our: time 245189ms: Process D switching out of CPU; blocking on I/O until time 246902ms [Q E C]
+
+3152
+gt:  time 236151ms: Recalculating tau for process G: old tau 2092ms ==> new tau 3082ms [Q H E D C]
+
+our: time 245195ms: Process E (tau 3426ms) started using the CPU for remaining 2344ms of 3356ms burst [Q C]
+
+3153
+gt:  time 236151ms: Process G switching out of CPU; blocking on I/O until time 237574ms [Q H E D C]
+
+our: time 246047ms: Process H (tau 475ms) completed I/O; preempting E [Q H C]
+
+3154
+gt:  time 236157ms: Process H (tau 3015ms) started using the CPU for 9128ms burst [Q E D C]
+
+our: time 246053ms: Process H (tau 475ms) started using the CPU for 164ms burst [Q E C]
+
+3155
+gt:  time 237574ms: Process G (tau 3082ms) completed I/O; added to ready queue [Q G E D C]
+
+our: time 246217ms: Process H (tau 475ms) completed a CPU burst; 11 bursts to go [Q E C]
+
+3156
+gt:  time 245285ms: Process H (tau 3015ms) completed a CPU burst; 14 bursts to go [Q G E D C]
+
+our: time 246217ms: Recalculating tau for process H: old tau 475ms ==> new tau 196ms [Q E C]
+
+3157
+gt:  time 245285ms: Recalculating tau for process H: old tau 3015ms ==> new tau 8517ms [Q G E D C]
+
+our: time 246217ms: Process H switching out of CPU; blocking on I/O until time 247855ms [Q E C]
+
+3158
+gt:  time 245285ms: Process H switching out of CPU; blocking on I/O until time 247640ms [Q G E D C]
+
+our: time 246223ms: Process E (tau 3426ms) started using the CPU for remaining 1492ms of 3356ms burst [Q C]
+
+3159
+gt:  time 245291ms: Process G (tau 3082ms) started using the CPU for 9268ms burst [Q E D C]
+
+our: time 246902ms: Process D (tau 1634ms) completed I/O; added to ready queue [Q D C]
+
+3160
+gt:  time 247640ms: Process H (tau 8517ms) completed I/O; added to ready queue [Q E H D C]
+
+our: time 247715ms: Process E (tau 3426ms) completed a CPU burst; 53 bursts to go [Q D C]
+
+3161
+gt:  time 254559ms: Process G (tau 3082ms) completed a CPU burst; 74 bursts to go [Q E H D C]
+
+our: time 247715ms: Recalculating tau for process E: old tau 3426ms ==> new tau 3363ms [Q D C]
+
+3162
+gt:  time 254559ms: Recalculating tau for process G: old tau 3082ms ==> new tau 8650ms [Q E H D C]
+
+our: time 247715ms: Process E switching out of CPU; blocking on I/O until time 249020ms [Q D C]
+
+3163
+gt:  time 254559ms: Process G switching out of CPU; blocking on I/O until time 255914ms [Q E H D C]
+
+our: time 247721ms: Process D (tau 1634ms) started using the CPU for 10668ms burst [Q C]
+
+3164
+gt:  time 254565ms: Process E (tau 8288ms) started using the CPU for remaining 5432ms of 9572ms burst [Q H D C]
+
+our: time 247855ms: Process H (tau 196ms) completed I/O; preempting D [Q H C]
+
+3165
+gt:  time 255914ms: Process G (tau 8650ms) completed I/O; added to ready queue [Q H G D C]
+
+our: time 247861ms: Process H (tau 196ms) started using the CPU for 1072ms burst [Q D C]
+
+3166
+gt:  time 259997ms: Process E (tau 8288ms) completed a CPU burst; 57 bursts to go [Q H G D C]
+
+our: time 248933ms: Process H (tau 196ms) completed a CPU burst; 10 bursts to go [Q D C]
+
+3167
+gt:  time 259997ms: Recalculating tau for process E: old tau 8288ms ==> new tau 9444ms [Q H G D C]
+
+our: time 248933ms: Recalculating tau for process H: old tau 196ms ==> new tau 985ms [Q D C]
+
+3168
+gt:  time 259997ms: Process E switching out of CPU; blocking on I/O until time 260680ms [Q H G D C]
+
+our: time 248933ms: Process H switching out of CPU; blocking on I/O until time 255393ms [Q D C]
+
+3169
+gt:  time 260003ms: Process H (tau 8517ms) started using the CPU for 1640ms burst [Q G D C]
+
+our: time 248939ms: Process D (tau 1634ms) started using the CPU for remaining 10534ms of 10668ms burst [Q C]
+
+3170
+gt:  time 260680ms: Process E (tau 9444ms) completed I/O; added to ready queue [Q G E D C]
+
+our: time 249020ms: Process E (tau 3363ms) completed I/O; added to ready queue [Q E C]
+
+3171
+gt:  time 261643ms: Process H (tau 8517ms) completed a CPU burst; 13 bursts to go [Q G E D C]
+
+our: time 255393ms: Process H (tau 985ms) completed I/O; added to ready queue [Q H E C]
+
+3172
+gt:  time 261643ms: Recalculating tau for process H: old tau 8517ms ==> new tau 2328ms [Q G E D C]
+
+our: time 259473ms: Process D (tau 1634ms) completed a CPU burst; 46 bursts to go [Q H E C]
+
+3173
+gt:  time 261643ms: Process H switching out of CPU; blocking on I/O until time 263436ms [Q G E D C]
+
+our: time 259473ms: Recalculating tau for process D: old tau 1634ms ==> new tau 9765ms [Q H E C]
+
+3174
+gt:  time 261649ms: Process G (tau 8650ms) started using the CPU for 4812ms burst [Q E D C]
+
+our: time 259473ms: Process D switching out of CPU; blocking on I/O until time 260228ms [Q H E C]
+
+3175
+gt:  time 263436ms: Process H (tau 2328ms) completed I/O; preempting G [Q H E D C]
+
+our: time 259479ms: Process H (tau 985ms) started using the CPU for 6724ms burst [Q E C]
+
+3176
+gt:  time 263442ms: Process H (tau 2328ms) started using the CPU for 268ms burst [Q G E D C]
+
+our: time 260228ms: Process D (tau 9765ms) completed I/O; added to ready queue [Q E C D]
+
+3177
+gt:  time 263710ms: Process H (tau 2328ms) completed a CPU burst; 12 bursts to go [Q G E D C]
+
+our: time 266203ms: Process H (tau 985ms) completed a CPU burst; 9 bursts to go [Q E C D]
+
+3178
+gt:  time 263710ms: Recalculating tau for process H: old tau 2328ms ==> new tau 475ms [Q G E D C]
+
+our: time 266203ms: Recalculating tau for process H: old tau 985ms ==> new tau 6151ms [Q E C D]
+
+3179
+gt:  time 263710ms: Process H switching out of CPU; blocking on I/O until time 271105ms [Q G E D C]
+
+our: time 266203ms: Process H switching out of CPU; blocking on I/O until time 269181ms [Q E C D]
+
+3180
+gt:  time 263716ms: Process G (tau 8650ms) started using the CPU for remaining 3025ms of 4812ms burst [Q E D C]
+
+our: time 266209ms: Process E (tau 3363ms) started using the CPU for 1656ms burst [Q C D]
+
+3181
+gt:  time 266741ms: Process G (tau 8650ms) completed a CPU burst; 73 bursts to go [Q E D C]
+
+our: time 267865ms: Process E (tau 3363ms) completed a CPU burst; 52 bursts to go [Q C D]
+
+3182
+gt:  time 266741ms: Recalculating tau for process G: old tau 8650ms ==> new tau 5196ms [Q E D C]
+
+our: time 267865ms: Recalculating tau for process E: old tau 3363ms ==> new tau 1827ms [Q C D]
+
+3183
+gt:  time 266741ms: Process G switching out of CPU; blocking on I/O until time 272569ms [Q E D C]
+
+our: time 267865ms: Process E switching out of CPU; blocking on I/O until time 271753ms [Q C D]
+
+3184
+gt:  time 266747ms: Process E (tau 9444ms) started using the CPU for 4552ms burst [Q D C]
+
+our: time 267871ms: Process C (tau 10504ms) started using the CPU for remaining 276ms of 4644ms burst [Q D]
+
+3185
+gt:  time 271105ms: Process H (tau 475ms) completed I/O; preempting E [Q H D C]
+
+our: time 268147ms: Process C (tau 10504ms) completed a CPU burst; 15 bursts to go [Q D]
+
+3186
+gt:  time 271111ms: Process H (tau 475ms) started using the CPU for 164ms burst [Q E D C]
+
+our: time 268147ms: Recalculating tau for process C: old tau 10504ms ==> new tau 5231ms [Q D]
+
+3187
+gt:  time 271275ms: Process H (tau 475ms) completed a CPU burst; 11 bursts to go [Q E D C]
+
+our: time 268147ms: Process C switching out of CPU; blocking on I/O until time 274010ms [Q D]
+
+3188
+gt:  time 271275ms: Recalculating tau for process H: old tau 475ms ==> new tau 196ms [Q E D C]
+
+our: time 268153ms: Process D (tau 9765ms) started using the CPU for 6324ms burst [Q <empty>]
+
+3189
+gt:  time 271275ms: Process H switching out of CPU; blocking on I/O until time 272913ms [Q E D C]
+
+our: time 269181ms: Process H (tau 6151ms) completed I/O; preempting D [Q H]
+
+3190
+gt:  time 271281ms: Process E (tau 9444ms) started using the CPU for remaining 194ms of 4552ms burst [Q D C]
+
+our: time 269187ms: Process H (tau 6151ms) started using the CPU for 2192ms burst [Q D]
+
+3191
+gt:  time 271475ms: Process E (tau 9444ms) completed a CPU burst; 56 bursts to go [Q D C]
+
+our: time 271379ms: Process H (tau 6151ms) completed a CPU burst; 8 bursts to go [Q D]
+
+3192
+gt:  time 271475ms: Recalculating tau for process E: old tau 9444ms ==> new tau 5042ms [Q D C]
+
+our: time 271379ms: Recalculating tau for process H: old tau 6151ms ==> new tau 2588ms [Q D]
+
+3193
+gt:  time 271475ms: Process E switching out of CPU; blocking on I/O until time 273935ms [Q D C]
+
+our: time 271379ms: Process H switching out of CPU; blocking on I/O until time 275007ms [Q D]
+
+3194
+gt:  time 271481ms: Process D (tau 9476ms) started using the CPU for 2536ms burst [Q C]
+
+our: time 271385ms: Process D (tau 9765ms) started using the CPU for remaining 5296ms of 6324ms burst [Q <empty>]
+
+3195
+gt:  time 272569ms: Process G (tau 5196ms) completed I/O; preempting D [Q G C]
+
+our: time 271753ms: Process E (tau 1827ms) completed I/O; preempting D [Q E]
+
+3196
+gt:  time 272575ms: Process G (tau 5196ms) started using the CPU for 2120ms burst [Q D C]
+
+our: time 271759ms: Process E (tau 1827ms) started using the CPU for 7024ms burst [Q D]
+
+3197
+gt:  time 272913ms: Process H (tau 196ms) completed I/O; preempting G [Q H D C]
+
+our: time 274010ms: Process C (tau 5231ms) completed I/O; added to ready queue [Q C D]
+
+3198
+gt:  time 272919ms: Process H (tau 196ms) started using the CPU for 1072ms burst [Q G D C]
+
+our: time 275007ms: Process H (tau 2588ms) completed I/O; added to ready queue [Q H C D]
+
+3199
+gt:  time 273935ms: Process E (tau 5042ms) completed I/O; added to ready queue [Q G E D C]
+
+our: time 278783ms: Process E (tau 1827ms) completed a CPU burst; 51 bursts to go [Q H C D]
+
+3200
+gt:  time 273991ms: Process H (tau 196ms) completed a CPU burst; 10 bursts to go [Q G E D C]
+
+our: time 278783ms: Recalculating tau for process E: old tau 1827ms ==> new tau 6505ms [Q H C D]
+
+3201
+gt:  time 273991ms: Recalculating tau for process H: old tau 196ms ==> new tau 985ms [Q G E D C]
+
+our: time 278783ms: Process E switching out of CPU; blocking on I/O until time 279371ms [Q H C D]
+
+3202
+gt:  time 273991ms: Process H switching out of CPU; blocking on I/O until time 280451ms [Q G E D C]
+
+our: time 278789ms: Process H (tau 2588ms) started using the CPU for 1052ms burst [Q C D]
+
+3203
+gt:  time 273997ms: Process G (tau 5196ms) started using the CPU for remaining 1782ms of 2120ms burst [Q E D C]
+
+our: time 279371ms: Process E (tau 6505ms) completed I/O; added to ready queue [Q C E D]
+
+3204
+gt:  time 275779ms: Process G (tau 5196ms) completed a CPU burst; 72 bursts to go [Q E D C]
+
+our: time 279841ms: Process H (tau 2588ms) completed a CPU burst; 7 bursts to go [Q C E D]
+
+3205
+gt:  time 275779ms: Recalculating tau for process G: old tau 5196ms ==> new tau 2428ms [Q E D C]
+
+our: time 279841ms: Recalculating tau for process H: old tau 2588ms ==> new tau 1206ms [Q C E D]
+
+3206
+gt:  time 275779ms: Process G switching out of CPU; blocking on I/O until time 277587ms [Q E D C]
+
+our: time 279841ms: Process H switching out of CPU; blocking on I/O until time 281514ms [Q C E D]
+
+3207
+gt:  time 275785ms: Process E (tau 5042ms) started using the CPU for 5016ms burst [Q D C]
+
+our: time 279847ms: Process C (tau 5231ms) started using the CPU for 240ms burst [Q E D]
+
+3208
+gt:  time 277587ms: Process G (tau 2428ms) completed I/O; preempting E [Q G D C]
+
+our: time 280087ms: Process C (tau 5231ms) completed a CPU burst; 14 bursts to go [Q E D]
+
+3209
+gt:  time 277593ms: Process G (tau 2428ms) started using the CPU for 4116ms burst [Q E D C]
+
+our: time 280087ms: Recalculating tau for process C: old tau 5231ms ==> new tau 740ms [Q E D]
+
+3210
+gt:  time 280451ms: Process H (tau 985ms) completed I/O; added to ready queue [Q H E D C]
+
+our: time 280087ms: Process C switching out of CPU; blocking on I/O until time 287497ms [Q E D]
+
+3211
+gt:  time 281709ms: Process G (tau 2428ms) completed a CPU burst; 71 bursts to go [Q H E D C]
+
+our: time 280093ms: Process E (tau 6505ms) started using the CPU for 1892ms burst [Q D]
+
+3212
+gt:  time 281709ms: Recalculating tau for process G: old tau 2428ms ==> new tau 3948ms [Q H E D C]
+
+our: time 281514ms: Process H (tau 1206ms) completed I/O; preempting E [Q H D]
+
+3213
+gt:  time 281709ms: Process G switching out of CPU; blocking on I/O until time 283382ms [Q H E D C]
+
+our: time 281520ms: Process H (tau 1206ms) started using the CPU for 260ms burst [Q E D]
+
+3214
+gt:  time 281715ms: Process H (tau 985ms) started using the CPU for 6724ms burst [Q E D C]
+
+our: time 281780ms: Process H (tau 1206ms) completed a CPU burst; 6 bursts to go [Q E D]
+
+3215
+gt:  time 283382ms: Process G (tau 3948ms) completed I/O; added to ready queue [Q E G D C]
+
+our: time 281780ms: Recalculating tau for process H: old tau 1206ms ==> new tau 355ms [Q E D]
+
+3216
+gt:  time 288439ms: Process H (tau 985ms) completed a CPU burst; 9 bursts to go [Q E G D C]
+
+our: time 281780ms: Process H switching out of CPU; blocking on I/O until time 283178ms [Q E D]
+
+3217
+gt:  time 288439ms: Recalculating tau for process H: old tau 985ms ==> new tau 6151ms [Q E G D C]
+
+our: time 281786ms: Process E (tau 6505ms) started using the CPU for remaining 471ms of 1892ms burst [Q D]
+
+3218
+gt:  time 288439ms: Process H switching out of CPU; blocking on I/O until time 291417ms [Q E G D C]
+
+our: time 282257ms: Process E (tau 6505ms) completed a CPU burst; 50 bursts to go [Q D]
+
+3219
+gt:  time 288445ms: Process E (tau 5042ms) started using the CPU for remaining 3214ms of 5016ms burst [Q G D C]
+
+our: time 282257ms: Recalculating tau for process E: old tau 6505ms ==> new tau 2354ms [Q D]
+
+3220
+gt:  time 291417ms: Process H (tau 6151ms) completed I/O; added to ready queue [Q G H D C]
+
+our: time 282257ms: Process E switching out of CPU; blocking on I/O until time 284877ms [Q D]
+
+3221
+gt:  time 291659ms: Process E (tau 5042ms) completed a CPU burst; 55 bursts to go [Q G H D C]
+
+our: time 282263ms: Process D (tau 9765ms) started using the CPU for remaining 4928ms of 6324ms burst [Q <empty>]
+
+3222
+gt:  time 291659ms: Recalculating tau for process E: old tau 5042ms ==> new tau 5019ms [Q G H D C]
+
+our: time 283178ms: Process H (tau 355ms) completed I/O; preempting D [Q H]
+
+3223
+gt:  time 291659ms: Process E switching out of CPU; blocking on I/O until time 292547ms [Q G H D C]
+
+our: time 283184ms: Process H (tau 355ms) started using the CPU for 6148ms burst [Q D]
+
+3224
+gt:  time 291665ms: Process G (tau 3948ms) started using the CPU for 2580ms burst [Q H D C]
+
+our: time 284877ms: Process E (tau 2354ms) completed I/O; added to ready queue [Q E D]
+
+3225
+gt:  time 292547ms: Process E (tau 5019ms) completed I/O; added to ready queue [Q E H D C]
+
+our: time 287497ms: Process C (tau 740ms) completed I/O; added to ready queue [Q C E D]
+
+3226
+gt:  time 294245ms: Process G (tau 3948ms) completed a CPU burst; 70 bursts to go [Q E H D C]
+
+our: time 289332ms: Process H (tau 355ms) completed a CPU burst; 5 bursts to go [Q C E D]
+
+3227
+gt:  time 294245ms: Recalculating tau for process G: old tau 3948ms ==> new tau 2717ms [Q E H D C]
+
+our: time 289332ms: Recalculating tau for process H: old tau 355ms ==> new tau 5569ms [Q C E D]
+
+3228
+gt:  time 294245ms: Process G switching out of CPU; blocking on I/O until time 298275ms [Q E H D C]
+
+our: time 289332ms: Process H switching out of CPU; blocking on I/O until time 289852ms [Q C E D]
+
+3229
+gt:  time 294251ms: Process E (tau 5019ms) started using the CPU for 3248ms burst [Q H D C]
+
+our: time 289338ms: Process C (tau 740ms) started using the CPU for 544ms burst [Q E D]
+
+3230
+gt:  time 297499ms: Process E (tau 5019ms) completed a CPU burst; 54 bursts to go [Q H D C]
+
+our: time 289852ms: Process H (tau 5569ms) completed I/O; added to ready queue [Q E H D]
+
+3231
+gt:  time 297499ms: Recalculating tau for process E: old tau 5019ms ==> new tau 3426ms [Q H D C]
+
+our: time 289882ms: Process C (tau 740ms) completed a CPU burst; 13 bursts to go [Q E H D]
+
+3232
+gt:  time 297499ms: Process E switching out of CPU; blocking on I/O until time 304142ms [Q H D C]
+
+our: time 289882ms: Recalculating tau for process C: old tau 740ms ==> new tau 564ms [Q E H D]
+
+3233
+gt:  time 297505ms: Process H (tau 6151ms) started using the CPU for 2192ms burst [Q D C]
+
+our: time 289882ms: Process C switching out of CPU; blocking on I/O until time 296200ms [Q E H D]
+
+3234
+gt:  time 298275ms: Process G (tau 2717ms) completed I/O; preempting H [Q G D C]
+
+our: time 289888ms: Process E (tau 2354ms) started using the CPU for 1268ms burst [Q H D]
+
+3235
+gt:  time 298281ms: Process G (tau 2717ms) started using the CPU for 1428ms burst [Q H D C]
+
+our: time 291156ms: Process E (tau 2354ms) completed a CPU burst; 49 bursts to go [Q H D]
+
+3236
+gt:  time 299709ms: Process G (tau 2717ms) completed a CPU burst; 69 bursts to go [Q H D C]
+
+our: time 291156ms: Recalculating tau for process E: old tau 2354ms ==> new tau 1377ms [Q H D]
+
+3237
+gt:  time 299709ms: Recalculating tau for process G: old tau 2717ms ==> new tau 1557ms [Q H D C]
+
+our: time 291156ms: Process E switching out of CPU; blocking on I/O until time 292946ms [Q H D]
+
+3238
+gt:  time 299709ms: Process G switching out of CPU; blocking on I/O until time 302532ms [Q H D C]
+
+our: time 291162ms: Process H (tau 5569ms) started using the CPU for 1692ms burst [Q D]
+
+3239
+gt:  time 299715ms: Process H (tau 6151ms) started using the CPU for remaining 1422ms of 2192ms burst [Q D C]
+
+our: time 292854ms: Process H (tau 5569ms) completed a CPU burst; 4 bursts to go [Q D]
+
+3240
+gt:  time 301137ms: Process H (tau 6151ms) completed a CPU burst; 8 bursts to go [Q D C]
+
+our: time 292854ms: Recalculating tau for process H: old tau 5569ms ==> new tau 2080ms [Q D]
+
+3241
+gt:  time 301137ms: Recalculating tau for process H: old tau 6151ms ==> new tau 2588ms [Q D C]
+
+our: time 292854ms: Process H switching out of CPU; blocking on I/O until time 295302ms [Q D]
+
+3242
+gt:  time 301137ms: Process H switching out of CPU; blocking on I/O until time 304765ms [Q D C]
+
+our: time 292860ms: Process D (tau 9765ms) started using the CPU for remaining 4013ms of 6324ms burst [Q <empty>]
+
+3243
+gt:  time 301143ms: Process D (tau 9476ms) started using the CPU for remaining 1448ms of 2536ms burst [Q C]
+
+our: time 292946ms: Process E (tau 1377ms) completed I/O; preempting D [Q E]
+
+3244
+gt:  time 302532ms: Process G (tau 1557ms) completed I/O; preempting D [Q G C]
+
+our: time 292952ms: Process E (tau 1377ms) started using the CPU for 3452ms burst [Q D]
+
+3245
+gt:  time 302538ms: Process G (tau 1557ms) started using the CPU for 20ms burst [Q D C]
+
+our: time 295302ms: Process H (tau 2080ms) completed I/O; added to ready queue [Q H D]
+
+3246
+gt:  time 302558ms: Process G (tau 1557ms) completed a CPU burst; 68 bursts to go [Q D C]
+
+our: time 296200ms: Process C (tau 564ms) completed I/O; added to ready queue [Q C H D]
+
+3247
+gt:  time 302558ms: Recalculating tau for process G: old tau 1557ms ==> new tau 174ms [Q D C]
+
+our: time 296404ms: Process E (tau 1377ms) completed a CPU burst; 48 bursts to go [Q C H D]
+
+3248
+gt:  time 302558ms: Process G switching out of CPU; blocking on I/O until time 308896ms [Q D C]
+
+our: time 296404ms: Recalculating tau for process E: old tau 1377ms ==> new tau 3245ms [Q C H D]
+
+3249
+gt:  time 302564ms: Process D (tau 9476ms) started using the CPU for remaining 59ms of 2536ms burst [Q C]
+
+our: time 296404ms: Process E switching out of CPU; blocking on I/O until time 296502ms [Q C H D]
+
+3250
+gt:  time 302623ms: Process D (tau 9476ms) completed a CPU burst; 49 bursts to go [Q C]
+
+our: time 296410ms: Process C (tau 564ms) started using the CPU for 5256ms burst [Q H D]
+
+3251
+gt:  time 302623ms: Recalculating tau for process D: old tau 9476ms ==> new tau 3231ms [Q C]
+
+our: time 296502ms: Process E (tau 3245ms) completed I/O; added to ready queue [Q H E D]
+
+3252
+gt:  time 302623ms: Process D switching out of CPU; blocking on I/O until time 308923ms [Q C]
+
+our: time 301666ms: Process C (tau 564ms) completed a CPU burst; 12 bursts to go [Q H E D]
+
+3253
+gt:  time 302629ms: Process C (tau 10504ms) started using the CPU for remaining 4570ms of 4644ms burst [Q <empty>]
+
+our: time 301666ms: Recalculating tau for process C: old tau 564ms ==> new tau 4787ms [Q H E D]
+
+3254
+gt:  time 304142ms: Process E (tau 3426ms) completed I/O; preempting C [Q E]
+
+our: time 301666ms: Process C switching out of CPU; blocking on I/O until time 306751ms [Q H E D]
+
+3255
+gt:  time 304148ms: Process E (tau 3426ms) started using the CPU for 3356ms burst [Q C]
+
+our: time 301672ms: Process H (tau 2080ms) started using the CPU for 1164ms burst [Q E D]
+
+3256
+gt:  time 304765ms: Process H (tau 2588ms) completed I/O; preempting E [Q H C]
+
+our: time 302836ms: Process H (tau 2080ms) completed a CPU burst; 3 bursts to go [Q E D]
+
+3257
+gt:  time 304771ms: Process H (tau 2588ms) started using the CPU for 1052ms burst [Q E C]
+
+our: time 302836ms: Recalculating tau for process H: old tau 2080ms ==> new tau 1256ms [Q E D]
+
+3258
+gt:  time 305823ms: Process H (tau 2588ms) completed a CPU burst; 7 bursts to go [Q E C]
+
+our: time 302836ms: Process H switching out of CPU; blocking on I/O until time 304589ms [Q E D]
+
+3259
+gt:  time 305823ms: Recalculating tau for process H: old tau 2588ms ==> new tau 1206ms [Q E C]
+
+our: time 302842ms: Process E (tau 3245ms) started using the CPU for 5308ms burst [Q D]
+
+3260
+gt:  time 305823ms: Process H switching out of CPU; blocking on I/O until time 307496ms [Q E C]
+
+our: time 304589ms: Process H (tau 1256ms) completed I/O; preempting E [Q H D]
+
+3261
+gt:  time 305829ms: Process E (tau 3426ms) started using the CPU for remaining 2739ms of 3356ms burst [Q C]
+
+our: time 304595ms: Process H (tau 1256ms) started using the CPU for 716ms burst [Q E D]
+
+3262
+gt:  time 307496ms: Process H (tau 1206ms) completed I/O; added to ready queue [Q H C]
+
+our: time 305311ms: Process H (tau 1256ms) completed a CPU burst; 2 bursts to go [Q E D]
+
+3263
+gt:  time 308568ms: Process E (tau 3426ms) completed a CPU burst; 53 bursts to go [Q H C]
+
+our: time 305311ms: Recalculating tau for process H: old tau 1256ms ==> new tau 770ms [Q E D]
+
+3264
+gt:  time 308568ms: Recalculating tau for process E: old tau 3426ms ==> new tau 3363ms [Q H C]
+
+our: time 305311ms: Process H switching out of CPU; blocking on I/O until time 312054ms [Q E D]
+
+3265
+gt:  time 308568ms: Process E switching out of CPU; blocking on I/O until time 309873ms [Q H C]
+
+our: time 305317ms: Process E (tau 3245ms) started using the CPU for remaining 3561ms of 5308ms burst [Q D]
+
+3266
+gt:  time 308574ms: Process H (tau 1206ms) started using the CPU for 260ms burst [Q C]
+
+our: time 306751ms: Process C (tau 4787ms) completed I/O; added to ready queue [Q C D]
+
+3267
+gt:  time 308834ms: Process H (tau 1206ms) completed a CPU burst; 6 bursts to go [Q C]
+
+our: time 308878ms: Process E (tau 3245ms) completed a CPU burst; 47 bursts to go [Q C D]
+
+3268
+gt:  time 308834ms: Recalculating tau for process H: old tau 1206ms ==> new tau 355ms [Q C]
+
+our: time 308878ms: Recalculating tau for process E: old tau 3245ms ==> new tau 5102ms [Q C D]
+
+3269
+gt:  time 308834ms: Process H switching out of CPU; blocking on I/O until time 310232ms [Q C]
+
+our: time 308878ms: Process E switching out of CPU; blocking on I/O until time 315221ms [Q C D]
+
+3270
+gt:  time 308840ms: Process C (tau 10504ms) started using the CPU for remaining 3057ms of 4644ms burst [Q <empty>]
+
+our: time 308884ms: Process C (tau 4787ms) started using the CPU for 3644ms burst [Q D]
+
+3271
+gt:  time 308896ms: Process G (tau 174ms) completed I/O; preempting C [Q G]
+
+our: time 312054ms: Process H (tau 770ms) completed I/O; preempting C [Q H D]
+
+3272
+gt:  time 308902ms: Process G (tau 174ms) started using the CPU for 3080ms burst [Q C]
+
+our: time 312060ms: Process H (tau 770ms) started using the CPU for 1496ms burst [Q C D]
+
+3273
+gt:  time 308923ms: Process D (tau 3231ms) completed I/O; added to ready queue [Q D C]
+
+our: time 313556ms: Process H (tau 770ms) completed a CPU burst; 1 burst to go [Q C D]
+
+3274
+gt:  time 309873ms: Process E (tau 3363ms) completed I/O; added to ready queue [Q D E C]
+
+our: time 313556ms: Recalculating tau for process H: old tau 770ms ==> new tau 1424ms [Q C D]
+
+3275
+gt:  time 310232ms: Process H (tau 355ms) completed I/O; added to ready queue [Q H D E C]
+
+our: time 313556ms: Process H switching out of CPU; blocking on I/O until time 315061ms [Q C D]
+
+3276
+gt:  time 311982ms: Process G (tau 174ms) completed a CPU burst; 67 bursts to go [Q H D E C]
+
+our: time 313562ms: Process C (tau 4787ms) started using the CPU for remaining 474ms of 3644ms burst [Q D]
+
+3277
+gt:  time 311982ms: Recalculating tau for process G: old tau 174ms ==> new tau 2790ms [Q H D E C]
+
+our: time 314036ms: Process C (tau 4787ms) completed a CPU burst; 11 bursts to go [Q D]
+
+3278
+gt:  time 311982ms: Process G switching out of CPU; blocking on I/O until time 313155ms [Q H D E C]
+
+our: time 314036ms: Recalculating tau for process C: old tau 4787ms ==> new tau 3759ms [Q D]
+
+3279
+gt:  time 311988ms: Process H (tau 355ms) started using the CPU for 6148ms burst [Q D E C]
+
+our: time 314036ms: Process C switching out of CPU; blocking on I/O until time 315021ms [Q D]
+
+3280
+gt:  time 313155ms: Process G (tau 2790ms) completed I/O; added to ready queue [Q G D E C]
+
+our: time 314042ms: Process D (tau 9765ms) started using the CPU for remaining 3927ms of 6324ms burst [Q <empty>]
+
+3281
+gt:  time 318136ms: Process H (tau 355ms) completed a CPU burst; 5 bursts to go [Q G D E C]
+
+our: time 315021ms: Process C (tau 3759ms) completed I/O; preempting D [Q C]
+
+3282
+gt:  time 318136ms: Recalculating tau for process H: old tau 355ms ==> new tau 5569ms [Q G D E C]
+
+our: time 315027ms: Process C (tau 3759ms) started using the CPU for 1980ms burst [Q D]
+
+3283
+gt:  time 318136ms: Process H switching out of CPU; blocking on I/O until time 318656ms [Q G D E C]
+
+our: time 315061ms: Process H (tau 1424ms) completed I/O; preempting C [Q H D]
+
+3284
+gt:  time 318142ms: Process G (tau 2790ms) started using the CPU for 2020ms burst [Q D E C]
+
+our: time 315067ms: Process H (tau 1424ms) started using the CPU for 7360ms burst [Q C D]
+
+3285
+gt:  time 318656ms: Process H (tau 5569ms) completed I/O; added to ready queue [Q D E H C]
+
+our: time 315221ms: Process E (tau 5102ms) completed I/O; added to ready queue [Q C E D]
+
+3286
+gt:  time 320162ms: Process G (tau 2790ms) completed a CPU burst; 66 bursts to go [Q D E H C]
+
+our: time 322427ms: Process H terminated [Q C E D]
+
+3287
+gt:  time 320162ms: Recalculating tau for process G: old tau 2790ms ==> new tau 2098ms [Q D E H C]
+
+our: time 322433ms: Process C (tau 3759ms) started using the CPU for remaining 1946ms of 1980ms burst [Q E D]
+
+3288
+gt:  time 320162ms: Process G switching out of CPU; blocking on I/O until time 321905ms [Q D E H C]
+
+our: time 324379ms: Process C (tau 3759ms) completed a CPU burst; 10 bursts to go [Q E D]
+
+3289
+gt:  time 320168ms: Process D (tau 3231ms) started using the CPU for 1268ms burst [Q E H C]
+
+our: time 324379ms: Recalculating tau for process C: old tau 3759ms ==> new tau 2158ms [Q E D]
+
+3290
+gt:  time 321436ms: Process D (tau 3231ms) completed a CPU burst; 48 bursts to go [Q E H C]
+
+our: time 324379ms: Process C switching out of CPU; blocking on I/O until time 326464ms [Q E D]
+
+3291
+gt:  time 321436ms: Recalculating tau for process D: old tau 3231ms ==> new tau 1465ms [Q E H C]
+
+our: time 324385ms: Process E (tau 5102ms) started using the CPU for 1536ms burst [Q D]
+
+3292
+gt:  time 321436ms: Process D switching out of CPU; blocking on I/O until time 322454ms [Q E H C]
+
+our: time 325921ms: Process E (tau 5102ms) completed a CPU burst; 46 bursts to go [Q D]
+
+3293
+gt:  time 321442ms: Process E (tau 3363ms) started using the CPU for 1656ms burst [Q H C]
+
+our: time 325921ms: Recalculating tau for process E: old tau 5102ms ==> new tau 1893ms [Q D]
+
+3294
+gt:  time 321905ms: Process G (tau 2098ms) completed I/O; preempting E [Q G H C]
+
+our: time 325921ms: Process E switching out of CPU; blocking on I/O until time 327401ms [Q D]
+
+3295
+gt:  time 321911ms: Process G (tau 2098ms) started using the CPU for 1264ms burst [Q E H C]
+
+our: time 325927ms: Process D (tau 9765ms) started using the CPU for remaining 2948ms of 6324ms burst [Q <empty>]
+
+3296
+gt:  time 322454ms: Process D (tau 1465ms) completed I/O; preempting G [Q D E H C]
+
+our: time 326464ms: Process C (tau 2158ms) completed I/O; preempting D [Q C]
+
+3297
+gt:  time 322460ms: Process D (tau 1465ms) started using the CPU for 1652ms burst [Q G E H C]
+
+our: time 326470ms: Process C (tau 2158ms) started using the CPU for 228ms burst [Q D]
+
+3298
+gt:  time 324112ms: Process D (tau 1465ms) completed a CPU burst; 47 bursts to go [Q G E H C]
+
+our: time 326698ms: Process C (tau 2158ms) completed a CPU burst; 9 bursts to go [Q D]
+
+3299
+gt:  time 324112ms: Recalculating tau for process D: old tau 1465ms ==> new tau 1634ms [Q G E H C]
+
+our: time 326698ms: Recalculating tau for process C: old tau 2158ms ==> new tau 422ms [Q D]
+
+3300
+gt:  time 324112ms: Process D switching out of CPU; blocking on I/O until time 325825ms [Q G E H C]
+
+our: time 326698ms: Process C switching out of CPU; blocking on I/O until time 329976ms [Q D]
+
+3301
+gt:  time 324118ms: Process G (tau 2098ms) started using the CPU for remaining 721ms of 1264ms burst [Q E H C]
+
+our: time 326704ms: Process D (tau 9765ms) started using the CPU for remaining 2411ms of 6324ms burst [Q <empty>]
+
+3302
+gt:  time 324839ms: Process G (tau 2098ms) completed a CPU burst; 65 bursts to go [Q E H C]
+
+our: time 327401ms: Process E (tau 1893ms) completed I/O; preempting D [Q E]
+
+3303
+gt:  time 324839ms: Recalculating tau for process G: old tau 2098ms ==> new tau 1348ms [Q E H C]
+
+our: time 327407ms: Process E (tau 1893ms) started using the CPU for 2096ms burst [Q D]
+
+3304
+gt:  time 324839ms: Process G switching out of CPU; blocking on I/O until time 325364ms [Q E H C]
+
+our: time 329503ms: Process E (tau 1893ms) completed a CPU burst; 45 bursts to go [Q D]
+
+3305
+gt:  time 324845ms: Process E (tau 3363ms) started using the CPU for remaining 1193ms of 1656ms burst [Q H C]
+
+our: time 329503ms: Recalculating tau for process E: old tau 1893ms ==> new tau 2076ms [Q D]
+
+3306
+gt:  time 325364ms: Process G (tau 1348ms) completed I/O; preempting E [Q G H C]
+
+our: time 329503ms: Process E switching out of CPU; blocking on I/O until time 329728ms [Q D]
+
+3307
+gt:  time 325370ms: Process G (tau 1348ms) started using the CPU for 3080ms burst [Q E H C]
+
+our: time 329509ms: Process D (tau 9765ms) started using the CPU for remaining 1714ms of 6324ms burst [Q <empty>]
+
+3308
+gt:  time 325825ms: Process D (tau 1634ms) completed I/O; added to ready queue [Q D E H C]
+
+our: time 329728ms: Process E (tau 2076ms) completed I/O; preempting D [Q E]
+
+3309
+gt:  time 328450ms: Process G (tau 1348ms) completed a CPU burst; 64 bursts to go [Q D E H C]
+
+our: time 329734ms: Process E (tau 2076ms) started using the CPU for 476ms burst [Q D]
+
+3310
+gt:  time 328450ms: Recalculating tau for process G: old tau 1348ms ==> new tau 2907ms [Q D E H C]
+
+our: time 329976ms: Process C (tau 422ms) completed I/O; preempting E [Q C D]
+
+3311
+gt:  time 328450ms: Process G switching out of CPU; blocking on I/O until time 329730ms [Q D E H C]
+
+our: time 329982ms: Process C (tau 422ms) started using the CPU for 1460ms burst [Q E D]
+
+3312
+gt:  time 328456ms: Process D (tau 1634ms) started using the CPU for 10668ms burst [Q E H C]
+
+our: time 331442ms: Process C (tau 422ms) completed a CPU burst; 8 bursts to go [Q E D]
+
+3313
+gt:  time 329730ms: Process G (tau 2907ms) completed I/O; added to ready queue [Q E G H C]
+
+our: time 331442ms: Recalculating tau for process C: old tau 422ms ==> new tau 1357ms [Q E D]
+
+3314
+gt:  time 339124ms: Process D (tau 1634ms) completed a CPU burst; 46 bursts to go [Q E G H C]
+
+our: time 331442ms: Process C switching out of CPU; blocking on I/O until time 336215ms [Q E D]
+
+3315
+gt:  time 339124ms: Recalculating tau for process D: old tau 1634ms ==> new tau 9765ms [Q E G H C]
+
+our: time 331448ms: Process E (tau 2076ms) started using the CPU for remaining 234ms of 476ms burst [Q D]
+
+3316
+gt:  time 339124ms: Process D switching out of CPU; blocking on I/O until time 339879ms [Q E G H C]
+
+our: time 331682ms: Process E (tau 2076ms) completed a CPU burst; 44 bursts to go [Q D]
+
+3317
+gt:  time 339130ms: Process E (tau 3363ms) started using the CPU for remaining 674ms of 1656ms burst [Q G H C]
+
+our: time 331682ms: Recalculating tau for process E: old tau 2076ms ==> new tau 637ms [Q D]
+
+3318
+gt:  time 339804ms: Process E (tau 3363ms) completed a CPU burst; 52 bursts to go [Q G H C]
+
+our: time 331682ms: Process E switching out of CPU; blocking on I/O until time 332352ms [Q D]
+
+3319
+gt:  time 339804ms: Recalculating tau for process E: old tau 3363ms ==> new tau 1827ms [Q G H C]
+
+our: time 331688ms: Process D (tau 9765ms) started using the CPU for remaining 1495ms of 6324ms burst [Q <empty>]
+
+3320
+gt:  time 339804ms: Process E switching out of CPU; blocking on I/O until time 343692ms [Q G H C]
+
+our: time 332352ms: Process E (tau 637ms) completed I/O; preempting D [Q E]
+
+3321
+gt:  time 339810ms: Process G (tau 2907ms) started using the CPU for 11336ms burst [Q H C]
+
+our: time 332358ms: Process E (tau 637ms) started using the CPU for 2088ms burst [Q D]
+
+3322
+gt:  time 339879ms: Process D (tau 9765ms) completed I/O; added to ready queue [Q H C D]
+
+our: time 334446ms: Process E (tau 637ms) completed a CPU burst; 43 bursts to go [Q D]
+
+3323
+gt:  time 343692ms: Process E (tau 1827ms) completed I/O; added to ready queue [Q E H C D]
+
+our: time 334446ms: Recalculating tau for process E: old tau 637ms ==> new tau 1943ms [Q D]
+
+3324
+gt:  time 351146ms: Process G (tau 2907ms) completed a CPU burst; 63 bursts to go [Q E H C D]
+
+our: time 334446ms: Process E switching out of CPU; blocking on I/O until time 336041ms [Q D]
+
+3325
+gt:  time 351146ms: Recalculating tau for process G: old tau 2907ms ==> new tau 10494ms [Q E H C D]
+
+our: time 334452ms: Process D (tau 9765ms) started using the CPU for remaining 831ms of 6324ms burst [Q <empty>]
+
+3326
+gt:  time 351146ms: Process G switching out of CPU; blocking on I/O until time 351244ms [Q E H C D]
+
+our: time 335283ms: Process D (tau 9765ms) completed a CPU burst; 45 bursts to go [Q <empty>]
+
+3327
+gt:  time 351152ms: Process E (tau 1827ms) started using the CPU for 7024ms burst [Q H C D]
+
+our: time 335283ms: Recalculating tau for process D: old tau 9765ms ==> new tau 6669ms [Q <empty>]
+
+3328
+gt:  time 351244ms: Process G (tau 10494ms) completed I/O; added to ready queue [Q H C D G]
+
+our: time 335283ms: Process D switching out of CPU; blocking on I/O until time 335308ms [Q <empty>]
+
+3329
+gt:  time 358176ms: Process E (tau 1827ms) completed a CPU burst; 51 bursts to go [Q H C D G]
+
+our: time 335308ms: Process D (tau 6669ms) completed I/O; added to ready queue [Q D]
+
+3330
+gt:  time 358176ms: Recalculating tau for process E: old tau 1827ms ==> new tau 6505ms [Q H C D G]
+
+our: time 335311ms: Process D (tau 6669ms) started using the CPU for 3284ms burst [Q <empty>]
+
+3331
+gt:  time 358176ms: Process E switching out of CPU; blocking on I/O until time 358764ms [Q H C D G]
+
+our: time 336041ms: Process E (tau 1943ms) completed I/O; preempting D [Q E]
+
+3332
+gt:  time 358182ms: Process H (tau 5569ms) started using the CPU for 1692ms burst [Q C D G]
+
+our: time 336047ms: Process E (tau 1943ms) started using the CPU for 2512ms burst [Q D]
+
+3333
+gt:  time 358764ms: Process E (tau 6505ms) completed I/O; added to ready queue [Q E C D G]
+
+our: time 336215ms: Process C (tau 1357ms) completed I/O; preempting E [Q C D]
+
+3334
+gt:  time 359874ms: Process H (tau 5569ms) completed a CPU burst; 4 bursts to go [Q E C D G]
+
+our: time 336221ms: Process C (tau 1357ms) started using the CPU for 2232ms burst [Q E D]
+
+3335
+gt:  time 359874ms: Recalculating tau for process H: old tau 5569ms ==> new tau 2080ms [Q E C D G]
+
+our: time 338453ms: Process C (tau 1357ms) completed a CPU burst; 7 bursts to go [Q E D]
+
+3336
+gt:  time 359874ms: Process H switching out of CPU; blocking on I/O until time 362322ms [Q E C D G]
+
+our: time 338453ms: Recalculating tau for process C: old tau 1357ms ==> new tau 2145ms [Q E D]
+
+3337
+gt:  time 359880ms: Process E (tau 6505ms) started using the CPU for 1892ms burst [Q C D G]
+
+our: time 338453ms: Process C switching out of CPU; blocking on I/O until time 338498ms [Q E D]
+
+3338
+gt:  time 361772ms: Process E (tau 6505ms) completed a CPU burst; 50 bursts to go [Q C D G]
+
+our: time 338459ms: Process E (tau 1943ms) started using the CPU for remaining 2344ms of 2512ms burst [Q D]
+
+3339
+gt:  time 361772ms: Recalculating tau for process E: old tau 6505ms ==> new tau 2354ms [Q C D G]
+
+our: time 338498ms: Process C (tau 2145ms) completed I/O; added to ready queue [Q C D]
+
+3340
+gt:  time 361772ms: Process E switching out of CPU; blocking on I/O until time 364392ms [Q C D G]
+
+our: time 340803ms: Process E (tau 1943ms) completed a CPU burst; 42 bursts to go [Q C D]
+
+3341
+gt:  time 361778ms: Process C (tau 10504ms) started using the CPU for remaining 3001ms of 4644ms burst [Q D G]
+
+our: time 340803ms: Recalculating tau for process E: old tau 1943ms ==> new tau 2456ms [Q C D]
+
+3342
+gt:  time 362322ms: Process H (tau 2080ms) completed I/O; preempting C [Q H D G]
+
+our: time 340803ms: Process E switching out of CPU; blocking on I/O until time 341413ms [Q C D]
+
+3343
+gt:  time 362328ms: Process H (tau 2080ms) started using the CPU for 1164ms burst [Q C D G]
+
+our: time 340809ms: Process C (tau 2145ms) started using the CPU for 2108ms burst [Q D]
+
+3344
+gt:  time 363492ms: Process H (tau 2080ms) completed a CPU burst; 3 bursts to go [Q C D G]
+
+our: time 341413ms: Process E (tau 2456ms) completed I/O; added to ready queue [Q E D]
+
+3345
+gt:  time 363492ms: Recalculating tau for process H: old tau 2080ms ==> new tau 1256ms [Q C D G]
+
+our: time 342917ms: Process C (tau 2145ms) completed a CPU burst; 6 bursts to go [Q E D]
+
+3346
+gt:  time 363492ms: Process H switching out of CPU; blocking on I/O until time 365245ms [Q C D G]
+
+our: time 342917ms: Recalculating tau for process C: old tau 2145ms ==> new tau 2112ms [Q E D]
+
+3347
+gt:  time 363498ms: Process C (tau 10504ms) started using the CPU for remaining 2457ms of 4644ms burst [Q D G]
+
+our: time 342917ms: Process C switching out of CPU; blocking on I/O until time 343727ms [Q E D]
+
+3348
+gt:  time 364392ms: Process E (tau 2354ms) completed I/O; preempting C [Q E D G]
+
+our: time 342923ms: Process E (tau 2456ms) started using the CPU for 10300ms burst [Q D]
+
+3349
+gt:  time 364398ms: Process E (tau 2354ms) started using the CPU for 1268ms burst [Q C D G]
+
+our: time 343727ms: Process C (tau 2112ms) completed I/O; added to ready queue [Q C D]
+
+3350
+gt:  time 365245ms: Process H (tau 1256ms) completed I/O; preempting E [Q H C D G]
+
+our: time 353223ms: Process E (tau 2456ms) completed a CPU burst; 41 bursts to go [Q C D]
+
+3351
+gt:  time 365251ms: Process H (tau 1256ms) started using the CPU for 716ms burst [Q E C D G]
+
+our: time 353223ms: Recalculating tau for process E: old tau 2456ms ==> new tau 9516ms [Q C D]
+
+3352
+gt:  time 365967ms: Process H (tau 1256ms) completed a CPU burst; 2 bursts to go [Q E C D G]
+
+our: time 353223ms: Process E switching out of CPU; blocking on I/O until time 355148ms [Q C D]
+
+3353
+gt:  time 365967ms: Recalculating tau for process H: old tau 1256ms ==> new tau 770ms [Q E C D G]
+
+our: time 353229ms: Process C (tau 2112ms) started using the CPU for 1872ms burst [Q D]
+
+3354
+gt:  time 365967ms: Process H switching out of CPU; blocking on I/O until time 372710ms [Q E C D G]
+
+our: time 355101ms: Process C (tau 2112ms) completed a CPU burst; 5 bursts to go [Q D]
+
+3355
+gt:  time 365973ms: Process E (tau 2354ms) started using the CPU for remaining 421ms of 1268ms burst [Q C D G]
+
+our: time 355101ms: Recalculating tau for process C: old tau 2112ms ==> new tau 1896ms [Q D]
+
+3356
+gt:  time 366394ms: Process E (tau 2354ms) completed a CPU burst; 49 bursts to go [Q C D G]
+
+our: time 355101ms: Process C switching out of CPU; blocking on I/O until time 355496ms [Q D]
+
+3357
+gt:  time 366394ms: Recalculating tau for process E: old tau 2354ms ==> new tau 1377ms [Q C D G]
+
+our: time 355107ms: Process D (tau 6669ms) started using the CPU for remaining 2554ms of 3284ms burst [Q <empty>]
+
+3358
+gt:  time 366394ms: Process E switching out of CPU; blocking on I/O until time 368184ms [Q C D G]
+
+our: time 355148ms: Process E (tau 9516ms) completed I/O; added to ready queue [Q E]
+
+3359
+gt:  time 366400ms: Process C (tau 10504ms) started using the CPU for remaining 1563ms of 4644ms burst [Q D G]
+
+our: time 355496ms: Process C (tau 1896ms) completed I/O; preempting D [Q C E]
+
+3360
+gt:  time 367963ms: Process C (tau 10504ms) completed a CPU burst; 15 bursts to go [Q D G]
+
+our: time 355502ms: Process C (tau 1896ms) started using the CPU for 4064ms burst [Q D E]
+
+3361
+gt:  time 367963ms: Recalculating tau for process C: old tau 10504ms ==> new tau 5231ms [Q D G]
+
+our: time 359566ms: Process C (tau 1896ms) completed a CPU burst; 4 bursts to go [Q D E]
+
+3362
+gt:  time 367963ms: Process C switching out of CPU; blocking on I/O until time 373826ms [Q D G]
+
+our: time 359566ms: Recalculating tau for process C: old tau 1896ms ==> new tau 3848ms [Q D E]
+
+3363
+gt:  time 367969ms: Process D (tau 9765ms) started using the CPU for 6324ms burst [Q G]
+
+our: time 359566ms: Process C switching out of CPU; blocking on I/O until time 360811ms [Q D E]
+
+3364
+gt:  time 368184ms: Process E (tau 1377ms) completed I/O; preempting D [Q E G]
+
+our: time 359572ms: Process D (tau 6669ms) started using the CPU for remaining 2165ms of 3284ms burst [Q E]
+
+3365
+gt:  time 368190ms: Process E (tau 1377ms) started using the CPU for 3452ms burst [Q D G]
+
+our: time 360811ms: Process C (tau 3848ms) completed I/O; preempting D [Q C E]
+
+3366
+gt:  time 371642ms: Process E (tau 1377ms) completed a CPU burst; 48 bursts to go [Q D G]
+
+our: time 360817ms: Process C (tau 3848ms) started using the CPU for 1032ms burst [Q D E]
+
+3367
+gt:  time 371642ms: Recalculating tau for process E: old tau 1377ms ==> new tau 3245ms [Q D G]
+
+our: time 361849ms: Process C (tau 3848ms) completed a CPU burst; 3 bursts to go [Q D E]
+
+3368
+gt:  time 371642ms: Process E switching out of CPU; blocking on I/O until time 371740ms [Q D G]
+
+our: time 361849ms: Recalculating tau for process C: old tau 3848ms ==> new tau 1314ms [Q D E]
+
+3369
+gt:  time 371648ms: Process D (tau 9765ms) started using the CPU for remaining 6109ms of 6324ms burst [Q G]
+
+our: time 361849ms: Process C switching out of CPU; blocking on I/O until time 365414ms [Q D E]
+
+3370
+gt:  time 371740ms: Process E (tau 3245ms) completed I/O; preempting D [Q E G]
+
+our: time 361855ms: Process D (tau 6669ms) started using the CPU for remaining 926ms of 3284ms burst [Q E]
+
+3371
+gt:  time 371746ms: Process E (tau 3245ms) started using the CPU for 5308ms burst [Q D G]
+
+our: time 362781ms: Process D (tau 6669ms) completed a CPU burst; 44 bursts to go [Q E]
+
+3372
+gt:  time 372710ms: Process H (tau 770ms) completed I/O; preempting E [Q H D G]
+
+our: time 362781ms: Recalculating tau for process D: old tau 6669ms ==> new tau 3623ms [Q E]
+
+3373
+gt:  time 372716ms: Process H (tau 770ms) started using the CPU for 1496ms burst [Q E D G]
+
+our: time 362781ms: Process D switching out of CPU; blocking on I/O until time 364854ms [Q E]
+
+3374
+gt:  time 373826ms: Process C (tau 5231ms) completed I/O; added to ready queue [Q E C D G]
+
+our: time 362787ms: Process E (tau 9516ms) started using the CPU for 4168ms burst [Q <empty>]
+
+3375
+gt:  time 374212ms: Process H (tau 770ms) completed a CPU burst; 1 burst to go [Q E C D G]
+
+our: time 364854ms: Process D (tau 3623ms) completed I/O; preempting E [Q D]
+
+3376
+gt:  time 374212ms: Recalculating tau for process H: old tau 770ms ==> new tau 1424ms [Q E C D G]
+
+our: time 364860ms: Process D (tau 3623ms) started using the CPU for 8520ms burst [Q E]
+
+3377
+gt:  time 374212ms: Process H switching out of CPU; blocking on I/O until time 375717ms [Q E C D G]
+
+our: time 365414ms: Process C (tau 1314ms) completed I/O; preempting D [Q C E]
+
+3378
+gt:  time 374218ms: Process E (tau 3245ms) started using the CPU for remaining 4344ms of 5308ms burst [Q C D G]
+
+our: time 365420ms: Process C (tau 1314ms) started using the CPU for 1236ms burst [Q D E]
+
+3379
+gt:  time 375717ms: Process H (tau 1424ms) completed I/O; added to ready queue [Q H C D G]
+
+our: time 366656ms: Process C (tau 1314ms) completed a CPU burst; 2 bursts to go [Q D E]
+
+3380
+gt:  time 378562ms: Process E (tau 3245ms) completed a CPU burst; 47 bursts to go [Q H C D G]
+
+our: time 366656ms: Recalculating tau for process C: old tau 1314ms ==> new tau 1244ms [Q D E]
+
+3381
+gt:  time 378562ms: Recalculating tau for process E: old tau 3245ms ==> new tau 5102ms [Q H C D G]
+
+our: time 366656ms: Process C switching out of CPU; blocking on I/O until time 368746ms [Q D E]
+
+3382
+gt:  time 378562ms: Process E switching out of CPU; blocking on I/O until time 384905ms [Q H C D G]
+
+our: time 366662ms: Process D (tau 3623ms) started using the CPU for remaining 7966ms of 8520ms burst [Q E]
+
+3383
+gt:  time 378568ms: Process H (tau 1424ms) started using the CPU for 7360ms burst [Q C D G]
+
+our: time 368746ms: Process C (tau 1244ms) completed I/O; added to ready queue [Q C E]
+
+3384
+gt:  time 384905ms: Process E (tau 5102ms) completed I/O; added to ready queue [Q E C D G]
+
+our: time 374628ms: Process D (tau 3623ms) completed a CPU burst; 43 bursts to go [Q C E]
+
+3385
+gt:  time 385928ms: Process H terminated [Q E C D G]
+
+our: time 374628ms: Recalculating tau for process D: old tau 3623ms ==> new tau 8031ms [Q C E]
+
+3386
+gt:  time 385934ms: Process E (tau 5102ms) started using the CPU for 1536ms burst [Q C D G]
+
+our: time 374628ms: Process D switching out of CPU; blocking on I/O until time 374743ms [Q C E]
+
+3387
+gt:  time 387470ms: Process E (tau 5102ms) completed a CPU burst; 46 bursts to go [Q C D G]
+
+our: time 374634ms: Process C (tau 1244ms) started using the CPU for 2348ms burst [Q E]
+
+3388
+gt:  time 387470ms: Recalculating tau for process E: old tau 5102ms ==> new tau 1893ms [Q C D G]
+
+our: time 374743ms: Process D (tau 8031ms) completed I/O; added to ready queue [Q E D]
+
+3389
+gt:  time 387470ms: Process E switching out of CPU; blocking on I/O until time 388950ms [Q C D G]
+
+our: time 376982ms: Process C (tau 1244ms) completed a CPU burst; 1 burst to go [Q E D]
+
+3390
+gt:  time 387476ms: Process C (tau 5231ms) started using the CPU for 240ms burst [Q D G]
+
+our: time 376982ms: Recalculating tau for process C: old tau 1244ms ==> new tau 2238ms [Q E D]
+
+3391
+gt:  time 387716ms: Process C (tau 5231ms) completed a CPU burst; 14 bursts to go [Q D G]
+
+our: time 376982ms: Process C switching out of CPU; blocking on I/O until time 377207ms [Q E D]
+
+3392
+gt:  time 387716ms: Recalculating tau for process C: old tau 5231ms ==> new tau 740ms [Q D G]
+
+our: time 376988ms: Process E (tau 9516ms) started using the CPU for remaining 2101ms of 4168ms burst [Q D]
+
+3393
+gt:  time 387716ms: Process C switching out of CPU; blocking on I/O until time 395126ms [Q D G]
+
+our: time 377207ms: Process C (tau 2238ms) completed I/O; preempting E [Q C D]
+
+3394
+gt:  time 387722ms: Process D (tau 9765ms) started using the CPU for remaining 6017ms of 6324ms burst [Q G]
+
+our: time 377213ms: Process C (tau 2238ms) started using the CPU for 4840ms burst [Q E D]
+
+3395
+gt:  time 388950ms: Process E (tau 1893ms) completed I/O; preempting D [Q E G]
+
+our: time 382053ms: Process C terminated [Q E D]
+
+3396
+gt:  time 388956ms: Process E (tau 1893ms) started using the CPU for 2096ms burst [Q D G]
+
+our: time 382059ms: Process E (tau 9516ms) started using the CPU for remaining 1882ms of 4168ms burst [Q D]
+
+3397
+gt:  time 391052ms: Process E (tau 1893ms) completed a CPU burst; 45 bursts to go [Q D G]
+
+our: time 383941ms: Process E (tau 9516ms) completed a CPU burst; 40 bursts to go [Q D]
+
+3398
+gt:  time 391052ms: Recalculating tau for process E: old tau 1893ms ==> new tau 2076ms [Q D G]
+
+our: time 383941ms: Recalculating tau for process E: old tau 9516ms ==> new tau 4703ms [Q D]
+
+3399
+gt:  time 391052ms: Process E switching out of CPU; blocking on I/O until time 391277ms [Q D G]
+
+our: time 383941ms: Process E switching out of CPU; blocking on I/O until time 386576ms [Q D]
+
+3400
+gt:  time 391058ms: Process D (tau 9765ms) started using the CPU for remaining 4789ms of 6324ms burst [Q G]
+
+our: time 383947ms: Process D (tau 8031ms) started using the CPU for 4524ms burst [Q <empty>]
+
+3401
+gt:  time 391277ms: Process E (tau 2076ms) completed I/O; preempting D [Q E G]
+
+our: time 386576ms: Process E (tau 4703ms) completed I/O; preempting D [Q E]
+
+3402
+gt:  time 391283ms: Process E (tau 2076ms) started using the CPU for 476ms burst [Q D G]
+
+our: time 386582ms: Process E (tau 4703ms) started using the CPU for 2104ms burst [Q D]
+
+3403
+gt:  time 391759ms: Process E (tau 2076ms) completed a CPU burst; 44 bursts to go [Q D G]
+
+our: time 388686ms: Process E (tau 4703ms) completed a CPU burst; 39 bursts to go [Q D]
+
+3404
+gt:  time 391759ms: Recalculating tau for process E: old tau 2076ms ==> new tau 637ms [Q D G]
+
+our: time 388686ms: Recalculating tau for process E: old tau 4703ms ==> new tau 2364ms [Q D]
+
+3405
+gt:  time 391759ms: Process E switching out of CPU; blocking on I/O until time 392429ms [Q D G]
+
+our: time 388686ms: Process E switching out of CPU; blocking on I/O until time 389459ms [Q D]
+
+3406
+gt:  time 391765ms: Process D (tau 9765ms) started using the CPU for remaining 4570ms of 6324ms burst [Q G]
+
+our: time 388692ms: Process D (tau 8031ms) started using the CPU for remaining 1895ms of 4524ms burst [Q <empty>]
+
+3407
+gt:  time 392429ms: Process E (tau 637ms) completed I/O; preempting D [Q E G]
+
+our: time 389459ms: Process E (tau 2364ms) completed I/O; preempting D [Q E]
+
+3408
+gt:  time 392435ms: Process E (tau 637ms) started using the CPU for 2088ms burst [Q D G]
+
+our: time 389465ms: Process E (tau 2364ms) started using the CPU for 8000ms burst [Q D]
+
+3409
+gt:  time 394523ms: Process E (tau 637ms) completed a CPU burst; 43 bursts to go [Q D G]
+
+our: time 397465ms: Process E (tau 2364ms) completed a CPU burst; 38 bursts to go [Q D]
+
+3410
+gt:  time 394523ms: Recalculating tau for process E: old tau 637ms ==> new tau 1943ms [Q D G]
+
+our: time 397465ms: Recalculating tau for process E: old tau 2364ms ==> new tau 7437ms [Q D]
+
+3411
+gt:  time 394523ms: Process E switching out of CPU; blocking on I/O until time 396118ms [Q D G]
+
+our: time 397465ms: Process E switching out of CPU; blocking on I/O until time 399548ms [Q D]
+
+3412
+gt:  time 394529ms: Process D (tau 9765ms) started using the CPU for remaining 3906ms of 6324ms burst [Q G]
+
+our: time 397471ms: Process D (tau 8031ms) started using the CPU for remaining 1128ms of 4524ms burst [Q <empty>]
+
+3413
+gt:  time 395126ms: Process C (tau 740ms) completed I/O; preempting D [Q C G]
+
+our: time 398599ms: Process D (tau 8031ms) completed a CPU burst; 42 bursts to go [Q <empty>]
+
+3414
+gt:  time 395132ms: Process C (tau 740ms) started using the CPU for 544ms burst [Q D G]
+
+our: time 398599ms: Recalculating tau for process D: old tau 8031ms ==> new tau 4875ms [Q <empty>]
+
+3415
+gt:  time 395676ms: Process C (tau 740ms) completed a CPU burst; 13 bursts to go [Q D G]
+
+our: time 398599ms: Process D switching out of CPU; blocking on I/O until time 400119ms [Q <empty>]
+
+3416
+gt:  time 395676ms: Recalculating tau for process C: old tau 740ms ==> new tau 564ms [Q D G]
+
+our: time 399548ms: Process E (tau 7437ms) completed I/O; added to ready queue [Q E]
+
+3417
+gt:  time 395676ms: Process C switching out of CPU; blocking on I/O until time 401994ms [Q D G]
+
+our: time 399551ms: Process E (tau 7437ms) started using the CPU for 1664ms burst [Q <empty>]
+
+3418
+gt:  time 395682ms: Process D (tau 9765ms) started using the CPU for remaining 3309ms of 6324ms burst [Q G]
+
+our: time 400119ms: Process D (tau 4875ms) completed I/O; preempting E [Q D]
+
+3419
+gt:  time 396118ms: Process E (tau 1943ms) completed I/O; preempting D [Q E G]
+
+our: time 400125ms: Process D (tau 4875ms) started using the CPU for 2256ms burst [Q E]
+
+3420
+gt:  time 396124ms: Process E (tau 1943ms) started using the CPU for 2512ms burst [Q D G]
+
+our: time 402381ms: Process D (tau 4875ms) completed a CPU burst; 41 bursts to go [Q E]
+
+3421
+gt:  time 398636ms: Process E (tau 1943ms) completed a CPU burst; 42 bursts to go [Q D G]
+
+our: time 402381ms: Recalculating tau for process D: old tau 4875ms ==> new tau 2518ms [Q E]
+
+3422
+gt:  time 398636ms: Recalculating tau for process E: old tau 1943ms ==> new tau 2456ms [Q D G]
+
+our: time 402381ms: Process D switching out of CPU; blocking on I/O until time 403069ms [Q E]
+
+3423
+gt:  time 398636ms: Process E switching out of CPU; blocking on I/O until time 399246ms [Q D G]
+
+our: time 402387ms: Process E (tau 7437ms) started using the CPU for remaining 1096ms of 1664ms burst [Q <empty>]
+
+3424
+gt:  time 398642ms: Process D (tau 9765ms) started using the CPU for remaining 2873ms of 6324ms burst [Q G]
+
+our: time 403069ms: Process D (tau 2518ms) completed I/O; preempting E [Q D]
+
+3425
+gt:  time 399246ms: Process E (tau 2456ms) completed I/O; preempting D [Q E G]
+
+our: time 403075ms: Process D (tau 2518ms) started using the CPU for 3096ms burst [Q E]
+
+3426
+gt:  time 399252ms: Process E (tau 2456ms) started using the CPU for 10300ms burst [Q D G]
+
+our: time 406171ms: Process D (tau 2518ms) completed a CPU burst; 40 bursts to go [Q E]
+
+3427
+gt:  time 401994ms: Process C (tau 564ms) completed I/O; added to ready queue [Q C D G]
+
+our: time 406171ms: Recalculating tau for process D: old tau 2518ms ==> new tau 3039ms [Q E]
+
+3428
+gt:  time 409552ms: Process E (tau 2456ms) completed a CPU burst; 41 bursts to go [Q C D G]
+
+our: time 406171ms: Process D switching out of CPU; blocking on I/O until time 412351ms [Q E]
+
+3429
+gt:  time 409552ms: Recalculating tau for process E: old tau 2456ms ==> new tau 9516ms [Q C D G]
+
+our: time 406177ms: Process E (tau 7437ms) started using the CPU for remaining 414ms of 1664ms burst [Q <empty>]
+
+3430
+gt:  time 409552ms: Process E switching out of CPU; blocking on I/O until time 411477ms [Q C D G]
+
+our: time 406591ms: Process E (tau 7437ms) completed a CPU burst; 37 bursts to go [Q <empty>]
+
+3431
+gt:  time 409558ms: Process C (tau 564ms) started using the CPU for 5256ms burst [Q D G]
+
+our: time 406591ms: Recalculating tau for process E: old tau 7437ms ==> new tau 2242ms [Q <empty>]
+
+3432
+gt:  time 411477ms: Process E (tau 9516ms) completed I/O; added to ready queue [Q D E G]
+
+our: time 406591ms: Process E switching out of CPU; blocking on I/O until time 408031ms [Q <empty>]
+
+3433
+gt:  time 414814ms: Process C (tau 564ms) completed a CPU burst; 12 bursts to go [Q D E G]
+
+our: time 408031ms: Process E (tau 2242ms) completed I/O; added to ready queue [Q E]
+
+3434
+gt:  time 414814ms: Recalculating tau for process C: old tau 564ms ==> new tau 4787ms [Q D E G]
+
+our: time 408034ms: Process E (tau 2242ms) started using the CPU for 5984ms burst [Q <empty>]
+
+3435
+gt:  time 414814ms: Process C switching out of CPU; blocking on I/O until time 419899ms [Q D E G]
+
+our: time 412351ms: Process D (tau 3039ms) completed I/O; added to ready queue [Q D]
+
+3436
+gt:  time 414820ms: Process D (tau 9765ms) started using the CPU for remaining 2269ms of 6324ms burst [Q E G]
+
+our: time 414018ms: Process E (tau 2242ms) completed a CPU burst; 36 bursts to go [Q D]
+
+3437
+gt:  time 417089ms: Process D (tau 9765ms) completed a CPU burst; 45 bursts to go [Q E G]
+
+our: time 414018ms: Recalculating tau for process E: old tau 2242ms ==> new tau 5610ms [Q D]
+
+3438
+gt:  time 417089ms: Recalculating tau for process D: old tau 9765ms ==> new tau 6669ms [Q E G]
+
+our: time 414018ms: Process E switching out of CPU; blocking on I/O until time 414871ms [Q D]
+
+3439
+gt:  time 417089ms: Process D switching out of CPU; blocking on I/O until time 417114ms [Q E G]
+
+our: time 414024ms: Process D (tau 3039ms) started using the CPU for 5156ms burst [Q <empty>]
+
+3440
+gt:  time 417095ms: Process E (tau 9516ms) started using the CPU for 4168ms burst [Q G]
+
+our: time 414871ms: Process E (tau 5610ms) completed I/O; added to ready queue [Q E]
+
+3441
+gt:  time 417114ms: Process D (tau 6669ms) completed I/O; preempting E [Q D G]
+
+our: time 419180ms: Process D (tau 3039ms) completed a CPU burst; 39 bursts to go [Q E]
+
+3442
+gt:  time 417120ms: Process D (tau 6669ms) started using the CPU for 3284ms burst [Q E G]
+
+our: time 419180ms: Recalculating tau for process D: old tau 3039ms ==> new tau 4945ms [Q E]
+
+3443
+gt:  time 419899ms: Process C (tau 4787ms) completed I/O; added to ready queue [Q C E G]
+
+our: time 419180ms: Process D switching out of CPU; blocking on I/O until time 420840ms [Q E]
+
+3444
+gt:  time 420404ms: Process D (tau 6669ms) completed a CPU burst; 44 bursts to go [Q C E G]
+
+our: time 419186ms: Process E (tau 5610ms) started using the CPU for 1584ms burst [Q <empty>]
+
+3445
+gt:  time 420404ms: Recalculating tau for process D: old tau 6669ms ==> new tau 3623ms [Q C E G]
+
+our: time 420770ms: Process E (tau 5610ms) completed a CPU burst; 35 bursts to go [Q <empty>]
+
+3446
+gt:  time 420404ms: Process D switching out of CPU; blocking on I/O until time 422477ms [Q C E G]
+
+our: time 420770ms: Recalculating tau for process E: old tau 5610ms ==> new tau 1987ms [Q <empty>]
+
+3447
+gt:  time 420410ms: Process C (tau 4787ms) started using the CPU for 3644ms burst [Q E G]
+
+our: time 420770ms: Process E switching out of CPU; blocking on I/O until time 421425ms [Q <empty>]
+
+3448
+gt:  time 422477ms: Process D (tau 3623ms) completed I/O; added to ready queue [Q D E G]
+
+our: time 420840ms: Process D (tau 4945ms) completed I/O; added to ready queue [Q D]
+
+3449
+gt:  time 424054ms: Process C (tau 4787ms) completed a CPU burst; 11 bursts to go [Q D E G]
+
+our: time 420843ms: Process D (tau 4945ms) started using the CPU for 6460ms burst [Q <empty>]
+
+3450
+gt:  time 424054ms: Recalculating tau for process C: old tau 4787ms ==> new tau 3759ms [Q D E G]
+
+our: time 421425ms: Process E (tau 1987ms) completed I/O; preempting D [Q E]
+
+3451
+gt:  time 424054ms: Process C switching out of CPU; blocking on I/O until time 425039ms [Q D E G]
+
+our: time 421431ms: Process E (tau 1987ms) started using the CPU for 4952ms burst [Q D]
+
+3452
+gt:  time 424060ms: Process D (tau 3623ms) started using the CPU for 8520ms burst [Q E G]
+
+our: time 426383ms: Process E (tau 1987ms) completed a CPU burst; 34 bursts to go [Q D]
+
+3453
+gt:  time 425039ms: Process C (tau 3759ms) completed I/O; added to ready queue [Q C E G]
+
+our: time 426383ms: Recalculating tau for process E: old tau 1987ms ==> new tau 4656ms [Q D]
+
+3454
+gt:  time 432580ms: Process D (tau 3623ms) completed a CPU burst; 43 bursts to go [Q C E G]
+
+our: time 426383ms: Process E switching out of CPU; blocking on I/O until time 428406ms [Q D]
+
+3455
+gt:  time 432580ms: Recalculating tau for process D: old tau 3623ms ==> new tau 8031ms [Q C E G]
+
+our: time 426389ms: Process D (tau 4945ms) started using the CPU for remaining 5878ms of 6460ms burst [Q <empty>]
+
+3456
+gt:  time 432580ms: Process D switching out of CPU; blocking on I/O until time 432695ms [Q C E G]
+
+our: time 428406ms: Process E (tau 4656ms) completed I/O; added to ready queue [Q E]
+
+3457
+gt:  time 432586ms: Process C (tau 3759ms) started using the CPU for 1980ms burst [Q E G]
+
+our: time 432267ms: Process D (tau 4945ms) completed a CPU burst; 38 bursts to go [Q E]
+
+3458
+gt:  time 432695ms: Process D (tau 8031ms) completed I/O; added to ready queue [Q D E G]
+
+our: time 432267ms: Recalculating tau for process D: old tau 4945ms ==> new tau 6309ms [Q E]
+
+3459
+gt:  time 434566ms: Process C (tau 3759ms) completed a CPU burst; 10 bursts to go [Q D E G]
+
+our: time 432267ms: Process D switching out of CPU; blocking on I/O until time 432765ms [Q E]
+
+3460
+gt:  time 434566ms: Recalculating tau for process C: old tau 3759ms ==> new tau 2158ms [Q D E G]
+
+our: time 432273ms: Process E (tau 4656ms) started using the CPU for 136ms burst [Q <empty>]
+
+3461
+gt:  time 434566ms: Process C switching out of CPU; blocking on I/O until time 436651ms [Q D E G]
+
+our: time 432409ms: Process E (tau 4656ms) completed a CPU burst; 33 bursts to go [Q <empty>]
+
+3462
+gt:  time 434572ms: Process D (tau 8031ms) started using the CPU for 4524ms burst [Q E G]
+
+our: time 432409ms: Recalculating tau for process E: old tau 4656ms ==> new tau 589ms [Q <empty>]
+
+3463
+gt:  time 436651ms: Process C (tau 2158ms) completed I/O; preempting D [Q C E G]
+
+our: time 432409ms: Process E switching out of CPU; blocking on I/O until time 432892ms [Q <empty>]
+
+3464
+gt:  time 436657ms: Process C (tau 2158ms) started using the CPU for 228ms burst [Q D E G]
+
+our: time 432765ms: Process D (tau 6309ms) completed I/O; added to ready queue [Q D]
+
+3465
+gt:  time 436885ms: Process C (tau 2158ms) completed a CPU burst; 9 bursts to go [Q D E G]
+
+our: time 432768ms: Process D (tau 6309ms) started using the CPU for 5060ms burst [Q <empty>]
+
+3466
+gt:  time 436885ms: Recalculating tau for process C: old tau 2158ms ==> new tau 422ms [Q D E G]
+
+our: time 432892ms: Process E (tau 589ms) completed I/O; preempting D [Q E]
+
+3467
+gt:  time 436885ms: Process C switching out of CPU; blocking on I/O until time 440163ms [Q D E G]
+
+our: time 432898ms: Process E (tau 589ms) started using the CPU for 504ms burst [Q D]
+
+3468
+gt:  time 436891ms: Process D (tau 8031ms) started using the CPU for remaining 2445ms of 4524ms burst [Q E G]
+
+our: time 433402ms: Process E (tau 589ms) completed a CPU burst; 32 bursts to go [Q D]
+
+3469
+gt:  time 439336ms: Process D (tau 8031ms) completed a CPU burst; 42 bursts to go [Q E G]
+
+our: time 433402ms: Recalculating tau for process E: old tau 589ms ==> new tau 513ms [Q D]
+
+3470
+gt:  time 439336ms: Recalculating tau for process D: old tau 8031ms ==> new tau 4875ms [Q E G]
+
+our: time 433402ms: Process E switching out of CPU; blocking on I/O until time 434550ms [Q D]
+
+3471
+gt:  time 439336ms: Process D switching out of CPU; blocking on I/O until time 440856ms [Q E G]
+
+our: time 433408ms: Process D (tau 6309ms) started using the CPU for remaining 4936ms of 5060ms burst [Q <empty>]
+
+3472
+gt:  time 439342ms: Process E (tau 9516ms) started using the CPU for remaining 4149ms of 4168ms burst [Q G]
+
+our: time 434550ms: Process E (tau 513ms) completed I/O; preempting D [Q E]
+
+3473
+gt:  time 440163ms: Process C (tau 422ms) completed I/O; preempting E [Q C G]
+
+our: time 434556ms: Process E (tau 513ms) started using the CPU for 44ms burst [Q D]
+
+3474
+gt:  time 440169ms: Process C (tau 422ms) started using the CPU for 1460ms burst [Q E G]
+
+our: time 434600ms: Process E (tau 513ms) completed a CPU burst; 31 bursts to go [Q D]
+
+3475
+gt:  time 440856ms: Process D (tau 4875ms) completed I/O; added to ready queue [Q D E G]
+
+our: time 434600ms: Recalculating tau for process E: old tau 513ms ==> new tau 91ms [Q D]
+
+3476
+gt:  time 441629ms: Process C (tau 422ms) completed a CPU burst; 8 bursts to go [Q D E G]
+
+our: time 434600ms: Process E switching out of CPU; blocking on I/O until time 435820ms [Q D]
+
+3477
+gt:  time 441629ms: Recalculating tau for process C: old tau 422ms ==> new tau 1357ms [Q D E G]
+
+our: time 434606ms: Process D (tau 6309ms) started using the CPU for remaining 3794ms of 5060ms burst [Q <empty>]
+
+3478
+gt:  time 441629ms: Process C switching out of CPU; blocking on I/O until time 446402ms [Q D E G]
+
+our: time 435820ms: Process E (tau 91ms) completed I/O; preempting D [Q E]
+
+3479
+gt:  time 441635ms: Process D (tau 4875ms) started using the CPU for 2256ms burst [Q E G]
+
+our: time 435826ms: Process E (tau 91ms) started using the CPU for 4172ms burst [Q D]
+
+3480
+gt:  time 443891ms: Process D (tau 4875ms) completed a CPU burst; 41 bursts to go [Q E G]
+
+our: time 439998ms: Process E (tau 91ms) completed a CPU burst; 30 bursts to go [Q D]
+
+3481
+gt:  time 443891ms: Recalculating tau for process D: old tau 4875ms ==> new tau 2518ms [Q E G]
+
+our: time 439998ms: Recalculating tau for process E: old tau 91ms ==> new tau 3764ms [Q D]
+
+3482
+gt:  time 443891ms: Process D switching out of CPU; blocking on I/O until time 444579ms [Q E G]
+
+our: time 439998ms: Process E switching out of CPU; blocking on I/O until time 442201ms [Q D]
+
+3483
+gt:  time 443897ms: Process E (tau 9516ms) started using the CPU for remaining 3328ms of 4168ms burst [Q G]
+
+our: time 440004ms: Process D (tau 6309ms) started using the CPU for remaining 2580ms of 5060ms burst [Q <empty>]
+
+3484
+gt:  time 444579ms: Process D (tau 2518ms) completed I/O; preempting E [Q D G]
+
+our: time 442201ms: Process E (tau 3764ms) completed I/O; added to ready queue [Q E]
+
+3485
+gt:  time 444585ms: Process D (tau 2518ms) started using the CPU for 3096ms burst [Q E G]
+
+our: time 442584ms: Process D (tau 6309ms) completed a CPU burst; 37 bursts to go [Q E]
+
+3486
+gt:  time 446402ms: Process C (tau 1357ms) completed I/O; added to ready queue [Q C E G]
+
+our: time 442584ms: Recalculating tau for process D: old tau 6309ms ==> new tau 5185ms [Q E]
+
+3487
+gt:  time 447681ms: Process D (tau 2518ms) completed a CPU burst; 40 bursts to go [Q C E G]
+
+our: time 442584ms: Process D switching out of CPU; blocking on I/O until time 443249ms [Q E]
+
+3488
+gt:  time 447681ms: Recalculating tau for process D: old tau 2518ms ==> new tau 3039ms [Q C E G]
+
+our: time 442590ms: Process E (tau 3764ms) started using the CPU for 312ms burst [Q <empty>]
+
+3489
+gt:  time 447681ms: Process D switching out of CPU; blocking on I/O until time 453861ms [Q C E G]
+
+our: time 442902ms: Process E (tau 3764ms) completed a CPU burst; 29 bursts to go [Q <empty>]
+
+3490
+gt:  time 447687ms: Process C (tau 1357ms) started using the CPU for 2232ms burst [Q E G]
+
+our: time 442902ms: Recalculating tau for process E: old tau 3764ms ==> new tau 658ms [Q <empty>]
+
+3491
+gt:  time 449919ms: Process C (tau 1357ms) completed a CPU burst; 7 bursts to go [Q E G]
+
+our: time 442902ms: Process E switching out of CPU; blocking on I/O until time 445300ms [Q <empty>]
+
+3492
+gt:  time 449919ms: Recalculating tau for process C: old tau 1357ms ==> new tau 2145ms [Q E G]
+
+our: time 443249ms: Process D (tau 5185ms) completed I/O; added to ready queue [Q D]
+
+3493
+gt:  time 449919ms: Process C switching out of CPU; blocking on I/O until time 449964ms [Q E G]
+
+our: time 443252ms: Process D (tau 5185ms) started using the CPU for 7836ms burst [Q <empty>]
+
+3494
+gt:  time 449925ms: Process E (tau 9516ms) started using the CPU for remaining 2646ms of 4168ms burst [Q G]
+
+our: time 445300ms: Process E (tau 658ms) completed I/O; preempting D [Q E]
+
+3495
+gt:  time 449964ms: Process C (tau 2145ms) completed I/O; preempting E [Q C G]
+
+our: time 445306ms: Process E (tau 658ms) started using the CPU for 696ms burst [Q D]
+
+3496
+gt:  time 449970ms: Process C (tau 2145ms) started using the CPU for 2108ms burst [Q E G]
+
+our: time 446002ms: Process E (tau 658ms) completed a CPU burst; 28 bursts to go [Q D]
+
+3497
+gt:  time 452078ms: Process C (tau 2145ms) completed a CPU burst; 6 bursts to go [Q E G]
+
+our: time 446002ms: Recalculating tau for process E: old tau 658ms ==> new tau 693ms [Q D]
+
+3498
+gt:  time 452078ms: Recalculating tau for process C: old tau 2145ms ==> new tau 2112ms [Q E G]
+
+our: time 446002ms: Process E switching out of CPU; blocking on I/O until time 448872ms [Q D]
+
+3499
+gt:  time 452078ms: Process C switching out of CPU; blocking on I/O until time 452888ms [Q E G]
+
+our: time 446008ms: Process D (tau 5185ms) started using the CPU for remaining 5788ms of 7836ms burst [Q <empty>]
+
+3500
+gt:  time 452084ms: Process E (tau 9516ms) started using the CPU for remaining 2607ms of 4168ms burst [Q G]
+
+our: time 448872ms: Process E (tau 693ms) completed I/O; added to ready queue [Q E]
+
+3501
+gt:  time 452888ms: Process C (tau 2112ms) completed I/O; preempting E [Q C G]
+
+our: time 451796ms: Process D (tau 5185ms) completed a CPU burst; 36 bursts to go [Q E]
+
+3502
+gt:  time 452894ms: Process C (tau 2112ms) started using the CPU for 1872ms burst [Q E G]
+
+our: time 451796ms: Recalculating tau for process D: old tau 5185ms ==> new tau 7571ms [Q E]
+
+3503
+gt:  time 453861ms: Process D (tau 3039ms) completed I/O; added to ready queue [Q D E G]
+
+our: time 451796ms: Process D switching out of CPU; blocking on I/O until time 454316ms [Q E]
+
+3504
+gt:  time 454766ms: Process C (tau 2112ms) completed a CPU burst; 5 bursts to go [Q D E G]
+
+our: time 451802ms: Process E (tau 693ms) started using the CPU for 2436ms burst [Q <empty>]
+
+3505
+gt:  time 454766ms: Recalculating tau for process C: old tau 2112ms ==> new tau 1896ms [Q D E G]
+
+our: time 454238ms: Process E (tau 693ms) completed a CPU burst; 27 bursts to go [Q <empty>]
+
+3506
+gt:  time 454766ms: Process C switching out of CPU; blocking on I/O until time 455161ms [Q D E G]
+
+our: time 454238ms: Recalculating tau for process E: old tau 693ms ==> new tau 2262ms [Q <empty>]
+
+3507
+gt:  time 454772ms: Process D (tau 3039ms) started using the CPU for 5156ms burst [Q E G]
+
+our: time 454238ms: Process E switching out of CPU; blocking on I/O until time 454446ms [Q <empty>]
+
+3508
+gt:  time 455161ms: Process C (tau 1896ms) completed I/O; preempting D [Q C E G]
+
+our: time 454316ms: Process D (tau 7571ms) completed I/O; added to ready queue [Q D]
+
+3509
+gt:  time 455167ms: Process C (tau 1896ms) started using the CPU for 4064ms burst [Q D E G]
+
+our: time 454319ms: Process D (tau 7571ms) started using the CPU for 6608ms burst [Q <empty>]
+
+3510
+gt:  time 459231ms: Process C (tau 1896ms) completed a CPU burst; 4 bursts to go [Q D E G]
+
+our: time 454446ms: Process E (tau 2262ms) completed I/O; preempting D [Q E]
+
+3511
+gt:  time 459231ms: Recalculating tau for process C: old tau 1896ms ==> new tau 3848ms [Q D E G]
+
+our: time 454452ms: Process E (tau 2262ms) started using the CPU for 6840ms burst [Q D]
+
+3512
+gt:  time 459231ms: Process C switching out of CPU; blocking on I/O until time 460476ms [Q D E G]
+
+our: time 461292ms: Process E (tau 2262ms) completed a CPU burst; 26 bursts to go [Q D]
+
+3513
+gt:  time 459237ms: Process D (tau 3039ms) started using the CPU for remaining 4767ms of 5156ms burst [Q E G]
+
+our: time 461292ms: Recalculating tau for process E: old tau 2262ms ==> new tau 6383ms [Q D]
+
+3514
+gt:  time 460476ms: Process C (tau 3848ms) completed I/O; added to ready queue [Q C E G]
+
+our: time 461292ms: Process E switching out of CPU; blocking on I/O until time 465885ms [Q D]
+
+3515
+gt:  time 464004ms: Process D (tau 3039ms) completed a CPU burst; 39 bursts to go [Q C E G]
+
+our: time 461298ms: Process D (tau 7571ms) started using the CPU for remaining 6481ms of 6608ms burst [Q <empty>]
+
+3516
+gt:  time 464004ms: Recalculating tau for process D: old tau 3039ms ==> new tau 4945ms [Q C E G]
+
+our: time 465885ms: Process E (tau 6383ms) completed I/O; added to ready queue [Q E]
+
+3517
+gt:  time 464004ms: Process D switching out of CPU; blocking on I/O until time 465664ms [Q C E G]
+
+our: time 467779ms: Process D (tau 7571ms) completed a CPU burst; 35 bursts to go [Q E]
+
+3518
+gt:  time 464010ms: Process C (tau 3848ms) started using the CPU for 1032ms burst [Q E G]
+
+our: time 467779ms: Recalculating tau for process D: old tau 7571ms ==> new tau 6705ms [Q E]
+
+3519
+gt:  time 465042ms: Process C (tau 3848ms) completed a CPU burst; 3 bursts to go [Q E G]
+
+our: time 467779ms: Process D switching out of CPU; blocking on I/O until time 468082ms [Q E]
+
+3520
+gt:  time 465042ms: Recalculating tau for process C: old tau 3848ms ==> new tau 1314ms [Q E G]
+
+our: time 467785ms: Process E (tau 6383ms) started using the CPU for 3900ms burst [Q <empty>]
+
+3521
+gt:  time 465042ms: Process C switching out of CPU; blocking on I/O until time 468607ms [Q E G]
+
+our: time 468082ms: Process D (tau 6705ms) completed I/O; added to ready queue [Q D]
+
+3522
+gt:  time 465048ms: Process E (tau 9516ms) started using the CPU for remaining 1803ms of 4168ms burst [Q G]
+
+our: time 471685ms: Process E (tau 6383ms) completed a CPU burst; 25 bursts to go [Q D]
+
+3523
+gt:  time 465664ms: Process D (tau 4945ms) completed I/O; preempting E [Q D G]
+
+our: time 471685ms: Recalculating tau for process E: old tau 6383ms ==> new tau 4149ms [Q D]
+
+3524
+gt:  time 465670ms: Process D (tau 4945ms) started using the CPU for 6460ms burst [Q E G]
+
+our: time 471685ms: Process E switching out of CPU; blocking on I/O until time 472203ms [Q D]
+
+3525
+gt:  time 468607ms: Process C (tau 1314ms) completed I/O; preempting D [Q C E G]
+
+our: time 471691ms: Process D (tau 6705ms) started using the CPU for 5908ms burst [Q <empty>]
+
+3526
+gt:  time 468613ms: Process C (tau 1314ms) started using the CPU for 1236ms burst [Q D E G]
+
+our: time 472203ms: Process E (tau 4149ms) completed I/O; preempting D [Q E]
+
+3527
+gt:  time 469849ms: Process C (tau 1314ms) completed a CPU burst; 2 bursts to go [Q D E G]
+
+our: time 472209ms: Process E (tau 4149ms) started using the CPU for 1624ms burst [Q D]
+
+3528
+gt:  time 469849ms: Recalculating tau for process C: old tau 1314ms ==> new tau 1244ms [Q D E G]
+
+our: time 473833ms: Process E (tau 4149ms) completed a CPU burst; 24 bursts to go [Q D]
+
+3529
+gt:  time 469849ms: Process C switching out of CPU; blocking on I/O until time 471939ms [Q D E G]
+
+our: time 473833ms: Recalculating tau for process E: old tau 4149ms ==> new tau 1877ms [Q D]
+
+3530
+gt:  time 469855ms: Process D (tau 4945ms) started using the CPU for remaining 3523ms of 6460ms burst [Q E G]
+
+our: time 473833ms: Process E switching out of CPU; blocking on I/O until time 475886ms [Q D]
+
+3531
+gt:  time 471939ms: Process C (tau 1244ms) completed I/O; added to ready queue [Q C E G]
+
+our: time 473839ms: Process D (tau 6705ms) started using the CPU for remaining 5396ms of 5908ms burst [Q <empty>]
+
+3532
+gt:  time 473378ms: Process D (tau 4945ms) completed a CPU burst; 38 bursts to go [Q C E G]
+
+our: time 475886ms: Process E (tau 1877ms) completed I/O; preempting D [Q E]
+
+3533
+gt:  time 473378ms: Recalculating tau for process D: old tau 4945ms ==> new tau 6309ms [Q C E G]
+
+our: time 475892ms: Process E (tau 1877ms) started using the CPU for 1448ms burst [Q D]
+
+3534
+gt:  time 473378ms: Process D switching out of CPU; blocking on I/O until time 473876ms [Q C E G]
+
+our: time 477340ms: Process E (tau 1877ms) completed a CPU burst; 23 bursts to go [Q D]
+
+3535
+gt:  time 473384ms: Process C (tau 1244ms) started using the CPU for 2348ms burst [Q E G]
+
+our: time 477340ms: Recalculating tau for process E: old tau 1877ms ==> new tau 1491ms [Q D]
+
+3536
+gt:  time 473876ms: Process D (tau 6309ms) completed I/O; added to ready queue [Q D E G]
+
+our: time 477340ms: Process E switching out of CPU; blocking on I/O until time 477950ms [Q D]
+
+3537
+gt:  time 475732ms: Process C (tau 1244ms) completed a CPU burst; 1 burst to go [Q D E G]
+
+our: time 477346ms: Process D (tau 6705ms) started using the CPU for remaining 3349ms of 5908ms burst [Q <empty>]
+
+3538
+gt:  time 475732ms: Recalculating tau for process C: old tau 1244ms ==> new tau 2238ms [Q D E G]
+
+our: time 477950ms: Process E (tau 1491ms) completed I/O; preempting D [Q E]
+
+3539
+gt:  time 475732ms: Process C switching out of CPU; blocking on I/O until time 475957ms [Q D E G]
+
+our: time 477956ms: Process E (tau 1491ms) started using the CPU for 5516ms burst [Q D]
+
+3540
+gt:  time 475738ms: Process D (tau 6309ms) started using the CPU for 5060ms burst [Q E G]
+
+our: time 483472ms: Process E (tau 1491ms) completed a CPU burst; 22 bursts to go [Q D]
+
+3541
+gt:  time 475957ms: Process C (tau 2238ms) completed I/O; preempting D [Q C E G]
+
+our: time 483472ms: Recalculating tau for process E: old tau 1491ms ==> new tau 5114ms [Q D]
+
+3542
+gt:  time 475963ms: Process C (tau 2238ms) started using the CPU for 4840ms burst [Q D E G]
+
+our: time 483472ms: Process E switching out of CPU; blocking on I/O until time 486870ms [Q D]
+
+3543
+gt:  time 480803ms: Process C terminated [Q D E G]
+
+our: time 483478ms: Process D (tau 6705ms) started using the CPU for remaining 2745ms of 5908ms burst [Q <empty>]
+
+3544
+gt:  time 480809ms: Process D (tau 6309ms) started using the CPU for remaining 4841ms of 5060ms burst [Q E G]
+
+our: time 486223ms: Process D (tau 6705ms) completed a CPU burst; 34 bursts to go [Q <empty>]
+
+3545
+gt:  time 485650ms: Process D (tau 6309ms) completed a CPU burst; 37 bursts to go [Q E G]
+
+our: time 486223ms: Recalculating tau for process D: old tau 6705ms ==> new tau 5988ms [Q <empty>]
+
+3546
+gt:  time 485650ms: Recalculating tau for process D: old tau 6309ms ==> new tau 5185ms [Q E G]
+
+our: time 486223ms: Process D switching out of CPU; blocking on I/O until time 492298ms [Q <empty>]
+
+3547
+gt:  time 485650ms: Process D switching out of CPU; blocking on I/O until time 486315ms [Q E G]
+
+our: time 486870ms: Process E (tau 5114ms) completed I/O; added to ready queue [Q E]
+
+3548
+gt:  time 485656ms: Process E (tau 9516ms) started using the CPU for remaining 1187ms of 4168ms burst [Q G]
+
+our: time 486873ms: Process E (tau 5114ms) started using the CPU for 488ms burst [Q <empty>]
+
+3549
+gt:  time 486315ms: Process D (tau 5185ms) completed I/O; preempting E [Q D G]
+
+our: time 487361ms: Process E (tau 5114ms) completed a CPU burst; 21 bursts to go [Q <empty>]
+
+3550
+gt:  time 486321ms: Process D (tau 5185ms) started using the CPU for 7836ms burst [Q E G]
+
+our: time 487361ms: Recalculating tau for process E: old tau 5114ms ==> new tau 951ms [Q <empty>]
+
+3551
+gt:  time 494157ms: Process D (tau 5185ms) completed a CPU burst; 36 bursts to go [Q E G]
+
+our: time 487361ms: Process E switching out of CPU; blocking on I/O until time 488714ms [Q <empty>]
+
+3552
+gt:  time 494157ms: Recalculating tau for process D: old tau 5185ms ==> new tau 7571ms [Q E G]
+
+our: time 488714ms: Process E (tau 951ms) completed I/O; added to ready queue [Q E]
+
+3553
+gt:  time 494157ms: Process D switching out of CPU; blocking on I/O until time 496677ms [Q E G]
+
+our: time 488717ms: Process E (tau 951ms) started using the CPU for 11452ms burst [Q <empty>]
+
+3554
+gt:  time 494163ms: Process E (tau 9516ms) started using the CPU for remaining 528ms of 4168ms burst [Q G]
+
+our: time 492298ms: Process D (tau 5988ms) completed I/O; added to ready queue [Q D]
+
+3555
+gt:  time 494691ms: Process E (tau 9516ms) completed a CPU burst; 40 bursts to go [Q G]
+
+our: time 500169ms: Process E (tau 951ms) completed a CPU burst; 20 bursts to go [Q D]
+
+3556
+gt:  time 494691ms: Recalculating tau for process E: old tau 9516ms ==> new tau 4703ms [Q G]
+
+our: time 500169ms: Recalculating tau for process E: old tau 951ms ==> new tau 10402ms [Q D]
+
+3557
+gt:  time 494691ms: Process E switching out of CPU; blocking on I/O until time 497326ms [Q G]
+
+our: time 500169ms: Process E switching out of CPU; blocking on I/O until time 501044ms [Q D]
+
+3558
+gt:  time 494697ms: Process G (tau 10494ms) started using the CPU for 1104ms burst [Q <empty>]
+
+our: time 500175ms: Process D (tau 5988ms) started using the CPU for 1068ms burst [Q <empty>]
+
+3559
+gt:  time 495801ms: Process G (tau 10494ms) completed a CPU burst; 62 bursts to go [Q <empty>]
+
+our: time 501044ms: Process E (tau 10402ms) completed I/O; added to ready queue [Q E]
+
+3560
+gt:  time 495801ms: Recalculating tau for process G: old tau 10494ms ==> new tau 2044ms [Q <empty>]
+
+our: time 501243ms: Process D (tau 5988ms) completed a CPU burst; 33 bursts to go [Q E]
+
+3561
+gt:  time 495801ms: Process G switching out of CPU; blocking on I/O until time 501141ms [Q <empty>]
+
+our: time 501243ms: Recalculating tau for process D: old tau 5988ms ==> new tau 1561ms [Q E]
+
+3562
+gt:  time 496677ms: Process D (tau 7571ms) completed I/O; added to ready queue [Q D]
+
+our: time 501243ms: Process D switching out of CPU; blocking on I/O until time 503198ms [Q E]
+
+3563
+gt:  time 496680ms: Process D (tau 7571ms) started using the CPU for 6608ms burst [Q <empty>]
+
+our: time 501249ms: Process E (tau 10402ms) started using the CPU for 380ms burst [Q <empty>]
+
+3564
+gt:  time 497326ms: Process E (tau 4703ms) completed I/O; preempting D [Q E]
+
+our: time 501629ms: Process E (tau 10402ms) completed a CPU burst; 19 bursts to go [Q <empty>]
+
+3565
+gt:  time 497332ms: Process E (tau 4703ms) started using the CPU for 2104ms burst [Q D]
+
+our: time 501629ms: Recalculating tau for process E: old tau 10402ms ==> new tau 1383ms [Q <empty>]
+
+3566
+gt:  time 499436ms: Process E (tau 4703ms) completed a CPU burst; 39 bursts to go [Q D]
+
+our: time 501629ms: Process E switching out of CPU; blocking on I/O until time 508229ms [Q <empty>]
+
+3567
+gt:  time 499436ms: Recalculating tau for process E: old tau 4703ms ==> new tau 2364ms [Q D]
+
+our: time 503198ms: Process D (tau 1561ms) completed I/O; added to ready queue [Q D]
+
+3568
+gt:  time 499436ms: Process E switching out of CPU; blocking on I/O until time 500209ms [Q D]
+
+our: time 503201ms: Process D (tau 1561ms) started using the CPU for 260ms burst [Q <empty>]
+
+3569
+gt:  time 499442ms: Process D (tau 7571ms) started using the CPU for remaining 5962ms of 6608ms burst [Q <empty>]
+
+our: time 503461ms: Process D (tau 1561ms) completed a CPU burst; 32 bursts to go [Q <empty>]
+
+3570
+gt:  time 500209ms: Process E (tau 2364ms) completed I/O; preempting D [Q E]
+
+our: time 503461ms: Recalculating tau for process D: old tau 1561ms ==> new tau 391ms [Q <empty>]
+
+3571
+gt:  time 500215ms: Process E (tau 2364ms) started using the CPU for 8000ms burst [Q D]
+
+our: time 503461ms: Process D switching out of CPU; blocking on I/O until time 506951ms [Q <empty>]
+
+3572
+gt:  time 501141ms: Process G (tau 2044ms) completed I/O; added to ready queue [Q G D]
+
+our: time 506951ms: Process D (tau 391ms) completed I/O; added to ready queue [Q D]
+
+3573
+gt:  time 508215ms: Process E (tau 2364ms) completed a CPU burst; 38 bursts to go [Q G D]
+
+our: time 506954ms: Process D (tau 391ms) started using the CPU for 936ms burst [Q <empty>]
+
+3574
+gt:  time 508215ms: Recalculating tau for process E: old tau 2364ms ==> new tau 7437ms [Q G D]
+
+our: time 507890ms: Process D (tau 391ms) completed a CPU burst; 31 bursts to go [Q <empty>]
+
+3575
+gt:  time 508215ms: Process E switching out of CPU; blocking on I/O until time 510298ms [Q G D]
+
+our: time 507890ms: Recalculating tau for process D: old tau 391ms ==> new tau 882ms [Q <empty>]
+
+3576
+gt:  time 508221ms: Process G (tau 2044ms) started using the CPU for 1512ms burst [Q D]
+
+our: time 507890ms: Process D switching out of CPU; blocking on I/O until time 508210ms [Q <empty>]
+
+3577
+gt:  time 509733ms: Process G (tau 2044ms) completed a CPU burst; 61 bursts to go [Q D]
+
+our: time 508210ms: Process D (tau 882ms) completed I/O; added to ready queue [Q D]
+
+3578
+gt:  time 509733ms: Recalculating tau for process G: old tau 2044ms ==> new tau 1566ms [Q D]
+
+our: time 508213ms: Process D (tau 882ms) started using the CPU for 292ms burst [Q <empty>]
+
+3579
+gt:  time 509733ms: Process G switching out of CPU; blocking on I/O until time 512881ms [Q D]
+
+our: time 508229ms: Process E (tau 1383ms) completed I/O; added to ready queue [Q E]
+
+3580
+gt:  time 509739ms: Process D (tau 7571ms) started using the CPU for remaining 5195ms of 6608ms burst [Q <empty>]
+
+our: time 508505ms: Process D (tau 882ms) completed a CPU burst; 30 bursts to go [Q E]
+
+3581
+gt:  time 510298ms: Process E (tau 7437ms) completed I/O; added to ready queue [Q E]
+
+our: time 508505ms: Recalculating tau for process D: old tau 882ms ==> new tau 351ms [Q E]
+
+3582
+gt:  time 512881ms: Process G (tau 1566ms) completed I/O; preempting D [Q G E]
+
+our: time 508505ms: Process D switching out of CPU; blocking on I/O until time 510333ms [Q E]
+
+3583
+gt:  time 512887ms: Process G (tau 1566ms) started using the CPU for 4412ms burst [Q D E]
+
+our: time 508511ms: Process E (tau 1383ms) started using the CPU for 5068ms burst [Q <empty>]
+
+3584
+gt:  time 517299ms: Process G (tau 1566ms) completed a CPU burst; 60 bursts to go [Q D E]
+
+our: time 510333ms: Process D (tau 351ms) completed I/O; added to ready queue [Q D]
+
+3585
+gt:  time 517299ms: Recalculating tau for process G: old tau 1566ms ==> new tau 4128ms [Q D E]
+
+our: time 513579ms: Process E (tau 1383ms) completed a CPU burst; 18 bursts to go [Q D]
+
+3586
+gt:  time 517299ms: Process G switching out of CPU; blocking on I/O until time 518624ms [Q D E]
+
+our: time 513579ms: Recalculating tau for process E: old tau 1383ms ==> new tau 4700ms [Q D]
+
+3587
+gt:  time 517305ms: Process D (tau 7571ms) started using the CPU for remaining 2053ms of 6608ms burst [Q E]
+
+our: time 513579ms: Process E switching out of CPU; blocking on I/O until time 515009ms [Q D]
+
+3588
+gt:  time 518624ms: Process G (tau 4128ms) completed I/O; added to ready queue [Q G E]
+
+our: time 513585ms: Process D (tau 351ms) started using the CPU for 10732ms burst [Q <empty>]
+
+3589
+gt:  time 519358ms: Process D (tau 7571ms) completed a CPU burst; 35 bursts to go [Q G E]
+
+our: time 515009ms: Process E (tau 4700ms) completed I/O; added to ready queue [Q E]
+
+3590
+gt:  time 519358ms: Recalculating tau for process D: old tau 7571ms ==> new tau 6705ms [Q G E]
+
+our: time 524317ms: Process D (tau 351ms) completed a CPU burst; 29 bursts to go [Q E]
+
+3591
+gt:  time 519358ms: Process D switching out of CPU; blocking on I/O until time 519661ms [Q G E]
+
+our: time 524317ms: Recalculating tau for process D: old tau 351ms ==> new tau 9694ms [Q E]
+
+3592
+gt:  time 519364ms: Process G (tau 4128ms) started using the CPU for 3152ms burst [Q E]
+
+our: time 524317ms: Process D switching out of CPU; blocking on I/O until time 530790ms [Q E]
+
+3593
+gt:  time 519661ms: Process D (tau 6705ms) completed I/O; added to ready queue [Q D E]
+
+our: time 524323ms: Process E (tau 4700ms) started using the CPU for 2484ms burst [Q <empty>]
+
+3594
+gt:  time 522516ms: Process G (tau 4128ms) completed a CPU burst; 59 bursts to go [Q D E]
+
+our: time 526807ms: Process E (tau 4700ms) completed a CPU burst; 17 bursts to go [Q <empty>]
+
+3595
+gt:  time 522516ms: Recalculating tau for process G: old tau 4128ms ==> new tau 3250ms [Q D E]
+
+our: time 526807ms: Recalculating tau for process E: old tau 4700ms ==> new tau 2706ms [Q <empty>]
+
+3596
+gt:  time 522516ms: Process G switching out of CPU; blocking on I/O until time 523959ms [Q D E]
+
+our: time 526807ms: Process E switching out of CPU; blocking on I/O until time 531985ms [Q <empty>]
+
+3597
+gt:  time 522522ms: Process D (tau 6705ms) started using the CPU for 5908ms burst [Q E]
+
+our: time 530790ms: Process D (tau 9694ms) completed I/O; added to ready queue [Q D]
+
+3598
+gt:  time 523959ms: Process G (tau 3250ms) completed I/O; preempting D [Q G E]
+
+our: time 530793ms: Process D (tau 9694ms) started using the CPU for 6440ms burst [Q <empty>]
+
+3599
+gt:  time 523965ms: Process G (tau 3250ms) started using the CPU for 432ms burst [Q D E]
+
+our: time 531985ms: Process E (tau 2706ms) completed I/O; preempting D [Q E]
+
+3600
+gt:  time 524397ms: Process G (tau 3250ms) completed a CPU burst; 58 bursts to go [Q D E]
+
+our: time 531991ms: Process E (tau 2706ms) started using the CPU for 716ms burst [Q D]
+
+3601
+gt:  time 524397ms: Recalculating tau for process G: old tau 3250ms ==> new tau 714ms [Q D E]
+
+our: time 532707ms: Process E (tau 2706ms) completed a CPU burst; 16 bursts to go [Q D]
+
+3602
+gt:  time 524397ms: Process G switching out of CPU; blocking on I/O until time 524422ms [Q D E]
+
+our: time 532707ms: Recalculating tau for process E: old tau 2706ms ==> new tau 915ms [Q D]
+
+3603
+gt:  time 524403ms: Process D (tau 6705ms) started using the CPU for remaining 4471ms of 5908ms burst [Q E]
+
+our: time 532707ms: Process E switching out of CPU; blocking on I/O until time 537235ms [Q D]
+
+3604
+gt:  time 524422ms: Process G (tau 714ms) completed I/O; preempting D [Q G E]
+
+our: time 532713ms: Process D (tau 9694ms) started using the CPU for remaining 5248ms of 6440ms burst [Q <empty>]
+
+3605
+gt:  time 524428ms: Process G (tau 714ms) started using the CPU for 4364ms burst [Q D E]
+
+our: time 537235ms: Process E (tau 915ms) completed I/O; preempting D [Q E]
+
+3606
+gt:  time 528792ms: Process G (tau 714ms) completed a CPU burst; 57 bursts to go [Q D E]
+
+our: time 537241ms: Process E (tau 915ms) started using the CPU for 524ms burst [Q D]
+
+3607
+gt:  time 528792ms: Recalculating tau for process G: old tau 714ms ==> new tau 3999ms [Q D E]
+
+our: time 537765ms: Process E (tau 915ms) completed a CPU burst; 15 bursts to go [Q D]
+
+3608
+gt:  time 528792ms: Process G switching out of CPU; blocking on I/O until time 529735ms [Q D E]
+
+our: time 537765ms: Recalculating tau for process E: old tau 915ms ==> new tau 564ms [Q D]
+
+3609
+gt:  time 528798ms: Process D (tau 6705ms) started using the CPU for remaining 4452ms of 5908ms burst [Q E]
+
+our: time 537765ms: Process E switching out of CPU; blocking on I/O until time 538518ms [Q D]
+
+3610
+gt:  time 529735ms: Process G (tau 3999ms) completed I/O; preempting D [Q G E]
+
+our: time 537771ms: Process D (tau 9694ms) started using the CPU for remaining 726ms of 6440ms burst [Q <empty>]
+
+3611
+gt:  time 529741ms: Process G (tau 3999ms) started using the CPU for 5616ms burst [Q D E]
+
+our: time 538497ms: Process D (tau 9694ms) completed a CPU burst; 28 bursts to go [Q <empty>]
+
+3612
+gt:  time 535357ms: Process G (tau 3999ms) completed a CPU burst; 56 bursts to go [Q D E]
+
+our: time 538497ms: Recalculating tau for process D: old tau 9694ms ==> new tau 6766ms [Q <empty>]
+
+3613
+gt:  time 535357ms: Recalculating tau for process G: old tau 3999ms ==> new tau 5455ms [Q D E]
+
+our: time 538497ms: Process D switching out of CPU; blocking on I/O until time 543187ms [Q <empty>]
+
+3614
+gt:  time 535357ms: Process G switching out of CPU; blocking on I/O until time 538930ms [Q D E]
+
+our: time 538518ms: Process E (tau 564ms) completed I/O; added to ready queue [Q E]
+
+3615
+gt:  time 535363ms: Process D (tau 6705ms) started using the CPU for remaining 3515ms of 5908ms burst [Q E]
+
+our: time 538521ms: Process E (tau 564ms) started using the CPU for 92ms burst [Q <empty>]
+
+3616
+gt:  time 538878ms: Process D (tau 6705ms) completed a CPU burst; 34 bursts to go [Q E]
+
+our: time 538613ms: Process E (tau 564ms) completed a CPU burst; 14 bursts to go [Q <empty>]
+
+3617
+gt:  time 538878ms: Recalculating tau for process D: old tau 6705ms ==> new tau 5988ms [Q E]
+
+our: time 538613ms: Recalculating tau for process E: old tau 564ms ==> new tau 140ms [Q <empty>]
+
+3618
+gt:  time 538878ms: Process D switching out of CPU; blocking on I/O until time 544953ms [Q E]
+
+our: time 538613ms: Process E switching out of CPU; blocking on I/O until time 544651ms [Q <empty>]
+
+3619
+gt:  time 538884ms: Process E (tau 7437ms) started using the CPU for 1664ms burst [Q <empty>]
+
+our: time 543187ms: Process D (tau 6766ms) completed I/O; added to ready queue [Q D]
+
+3620
+gt:  time 538930ms: Process G (tau 5455ms) completed I/O; preempting E [Q G]
+
+our: time 543190ms: Process D (tau 6766ms) started using the CPU for 464ms burst [Q <empty>]
+
+3621
+gt:  time 538936ms: Process G (tau 5455ms) started using the CPU for 352ms burst [Q E]
+
+our: time 543654ms: Process D (tau 6766ms) completed a CPU burst; 27 bursts to go [Q <empty>]
+
+3622
+gt:  time 539288ms: Process G (tau 5455ms) completed a CPU burst; 55 bursts to go [Q E]
+
+our: time 543654ms: Recalculating tau for process D: old tau 6766ms ==> new tau 1095ms [Q <empty>]
+
+3623
+gt:  time 539288ms: Recalculating tau for process G: old tau 5455ms ==> new tau 863ms [Q E]
+
+our: time 543654ms: Process D switching out of CPU; blocking on I/O until time 548782ms [Q <empty>]
+
+3624
+gt:  time 539288ms: Process G switching out of CPU; blocking on I/O until time 544128ms [Q E]
+
+our: time 544651ms: Process E (tau 140ms) completed I/O; added to ready queue [Q E]
+
+3625
+gt:  time 539294ms: Process E (tau 7437ms) started using the CPU for remaining 1618ms of 1664ms burst [Q <empty>]
+
+our: time 544654ms: Process E (tau 140ms) started using the CPU for 596ms burst [Q <empty>]
+
+3626
+gt:  time 540912ms: Process E (tau 7437ms) completed a CPU burst; 37 bursts to go [Q <empty>]
+
+our: time 545250ms: Process E (tau 140ms) completed a CPU burst; 13 bursts to go [Q <empty>]
+
+3627
+gt:  time 540912ms: Recalculating tau for process E: old tau 7437ms ==> new tau 2242ms [Q <empty>]
+
+our: time 545250ms: Recalculating tau for process E: old tau 140ms ==> new tau 551ms [Q <empty>]
+
+3628
+gt:  time 540912ms: Process E switching out of CPU; blocking on I/O until time 542352ms [Q <empty>]
+
+our: time 545250ms: Process E switching out of CPU; blocking on I/O until time 545805ms [Q <empty>]
+
+3629
+gt:  time 542352ms: Process E (tau 2242ms) completed I/O; added to ready queue [Q E]
+
+our: time 545805ms: Process E (tau 551ms) completed I/O; added to ready queue [Q E]
+
+3630
+gt:  time 542355ms: Process E (tau 2242ms) started using the CPU for 5984ms burst [Q <empty>]
+
+our: time 545808ms: Process E (tau 551ms) started using the CPU for 3284ms burst [Q <empty>]
+
+3631
+gt:  time 544128ms: Process G (tau 863ms) completed I/O; added to ready queue [Q G]
+
+our: time 548782ms: Process D (tau 1095ms) completed I/O; added to ready queue [Q D]
+
+3632
+gt:  time 544953ms: Process D (tau 5988ms) completed I/O; added to ready queue [Q G D]
+
+our: time 549092ms: Process E (tau 551ms) completed a CPU burst; 12 bursts to go [Q D]
+
+3633
+gt:  time 548339ms: Process E (tau 2242ms) completed a CPU burst; 36 bursts to go [Q G D]
+
+our: time 549092ms: Recalculating tau for process E: old tau 551ms ==> new tau 3011ms [Q D]
+
+3634
+gt:  time 548339ms: Recalculating tau for process E: old tau 2242ms ==> new tau 5610ms [Q G D]
+
+our: time 549092ms: Process E switching out of CPU; blocking on I/O until time 549705ms [Q D]
+
+3635
+gt:  time 548339ms: Process E switching out of CPU; blocking on I/O until time 549192ms [Q G D]
+
+our: time 549098ms: Process D (tau 1095ms) started using the CPU for 556ms burst [Q <empty>]
+
+3636
+gt:  time 548345ms: Process G (tau 863ms) started using the CPU for 904ms burst [Q D]
+
+our: time 549654ms: Process D (tau 1095ms) completed a CPU burst; 26 bursts to go [Q <empty>]
+
+3637
+gt:  time 549192ms: Process E (tau 5610ms) completed I/O; added to ready queue [Q E D]
+
+our: time 549654ms: Recalculating tau for process D: old tau 1095ms ==> new tau 610ms [Q <empty>]
+
+3638
+gt:  time 549249ms: Process G (tau 863ms) completed a CPU burst; 54 bursts to go [Q E D]
+
+our: time 549654ms: Process D switching out of CPU; blocking on I/O until time 553419ms [Q <empty>]
+
+3639
+gt:  time 549249ms: Recalculating tau for process G: old tau 863ms ==> new tau 900ms [Q E D]
+
+our: time 549705ms: Process E (tau 3011ms) completed I/O; added to ready queue [Q E]
+
+3640
+gt:  time 549249ms: Process G switching out of CPU; blocking on I/O until time 550337ms [Q E D]
+
+our: time 549708ms: Process E (tau 3011ms) started using the CPU for 412ms burst [Q <empty>]
+
+3641
+gt:  time 549255ms: Process E (tau 5610ms) started using the CPU for 1584ms burst [Q D]
+
+our: time 550120ms: Process E (tau 3011ms) completed a CPU burst; 11 bursts to go [Q <empty>]
+
+3642
+gt:  time 550337ms: Process G (tau 900ms) completed I/O; preempting E [Q G D]
+
+our: time 550120ms: Recalculating tau for process E: old tau 3011ms ==> new tau 672ms [Q <empty>]
+
+3643
+gt:  time 550343ms: Process G (tau 900ms) started using the CPU for 8632ms burst [Q E D]
+
+our: time 550120ms: Process E switching out of CPU; blocking on I/O until time 551755ms [Q <empty>]
+
+3644
+gt:  time 558975ms: Process G (tau 900ms) completed a CPU burst; 53 bursts to go [Q E D]
+
+our: time 551755ms: Process E (tau 672ms) completed I/O; added to ready queue [Q E]
+
+3645
+gt:  time 558975ms: Recalculating tau for process G: old tau 900ms ==> new tau 7859ms [Q E D]
+
+our: time 551758ms: Process E (tau 672ms) started using the CPU for 860ms burst [Q <empty>]
+
+3646
+gt:  time 558975ms: Process G switching out of CPU; blocking on I/O until time 559425ms [Q E D]
+
+our: time 552618ms: Process E (tau 672ms) completed a CPU burst; 10 bursts to go [Q <empty>]
+
+3647
+gt:  time 558981ms: Process E (tau 5610ms) started using the CPU for remaining 502ms of 1584ms burst [Q D]
+
+our: time 552618ms: Recalculating tau for process E: old tau 672ms ==> new tau 842ms [Q <empty>]
+
+3648
+gt:  time 559425ms: Process G (tau 7859ms) completed I/O; added to ready queue [Q D G]
+
+our: time 552618ms: Process E switching out of CPU; blocking on I/O until time 552856ms [Q <empty>]
+
+3649
+gt:  time 559483ms: Process E (tau 5610ms) completed a CPU burst; 35 bursts to go [Q D G]
+
+our: time 552856ms: Process E (tau 842ms) completed I/O; added to ready queue [Q E]
+
+3650
+gt:  time 559483ms: Recalculating tau for process E: old tau 5610ms ==> new tau 1987ms [Q D G]
+
+our: time 552859ms: Process E (tau 842ms) started using the CPU for 744ms burst [Q <empty>]
+
+3651
+gt:  time 559483ms: Process E switching out of CPU; blocking on I/O until time 560138ms [Q D G]
+
+our: time 553419ms: Process D (tau 610ms) completed I/O; added to ready queue [Q D]
+
+3652
+gt:  time 559489ms: Process D (tau 5988ms) started using the CPU for 1068ms burst [Q G]
+
+our: time 553603ms: Process E (tau 842ms) completed a CPU burst; 9 bursts to go [Q D]
+
+3653
+gt:  time 560138ms: Process E (tau 1987ms) completed I/O; preempting D [Q E G]
+
+our: time 553603ms: Recalculating tau for process E: old tau 842ms ==> new tau 754ms [Q D]
+
+3654
+gt:  time 560144ms: Process E (tau 1987ms) started using the CPU for 4952ms burst [Q D G]
+
+our: time 553603ms: Process E switching out of CPU; blocking on I/O until time 553713ms [Q D]
+
+3655
+gt:  time 565096ms: Process E (tau 1987ms) completed a CPU burst; 34 bursts to go [Q D G]
+
+our: time 553609ms: Process D (tau 610ms) started using the CPU for 1096ms burst [Q <empty>]
+
+3656
+gt:  time 565096ms: Recalculating tau for process E: old tau 1987ms ==> new tau 4656ms [Q D G]
+
+our: time 553713ms: Process E (tau 754ms) completed I/O; added to ready queue [Q E]
+
+3657
+gt:  time 565096ms: Process E switching out of CPU; blocking on I/O until time 567119ms [Q D G]
+
+our: time 554705ms: Process D (tau 610ms) completed a CPU burst; 25 bursts to go [Q E]
+
+3658
+gt:  time 565102ms: Process D (tau 5988ms) started using the CPU for remaining 419ms of 1068ms burst [Q G]
+
+our: time 554705ms: Recalculating tau for process D: old tau 610ms ==> new tau 1048ms [Q E]
+
+3659
+gt:  time 565521ms: Process D (tau 5988ms) completed a CPU burst; 33 bursts to go [Q G]
+
+our: time 554705ms: Process D switching out of CPU; blocking on I/O until time 554783ms [Q E]
+
+3660
+gt:  time 565521ms: Recalculating tau for process D: old tau 5988ms ==> new tau 1561ms [Q G]
+
+our: time 554711ms: Process E (tau 754ms) started using the CPU for 112ms burst [Q <empty>]
+
+3661
+gt:  time 565521ms: Process D switching out of CPU; blocking on I/O until time 567476ms [Q G]
+
+our: time 554783ms: Process D (tau 1048ms) completed I/O; added to ready queue [Q D]
+
+3662
+gt:  time 565527ms: Process G (tau 7859ms) started using the CPU for 896ms burst [Q <empty>]
+
+our: time 554823ms: Process E (tau 754ms) completed a CPU burst; 8 bursts to go [Q D]
+
+3663
+gt:  time 566423ms: Process G (tau 7859ms) completed a CPU burst; 52 bursts to go [Q <empty>]
+
+our: time 554823ms: Recalculating tau for process E: old tau 754ms ==> new tau 177ms [Q D]
+
+3664
+gt:  time 566423ms: Recalculating tau for process G: old tau 7859ms ==> new tau 1593ms [Q <empty>]
+
+our: time 554823ms: Process E switching out of CPU; blocking on I/O until time 556716ms [Q D]
+
+3665
+gt:  time 566423ms: Process G switching out of CPU; blocking on I/O until time 566788ms [Q <empty>]
+
+our: time 554829ms: Process D (tau 1048ms) started using the CPU for 1092ms burst [Q <empty>]
+
+3666
+gt:  time 566788ms: Process G (tau 1593ms) completed I/O; added to ready queue [Q G]
+
+our: time 555921ms: Process D (tau 1048ms) completed a CPU burst; 24 bursts to go [Q <empty>]
+
+3667
+gt:  time 566791ms: Process G (tau 1593ms) started using the CPU for 2808ms burst [Q <empty>]
+
+our: time 555921ms: Recalculating tau for process D: old tau 1048ms ==> new tau 1088ms [Q <empty>]
+
+3668
+gt:  time 567119ms: Process E (tau 4656ms) completed I/O; added to ready queue [Q E]
+
+our: time 555921ms: Process D switching out of CPU; blocking on I/O until time 557399ms [Q <empty>]
+
+3669
+gt:  time 567476ms: Process D (tau 1561ms) completed I/O; added to ready queue [Q D E]
+
+our: time 556716ms: Process E (tau 177ms) completed I/O; added to ready queue [Q E]
+
+3670
+gt:  time 569599ms: Process G (tau 1593ms) completed a CPU burst; 51 bursts to go [Q D E]
+
+our: time 556719ms: Process E (tau 177ms) started using the CPU for 10252ms burst [Q <empty>]
+
+3671
+gt:  time 569599ms: Recalculating tau for process G: old tau 1593ms ==> new tau 2687ms [Q D E]
+
+our: time 557399ms: Process D (tau 1088ms) completed I/O; added to ready queue [Q D]
+
+3672
+gt:  time 569599ms: Process G switching out of CPU; blocking on I/O until time 573557ms [Q D E]
+
+our: time 566971ms: Process E (tau 177ms) completed a CPU burst; 7 bursts to go [Q D]
+
+3673
+gt:  time 569605ms: Process D (tau 1561ms) started using the CPU for 260ms burst [Q E]
+
+our: time 566971ms: Recalculating tau for process E: old tau 177ms ==> new tau 9245ms [Q D]
+
+3674
+gt:  time 569865ms: Process D (tau 1561ms) completed a CPU burst; 32 bursts to go [Q E]
+
+our: time 566971ms: Process E switching out of CPU; blocking on I/O until time 567569ms [Q D]
+
+3675
+gt:  time 569865ms: Recalculating tau for process D: old tau 1561ms ==> new tau 391ms [Q E]
+
+our: time 566977ms: Process D (tau 1088ms) started using the CPU for 6528ms burst [Q <empty>]
+
+3676
+gt:  time 569865ms: Process D switching out of CPU; blocking on I/O until time 573355ms [Q E]
+
+our: time 567569ms: Process E (tau 9245ms) completed I/O; added to ready queue [Q E]
+
+3677
+gt:  time 569871ms: Process E (tau 4656ms) started using the CPU for 136ms burst [Q <empty>]
+
+our: time 573505ms: Process D (tau 1088ms) completed a CPU burst; 23 bursts to go [Q E]
+
+3678
+gt:  time 570007ms: Process E (tau 4656ms) completed a CPU burst; 33 bursts to go [Q <empty>]
+
+our: time 573505ms: Recalculating tau for process D: old tau 1088ms ==> new tau 5984ms [Q E]
+
+3679
+gt:  time 570007ms: Recalculating tau for process E: old tau 4656ms ==> new tau 589ms [Q <empty>]
+
+our: time 573505ms: Process D switching out of CPU; blocking on I/O until time 579690ms [Q E]
+
+3680
+gt:  time 570007ms: Process E switching out of CPU; blocking on I/O until time 570490ms [Q <empty>]
+
+our: time 573511ms: Process E (tau 9245ms) started using the CPU for 3016ms burst [Q <empty>]
+
+3681
+gt:  time 570490ms: Process E (tau 589ms) completed I/O; added to ready queue [Q E]
+
+our: time 576527ms: Process E (tau 9245ms) completed a CPU burst; 6 bursts to go [Q <empty>]
+
+3682
+gt:  time 570493ms: Process E (tau 589ms) started using the CPU for 504ms burst [Q <empty>]
+
+our: time 576527ms: Recalculating tau for process E: old tau 9245ms ==> new tau 3639ms [Q <empty>]
+
+3683
+gt:  time 570997ms: Process E (tau 589ms) completed a CPU burst; 32 bursts to go [Q <empty>]
+
+our: time 576527ms: Process E switching out of CPU; blocking on I/O until time 577442ms [Q <empty>]
+
+3684
+gt:  time 570997ms: Recalculating tau for process E: old tau 589ms ==> new tau 513ms [Q <empty>]
+
+our: time 577442ms: Process E (tau 3639ms) completed I/O; added to ready queue [Q E]
+
+3685
+gt:  time 570997ms: Process E switching out of CPU; blocking on I/O until time 572145ms [Q <empty>]
+
+our: time 577445ms: Process E (tau 3639ms) started using the CPU for 452ms burst [Q <empty>]
+
+3686
+gt:  time 572145ms: Process E (tau 513ms) completed I/O; added to ready queue [Q E]
+
+our: time 577897ms: Process E (tau 3639ms) completed a CPU burst; 5 bursts to go [Q <empty>]
+
+3687
+gt:  time 572148ms: Process E (tau 513ms) started using the CPU for 44ms burst [Q <empty>]
+
+our: time 577897ms: Recalculating tau for process E: old tau 3639ms ==> new tau 771ms [Q <empty>]
+
+3688
+gt:  time 572192ms: Process E (tau 513ms) completed a CPU burst; 31 bursts to go [Q <empty>]
+
+our: time 577897ms: Process E switching out of CPU; blocking on I/O until time 578095ms [Q <empty>]
+
+3689
+gt:  time 572192ms: Recalculating tau for process E: old tau 513ms ==> new tau 91ms [Q <empty>]
+
+our: time 578095ms: Process E (tau 771ms) completed I/O; added to ready queue [Q E]
+
+3690
+gt:  time 572192ms: Process E switching out of CPU; blocking on I/O until time 573412ms [Q <empty>]
+
+our: time 578098ms: Process E (tau 771ms) started using the CPU for 2220ms burst [Q <empty>]
+
+3691
+gt:  time 573355ms: Process D (tau 391ms) completed I/O; added to ready queue [Q D]
+
+our: time 579690ms: Process D (tau 5984ms) completed I/O; added to ready queue [Q D]
+
+3692
+gt:  time 573358ms: Process D (tau 391ms) started using the CPU for 936ms burst [Q <empty>]
+
+our: time 580318ms: Process E (tau 771ms) completed a CPU burst; 4 bursts to go [Q D]
+
+3693
+gt:  time 573412ms: Process E (tau 91ms) completed I/O; preempting D [Q E]
+
+our: time 580318ms: Recalculating tau for process E: old tau 771ms ==> new tau 2076ms [Q D]
+
+3694
+gt:  time 573418ms: Process E (tau 91ms) started using the CPU for 4172ms burst [Q D]
+
+our: time 580318ms: Process E switching out of CPU; blocking on I/O until time 584726ms [Q D]
+
+3695
+gt:  time 573557ms: Process G (tau 2687ms) completed I/O; added to ready queue [Q D G]
+
+our: time 580324ms: Process D (tau 5984ms) started using the CPU for 5812ms burst [Q <empty>]
+
+3696
+gt:  time 577590ms: Process E (tau 91ms) completed a CPU burst; 30 bursts to go [Q D G]
+
+our: time 584726ms: Process E (tau 2076ms) completed I/O; added to ready queue [Q E]
+
+3697
+gt:  time 577590ms: Recalculating tau for process E: old tau 91ms ==> new tau 3764ms [Q D G]
+
+our: time 586136ms: Process D (tau 5984ms) completed a CPU burst; 22 bursts to go [Q E]
+
+3698
+gt:  time 577590ms: Process E switching out of CPU; blocking on I/O until time 579793ms [Q D G]
+
+our: time 586136ms: Recalculating tau for process D: old tau 5984ms ==> new tau 5830ms [Q E]
+
+3699
+gt:  time 577596ms: Process D (tau 391ms) started using the CPU for remaining 882ms of 936ms burst [Q G]
+
+our: time 586136ms: Process D switching out of CPU; blocking on I/O until time 586229ms [Q E]
+
+3700
+gt:  time 578478ms: Process D (tau 391ms) completed a CPU burst; 31 bursts to go [Q G]
+
+our: time 586142ms: Process E (tau 2076ms) started using the CPU for 2164ms burst [Q <empty>]
+
+3701
+gt:  time 578478ms: Recalculating tau for process D: old tau 391ms ==> new tau 882ms [Q G]
+
+our: time 586229ms: Process D (tau 5830ms) completed I/O; added to ready queue [Q D]
+
+3702
+gt:  time 578478ms: Process D switching out of CPU; blocking on I/O until time 578798ms [Q G]
+
+our: time 588306ms: Process E (tau 2076ms) completed a CPU burst; 3 bursts to go [Q D]
+
+3703
+gt:  time 578484ms: Process G (tau 2687ms) started using the CPU for 3660ms burst [Q <empty>]
+
+our: time 588306ms: Recalculating tau for process E: old tau 2076ms ==> new tau 2156ms [Q D]
+
+3704
+gt:  time 578798ms: Process D (tau 882ms) completed I/O; preempting G [Q D]
+
+our: time 588306ms: Process E switching out of CPU; blocking on I/O until time 594511ms [Q D]
+
+3705
+gt:  time 578804ms: Process D (tau 882ms) started using the CPU for 292ms burst [Q G]
+
+our: time 588312ms: Process D (tau 5830ms) started using the CPU for 8508ms burst [Q <empty>]
+
+3706
+gt:  time 579096ms: Process D (tau 882ms) completed a CPU burst; 30 bursts to go [Q G]
+
+our: time 594511ms: Process E (tau 2156ms) completed I/O; added to ready queue [Q E]
+
+3707
+gt:  time 579096ms: Recalculating tau for process D: old tau 882ms ==> new tau 352ms [Q G]
+
+our: time 596820ms: Process D (tau 5830ms) completed a CPU burst; 21 bursts to go [Q E]
+
+3708
+gt:  time 579096ms: Process D switching out of CPU; blocking on I/O until time 580924ms [Q G]
+
+our: time 596820ms: Recalculating tau for process D: old tau 5830ms ==> new tau 8241ms [Q E]
+
+3709
+gt:  time 579102ms: Process G (tau 2687ms) started using the CPU for remaining 3346ms of 3660ms burst [Q <empty>]
+
+our: time 596820ms: Process D switching out of CPU; blocking on I/O until time 597380ms [Q E]
+
+3710
+gt:  time 579793ms: Process E (tau 3764ms) completed I/O; added to ready queue [Q E]
+
+our: time 596826ms: Process E (tau 2156ms) started using the CPU for 3928ms burst [Q <empty>]
+
+3711
+gt:  time 580924ms: Process D (tau 352ms) completed I/O; preempting G [Q D E]
+
+our: time 597380ms: Process D (tau 8241ms) completed I/O; added to ready queue [Q D]
+
+3712
+gt:  time 580930ms: Process D (tau 352ms) started using the CPU for 10732ms burst [Q G E]
+
+our: time 600754ms: Process E (tau 2156ms) completed a CPU burst; 2 bursts to go [Q D]
+
+3713
+gt:  time 591662ms: Process D (tau 352ms) completed a CPU burst; 29 bursts to go [Q G E]
+
+our: time 600754ms: Recalculating tau for process E: old tau 2156ms ==> new tau 3751ms [Q D]
+
+3714
+gt:  time 591662ms: Recalculating tau for process D: old tau 352ms ==> new tau 9694ms [Q G E]
+
+our: time 600754ms: Process E switching out of CPU; blocking on I/O until time 601844ms [Q D]
+
+3715
+gt:  time 591662ms: Process D switching out of CPU; blocking on I/O until time 598135ms [Q G E]
+
+our: time 600760ms: Process D (tau 8241ms) started using the CPU for 1448ms burst [Q <empty>]
+
+3716
+gt:  time 591668ms: Process G (tau 2687ms) started using the CPU for remaining 1524ms of 3660ms burst [Q E]
+
+our: time 601844ms: Process E (tau 3751ms) completed I/O; preempting D [Q E]
+
+3717
+gt:  time 593192ms: Process G (tau 2687ms) completed a CPU burst; 50 bursts to go [Q E]
+
+our: time 601850ms: Process E (tau 3751ms) started using the CPU for 920ms burst [Q D]
+
+3718
+gt:  time 593192ms: Recalculating tau for process G: old tau 2687ms ==> new tau 3563ms [Q E]
+
+our: time 602770ms: Process E (tau 3751ms) completed a CPU burst; 1 burst to go [Q D]
+
+3719
+gt:  time 593192ms: Process G switching out of CPU; blocking on I/O until time 599617ms [Q E]
+
+our: time 602770ms: Recalculating tau for process E: old tau 3751ms ==> new tau 1204ms [Q D]
+
+3720
+gt:  time 593198ms: Process E (tau 3764ms) started using the CPU for 312ms burst [Q <empty>]
+
+our: time 602770ms: Process E switching out of CPU; blocking on I/O until time 603628ms [Q D]
+
+3721
+gt:  time 593510ms: Process E (tau 3764ms) completed a CPU burst; 29 bursts to go [Q <empty>]
+
+our: time 602776ms: Process D (tau 8241ms) started using the CPU for remaining 364ms of 1448ms burst [Q <empty>]
+
+3722
+gt:  time 593510ms: Recalculating tau for process E: old tau 3764ms ==> new tau 658ms [Q <empty>]
+
+our: time 603140ms: Process D (tau 8241ms) completed a CPU burst; 20 bursts to go [Q <empty>]
+
+3723
+gt:  time 593510ms: Process E switching out of CPU; blocking on I/O until time 595908ms [Q <empty>]
+
+our: time 603140ms: Recalculating tau for process D: old tau 8241ms ==> new tau 2128ms [Q <empty>]
+
+3724
+gt:  time 595908ms: Process E (tau 658ms) completed I/O; added to ready queue [Q E]
+
+our: time 603140ms: Process D switching out of CPU; blocking on I/O until time 603345ms [Q <empty>]
+
+3725
+gt:  time 595911ms: Process E (tau 658ms) started using the CPU for 696ms burst [Q <empty>]
+
+our: time 603345ms: Process D (tau 2128ms) completed I/O; added to ready queue [Q D]
+
+3726
+gt:  time 596607ms: Process E (tau 658ms) completed a CPU burst; 28 bursts to go [Q <empty>]
+
+our: time 603348ms: Process D (tau 2128ms) started using the CPU for 7956ms burst [Q <empty>]
+
+3727
+gt:  time 596607ms: Recalculating tau for process E: old tau 658ms ==> new tau 693ms [Q <empty>]
+
+our: time 603628ms: Process E (tau 1204ms) completed I/O; preempting D [Q E]
+
+3728
+gt:  time 596607ms: Process E switching out of CPU; blocking on I/O until time 599477ms [Q <empty>]
+
+our: time 603634ms: Process E (tau 1204ms) started using the CPU for 584ms burst [Q D]
+
+3729
+gt:  time 598135ms: Process D (tau 9694ms) completed I/O; added to ready queue [Q D]
+
+our: time 604218ms: Process E terminated [Q D]
+
+3730
+gt:  time 598138ms: Process D (tau 9694ms) started using the CPU for 6440ms burst [Q <empty>]
+
+our: time 604224ms: Process D (tau 2128ms) started using the CPU for remaining 7676ms of 7956ms burst [Q <empty>]
+
+3731
+gt:  time 599477ms: Process E (tau 693ms) completed I/O; preempting D [Q E]
+
+our: time 611900ms: Process D (tau 2128ms) completed a CPU burst; 19 bursts to go [Q <empty>]
+
+3732
+gt:  time 599483ms: Process E (tau 693ms) started using the CPU for 2436ms burst [Q D]
+
+our: time 611900ms: Recalculating tau for process D: old tau 2128ms ==> new tau 7374ms [Q <empty>]
+
+3733
+gt:  time 599617ms: Process G (tau 3563ms) completed I/O; added to ready queue [Q G D]
+
+our: time 611900ms: Process D switching out of CPU; blocking on I/O until time 613800ms [Q <empty>]
+
+3734
+gt:  time 601919ms: Process E (tau 693ms) completed a CPU burst; 27 bursts to go [Q G D]
+
+our: time 613800ms: Process D (tau 7374ms) completed I/O; added to ready queue [Q D]
+
+3735
+gt:  time 601919ms: Recalculating tau for process E: old tau 693ms ==> new tau 2262ms [Q G D]
+
+our: time 613803ms: Process D (tau 7374ms) started using the CPU for 6748ms burst [Q <empty>]
+
+3736
+gt:  time 601919ms: Process E switching out of CPU; blocking on I/O until time 602127ms [Q G D]
+
+our: time 620551ms: Process D (tau 7374ms) completed a CPU burst; 18 bursts to go [Q <empty>]
+
+3737
+gt:  time 601925ms: Process G (tau 3563ms) started using the CPU for 2452ms burst [Q D]
+
+our: time 620551ms: Recalculating tau for process D: old tau 7374ms ==> new tau 6811ms [Q <empty>]
+
+3738
+gt:  time 602127ms: Process E (tau 2262ms) completed I/O; preempting G [Q E D]
+
+our: time 620551ms: Process D switching out of CPU; blocking on I/O until time 622006ms [Q <empty>]
+
+3739
+gt:  time 602133ms: Process E (tau 2262ms) started using the CPU for 6840ms burst [Q G D]
+
+our: time 622006ms: Process D (tau 6811ms) completed I/O; added to ready queue [Q D]
+
+3740
+gt:  time 608973ms: Process E (tau 2262ms) completed a CPU burst; 26 bursts to go [Q G D]
+
+our: time 622009ms: Process D (tau 6811ms) started using the CPU for 2276ms burst [Q <empty>]
+
+3741
+gt:  time 608973ms: Recalculating tau for process E: old tau 2262ms ==> new tau 6383ms [Q G D]
+
+our: time 624285ms: Process D (tau 6811ms) completed a CPU burst; 17 bursts to go [Q <empty>]
+
+3742
+gt:  time 608973ms: Process E switching out of CPU; blocking on I/O until time 613566ms [Q G D]
+
+our: time 624285ms: Recalculating tau for process D: old tau 6811ms ==> new tau 2730ms [Q <empty>]
+
+3743
+gt:  time 608979ms: Process G (tau 3563ms) started using the CPU for remaining 2250ms of 2452ms burst [Q D]
+
+our: time 624285ms: Process D switching out of CPU; blocking on I/O until time 626923ms [Q <empty>]
+
+3744
+gt:  time 611229ms: Process G (tau 3563ms) completed a CPU burst; 49 bursts to go [Q D]
+
+our: time 626923ms: Process D (tau 2730ms) completed I/O; added to ready queue [Q D]
+
+3745
+gt:  time 611229ms: Recalculating tau for process G: old tau 3563ms ==> new tau 2564ms [Q D]
+
+our: time 626926ms: Process D (tau 2730ms) started using the CPU for 2204ms burst [Q <empty>]
+
+3746
+gt:  time 611229ms: Process G switching out of CPU; blocking on I/O until time 614619ms [Q D]
+
+our: time 629130ms: Process D (tau 2730ms) completed a CPU burst; 16 bursts to go [Q <empty>]
+
+3747
+gt:  time 611235ms: Process D (tau 9694ms) started using the CPU for remaining 5101ms of 6440ms burst [Q <empty>]
+
+our: time 629130ms: Recalculating tau for process D: old tau 2730ms ==> new tau 2257ms [Q <empty>]
+
+3748
+gt:  time 613566ms: Process E (tau 6383ms) completed I/O; added to ready queue [Q E]
+
+our: time 629130ms: Process D switching out of CPU; blocking on I/O until time 631533ms [Q <empty>]
+
+3749
+gt:  time 614619ms: Process G (tau 2564ms) completed I/O; preempting D [Q G E]
+
+our: time 631533ms: Process D (tau 2257ms) completed I/O; added to ready queue [Q D]
+
+3750
+gt:  time 614625ms: Process G (tau 2564ms) started using the CPU for 3544ms burst [Q D E]
+
+our: time 631536ms: Process D (tau 2257ms) started using the CPU for 2292ms burst [Q <empty>]
+
+3751
+gt:  time 618169ms: Process G (tau 2564ms) completed a CPU burst; 48 bursts to go [Q D E]
+
+our: time 633828ms: Process D (tau 2257ms) completed a CPU burst; 15 bursts to go [Q <empty>]
+
+3752
+gt:  time 618169ms: Recalculating tau for process G: old tau 2564ms ==> new tau 3446ms [Q D E]
+
+our: time 633828ms: Recalculating tau for process D: old tau 2257ms ==> new tau 2289ms [Q <empty>]
+
+3753
+gt:  time 618169ms: Process G switching out of CPU; blocking on I/O until time 620542ms [Q D E]
+
+our: time 633828ms: Process D switching out of CPU; blocking on I/O until time 636273ms [Q <empty>]
+
+3754
+gt:  time 618175ms: Process D (tau 9694ms) started using the CPU for remaining 1717ms of 6440ms burst [Q E]
+
+our: time 636273ms: Process D (tau 2289ms) completed I/O; added to ready queue [Q D]
+
+3755
+gt:  time 619892ms: Process D (tau 9694ms) completed a CPU burst; 28 bursts to go [Q E]
+
+our: time 636276ms: Process D (tau 2289ms) started using the CPU for 844ms burst [Q <empty>]
+
+3756
+gt:  time 619892ms: Recalculating tau for process D: old tau 9694ms ==> new tau 6766ms [Q E]
+
+our: time 637120ms: Process D (tau 2289ms) completed a CPU burst; 14 bursts to go [Q <empty>]
+
+3757
+gt:  time 619892ms: Process D switching out of CPU; blocking on I/O until time 624582ms [Q E]
+
+our: time 637120ms: Recalculating tau for process D: old tau 2289ms ==> new tau 989ms [Q <empty>]
+
+3758
+gt:  time 619898ms: Process E (tau 6383ms) started using the CPU for 3900ms burst [Q <empty>]
+
+our: time 637120ms: Process D switching out of CPU; blocking on I/O until time 639520ms [Q <empty>]
+
+3759
+gt:  time 620542ms: Process G (tau 3446ms) completed I/O; preempting E [Q G]
+
+our: time 639520ms: Process D (tau 989ms) completed I/O; added to ready queue [Q D]
+
+3760
+gt:  time 620548ms: Process G (tau 3446ms) started using the CPU for 4340ms burst [Q E]
+
+our: time 639523ms: Process D (tau 989ms) started using the CPU for 5128ms burst [Q <empty>]
+
+3761
+gt:  time 624582ms: Process D (tau 6766ms) completed I/O; added to ready queue [Q E D]
+
+our: time 644651ms: Process D (tau 989ms) completed a CPU burst; 13 bursts to go [Q <empty>]
+
+3762
+gt:  time 624888ms: Process G (tau 3446ms) completed a CPU burst; 47 bursts to go [Q E D]
+
+our: time 644651ms: Recalculating tau for process D: old tau 989ms ==> new tau 4715ms [Q <empty>]
+
+3763
+gt:  time 624888ms: Recalculating tau for process G: old tau 3446ms ==> new tau 4251ms [Q E D]
+
+our: time 644651ms: Process D switching out of CPU; blocking on I/O until time 646719ms [Q <empty>]
+
+3764
+gt:  time 624888ms: Process G switching out of CPU; blocking on I/O until time 626781ms [Q E D]
+
+our: time 646719ms: Process D (tau 4715ms) completed I/O; added to ready queue [Q D]
+
+3765
+gt:  time 624894ms: Process E (tau 6383ms) started using the CPU for remaining 3256ms of 3900ms burst [Q D]
+
+our: time 646722ms: Process D (tau 4715ms) started using the CPU for 1572ms burst [Q <empty>]
+
+3766
+gt:  time 626781ms: Process G (tau 4251ms) completed I/O; added to ready queue [Q G D]
+
+our: time 648294ms: Process D (tau 4715ms) completed a CPU burst; 12 bursts to go [Q <empty>]
+
+3767
+gt:  time 628150ms: Process E (tau 6383ms) completed a CPU burst; 25 bursts to go [Q G D]
+
+our: time 648294ms: Recalculating tau for process D: old tau 4715ms ==> new tau 1887ms [Q <empty>]
+
+3768
+gt:  time 628150ms: Recalculating tau for process E: old tau 6383ms ==> new tau 4149ms [Q G D]
+
+our: time 648294ms: Process D switching out of CPU; blocking on I/O until time 651259ms [Q <empty>]
+
+3769
+gt:  time 628150ms: Process E switching out of CPU; blocking on I/O until time 628668ms [Q G D]
+
+our: time 651259ms: Process D (tau 1887ms) completed I/O; added to ready queue [Q D]
+
+3770
+gt:  time 628156ms: Process G (tau 4251ms) started using the CPU for 2752ms burst [Q D]
+
+our: time 651262ms: Process D (tau 1887ms) started using the CPU for 3824ms burst [Q <empty>]
+
+3771
+gt:  time 628668ms: Process E (tau 4149ms) completed I/O; added to ready queue [Q E D]
+
+our: time 655086ms: Process D (tau 1887ms) completed a CPU burst; 11 bursts to go [Q <empty>]
+
+3772
+gt:  time 630908ms: Process G (tau 4251ms) completed a CPU burst; 46 bursts to go [Q E D]
+
+our: time 655086ms: Recalculating tau for process D: old tau 1887ms ==> new tau 3631ms [Q <empty>]
+
+3773
+gt:  time 630908ms: Recalculating tau for process G: old tau 4251ms ==> new tau 2902ms [Q E D]
+
+our: time 655086ms: Process D switching out of CPU; blocking on I/O until time 657951ms [Q <empty>]
+
+3774
+gt:  time 630908ms: Process G switching out of CPU; blocking on I/O until time 636053ms [Q E D]
+
+our: time 657951ms: Process D (tau 3631ms) completed I/O; added to ready queue [Q D]
+
+3775
+gt:  time 630914ms: Process E (tau 4149ms) started using the CPU for 1624ms burst [Q D]
+
+our: time 657954ms: Process D (tau 3631ms) started using the CPU for 616ms burst [Q <empty>]
+
+3776
+gt:  time 632538ms: Process E (tau 4149ms) completed a CPU burst; 24 bursts to go [Q D]
+
+our: time 658570ms: Process D (tau 3631ms) completed a CPU burst; 10 bursts to go [Q <empty>]
+
+3777
+gt:  time 632538ms: Recalculating tau for process E: old tau 4149ms ==> new tau 1877ms [Q D]
+
+our: time 658570ms: Recalculating tau for process D: old tau 3631ms ==> new tau 918ms [Q <empty>]
+
+3778
+gt:  time 632538ms: Process E switching out of CPU; blocking on I/O until time 634591ms [Q D]
+
+our: time 658570ms: Process D switching out of CPU; blocking on I/O until time 660083ms [Q <empty>]
+
+3779
+gt:  time 632544ms: Process D (tau 6766ms) started using the CPU for 464ms burst [Q <empty>]
+
+our: time 660083ms: Process D (tau 918ms) completed I/O; added to ready queue [Q D]
+
+3780
+gt:  time 633008ms: Process D (tau 6766ms) completed a CPU burst; 27 bursts to go [Q <empty>]
+
+our: time 660086ms: Process D (tau 918ms) started using the CPU for 1304ms burst [Q <empty>]
+
+3781
+gt:  time 633008ms: Recalculating tau for process D: old tau 6766ms ==> new tau 1095ms [Q <empty>]
+
+our: time 661390ms: Process D (tau 918ms) completed a CPU burst; 9 bursts to go [Q <empty>]
+
+3782
+gt:  time 633008ms: Process D switching out of CPU; blocking on I/O until time 638136ms [Q <empty>]
+
+our: time 661390ms: Recalculating tau for process D: old tau 918ms ==> new tau 1266ms [Q <empty>]
+
+3783
+gt:  time 634591ms: Process E (tau 1877ms) completed I/O; added to ready queue [Q E]
+
+our: time 661390ms: Process D switching out of CPU; blocking on I/O until time 663420ms [Q <empty>]
+
+3784
+gt:  time 634594ms: Process E (tau 1877ms) started using the CPU for 1448ms burst [Q <empty>]
+
+our: time 663420ms: Process D (tau 1266ms) completed I/O; added to ready queue [Q D]
+
+3785
+gt:  time 636042ms: Process E (tau 1877ms) completed a CPU burst; 23 bursts to go [Q <empty>]
+
+our: time 663423ms: Process D (tau 1266ms) started using the CPU for 528ms burst [Q <empty>]
+
+3786
+gt:  time 636042ms: Recalculating tau for process E: old tau 1877ms ==> new tau 1491ms [Q <empty>]
+
+our: time 663951ms: Process D (tau 1266ms) completed a CPU burst; 8 bursts to go [Q <empty>]
+
+3787
+gt:  time 636042ms: Process E switching out of CPU; blocking on I/O until time 636652ms [Q <empty>]
+
+our: time 663951ms: Recalculating tau for process D: old tau 1266ms ==> new tau 602ms [Q <empty>]
+
+3788
+gt:  time 636053ms: Process G (tau 2902ms) completed I/O; added to ready queue [Q G]
+
+our: time 663951ms: Process D switching out of CPU; blocking on I/O until time 666359ms [Q <empty>]
+
+3789
+gt:  time 636056ms: Process G (tau 2902ms) started using the CPU for 3180ms burst [Q <empty>]
+
+our: time 666359ms: Process D (tau 602ms) completed I/O; added to ready queue [Q D]
+
+3790
+gt:  time 636652ms: Process E (tau 1491ms) completed I/O; preempting G [Q E]
+
+our: time 666362ms: Process D (tau 602ms) started using the CPU for 28ms burst [Q <empty>]
+
+3791
+gt:  time 636658ms: Process E (tau 1491ms) started using the CPU for 5516ms burst [Q G]
+
+our: time 666390ms: Process D (tau 602ms) completed a CPU burst; 7 bursts to go [Q <empty>]
+
+3792
+gt:  time 638136ms: Process D (tau 1095ms) completed I/O; added to ready queue [Q D G]
+
+our: time 666390ms: Recalculating tau for process D: old tau 602ms ==> new tau 86ms [Q <empty>]
+
+3793
+gt:  time 642174ms: Process E (tau 1491ms) completed a CPU burst; 22 bursts to go [Q D G]
+
+our: time 666390ms: Process D switching out of CPU; blocking on I/O until time 666625ms [Q <empty>]
+
+3794
+gt:  time 642174ms: Recalculating tau for process E: old tau 1491ms ==> new tau 5114ms [Q D G]
+
+our: time 666625ms: Process D (tau 86ms) completed I/O; added to ready queue [Q D]
+
+3795
+gt:  time 642174ms: Process E switching out of CPU; blocking on I/O until time 645572ms [Q D G]
+
+our: time 666628ms: Process D (tau 86ms) started using the CPU for 1252ms burst [Q <empty>]
+
+3796
+gt:  time 642180ms: Process D (tau 1095ms) started using the CPU for 556ms burst [Q G]
+
+our: time 667880ms: Process D (tau 86ms) completed a CPU burst; 6 bursts to go [Q <empty>]
+
+3797
+gt:  time 642736ms: Process D (tau 1095ms) completed a CPU burst; 26 bursts to go [Q G]
+
+our: time 667880ms: Recalculating tau for process D: old tau 86ms ==> new tau 1136ms [Q <empty>]
+
+3798
+gt:  time 642736ms: Recalculating tau for process D: old tau 1095ms ==> new tau 610ms [Q G]
+
+our: time 667880ms: Process D switching out of CPU; blocking on I/O until time 668370ms [Q <empty>]
+
+3799
+gt:  time 642736ms: Process D switching out of CPU; blocking on I/O until time 646501ms [Q G]
+
+our: time 668370ms: Process D (tau 1136ms) completed I/O; added to ready queue [Q D]
+
+3800
+gt:  time 642742ms: Process G (tau 2902ms) started using the CPU for remaining 2584ms of 3180ms burst [Q <empty>]
+
+our: time 668373ms: Process D (tau 1136ms) started using the CPU for 436ms burst [Q <empty>]
+
+3801
+gt:  time 645326ms: Process G (tau 2902ms) completed a CPU burst; 45 bursts to go [Q <empty>]
+
+our: time 668809ms: Process D (tau 1136ms) completed a CPU burst; 5 bursts to go [Q <empty>]
+
+3802
+gt:  time 645326ms: Recalculating tau for process G: old tau 2902ms ==> new tau 3153ms [Q <empty>]
+
+our: time 668809ms: Recalculating tau for process D: old tau 1136ms ==> new tau 507ms [Q <empty>]
+
+3803
+gt:  time 645326ms: Process G switching out of CPU; blocking on I/O until time 650129ms [Q <empty>]
+
+our: time 668809ms: Process D switching out of CPU; blocking on I/O until time 669139ms [Q <empty>]
+
+3804
+gt:  time 645572ms: Process E (tau 5114ms) completed I/O; added to ready queue [Q E]
+
+our: time 669139ms: Process D (tau 507ms) completed I/O; added to ready queue [Q D]
+
+3805
+gt:  time 645575ms: Process E (tau 5114ms) started using the CPU for 488ms burst [Q <empty>]
+
+our: time 669142ms: Process D (tau 507ms) started using the CPU for 692ms burst [Q <empty>]
+
+3806
+gt:  time 646063ms: Process E (tau 5114ms) completed a CPU burst; 21 bursts to go [Q <empty>]
+
+our: time 669834ms: Process D (tau 507ms) completed a CPU burst; 4 bursts to go [Q <empty>]
+
+3807
+gt:  time 646063ms: Recalculating tau for process E: old tau 5114ms ==> new tau 951ms [Q <empty>]
+
+our: time 669834ms: Recalculating tau for process D: old tau 507ms ==> new tau 674ms [Q <empty>]
+
+3808
+gt:  time 646063ms: Process E switching out of CPU; blocking on I/O until time 647416ms [Q <empty>]
+
+our: time 669834ms: Process D switching out of CPU; blocking on I/O until time 670364ms [Q <empty>]
+
+3809
+gt:  time 646501ms: Process D (tau 610ms) completed I/O; added to ready queue [Q D]
+
+our: time 670364ms: Process D (tau 674ms) completed I/O; added to ready queue [Q D]
+
+3810
+gt:  time 646504ms: Process D (tau 610ms) started using the CPU for 1096ms burst [Q <empty>]
+
+our: time 670367ms: Process D (tau 674ms) started using the CPU for 6504ms burst [Q <empty>]
+
+3811
+gt:  time 647416ms: Process E (tau 951ms) completed I/O; added to ready queue [Q E]
+
+our: time 676871ms: Process D (tau 674ms) completed a CPU burst; 3 bursts to go [Q <empty>]
+
+3812
+gt:  time 647600ms: Process D (tau 610ms) completed a CPU burst; 25 bursts to go [Q E]
+
+our: time 676871ms: Recalculating tau for process D: old tau 674ms ==> new tau 5921ms [Q <empty>]
+
+3813
+gt:  time 647600ms: Recalculating tau for process D: old tau 610ms ==> new tau 1048ms [Q E]
+
+our: time 676871ms: Process D switching out of CPU; blocking on I/O until time 678199ms [Q <empty>]
+
+3814
+gt:  time 647600ms: Process D switching out of CPU; blocking on I/O until time 647678ms [Q E]
+
+our: time 678199ms: Process D (tau 5921ms) completed I/O; added to ready queue [Q D]
+
+3815
+gt:  time 647606ms: Process E (tau 951ms) started using the CPU for 11452ms burst [Q <empty>]
+
+our: time 678202ms: Process D (tau 5921ms) started using the CPU for 992ms burst
+==> Checking simout.txt
+len(gt_lines) = 31 len(our_lines) = 48
