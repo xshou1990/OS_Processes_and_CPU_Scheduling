@@ -1,4 +1,5 @@
-# OS
+# OS project: CPU scheduling and Processes
+In collaboration with Yanna Ding and Kushal Bhandari.
 
 ## To compile:
 ```
